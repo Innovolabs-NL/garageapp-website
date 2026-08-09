@@ -36,7 +36,7 @@ export function Header() {
   const overHero = isHome && !scrolled && !open;
   const barClass = overHero
     ? "absolute inset-x-0 top-0 z-50 border-transparent bg-transparent"
-    : "sticky top-0 z-50 border-b border-hairline bg-mist backdrop-blur-xl";
+    : "sticky top-0 z-50 border-b border-hairline bg-white/80 backdrop-blur-xl";
 
   const ink = overHero ? "text-white" : "text-ink";
   const muted = overHero ? "text-white/75 hover:text-white" : "text-body hover:text-ink";

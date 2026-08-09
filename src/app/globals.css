@@ -61,7 +61,7 @@ h3,
 .font-display {
   font-family: var(--font-syne), system-ui, sans-serif;
   color: var(--ink);
-  letter-spacing: -0.035em;
+  letter-spacing: -0.02em;
   font-weight: 700;
 }
 

@@ -49,13 +49,13 @@ export default async function HomePage({ params }: Props) {
             sizes="100vw"
           />
         </div>
-        <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(8,12,20,0.92)_0%,rgba(8,12,20,0.72)_42%,rgba(8,12,20,0.35)_100%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(240,161,26,0.22),transparent_40%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(8,12,20,0.9)_0%,rgba(8,12,20,0.45)_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(240,161,26,0.18),transparent_42%)]" />
         <div className="noise-overlay" />
 
         <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-4 pb-16 pt-32 sm:px-6 sm:pb-24">
           <FadeUp>
-            <p className="font-display text-[clamp(3.4rem,11vw,7.5rem)] font-extrabold leading-[0.9] tracking-[-0.045em] text-white">
+            <p className="font-display text-[clamp(3.4rem,11vw,7.5rem)] font-extrabold leading-[0.9] tracking-[-0.04em] text-white">
               {t("brand")}
             </p>
           </FadeUp>
