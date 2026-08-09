@@ -24,7 +24,10 @@ Toggle language in the header; path is preserved when possible.
 
 - UI copy: `src/messages/nl.json`, `src/messages/en.json`
 - Blog articles (Markdown + frontmatter): `content/blog/nl/`, `content/blog/en/`
-- Visual system: Syne + Manrope, cool canvas, charcoal night sections, amber CTAs
+
+## Visual system
+
+Bold editorial: Space Grotesk display type over Inter body, GarageApp slate (`#1F3A5F`) as the brand anchor, amber marker accents, and rule-line layouts instead of card grids. Light and dark mode are both supported — the toggle in the header persists to `localStorage` and defaults to the OS preference (tokens live in `src/app/globals.css`, boot script in `src/lib/theme.ts`).
 
 ## Contact form
 
@@ -54,10 +57,6 @@ CONTACT_FROM_EMAIL=GarageApp <onboarding@resend.dev>
 | `npm run build` | Production build |
 | `npm run start` | Serve production build |
 | `npm run lint` | ESLint |
-
-## Hero image
-
-Default hero uses an Unsplash workshop photo (`images.unsplash.com`). Replace with your own licensed asset under `public/` and update `src/lib/site.ts` when ready.
 
 ## License
 

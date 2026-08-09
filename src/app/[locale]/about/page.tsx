@@ -33,20 +33,24 @@ export default async function AboutPage({ params }: Props) {
         <PageHero title={t("title")} intro={t("intro")} />
       </FadeUp>
 
-      <FadeUp className="mt-8 border-t border-hairline pt-12">
-        <h2 className="font-display text-3xl font-extrabold">{t("storyTitle")}</h2>
-        <p className="mt-4 max-w-3xl text-lg leading-relaxed text-body">
-          {t("storyBody")}
-        </p>
+      <FadeUp className="mx-auto mt-4 max-w-3xl">
+        <div className="card-surface rounded-xl p-6 sm:p-8">
+          <h2 className="text-2xl font-semibold text-foreground">{t("storyTitle")}</h2>
+          <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
+            {t("storyBody")}
+          </p>
+        </div>
       </FadeUp>
 
-      <FadeUp className="mt-14">
-        <h2 className="font-display text-3xl font-extrabold">{t("valuesTitle")}</h2>
-        <ul className="mt-6 space-y-4">
+      <FadeUp className="mx-auto mt-8 max-w-3xl">
+        <h2 className="text-center text-2xl font-semibold text-foreground">
+          {t("valuesTitle")}
+        </h2>
+        <ul className="mt-6 space-y-3">
           {[t("value1"), t("value2"), t("value3")].map((item) => (
             <li
               key={item}
-              className="border-l-4 border-accent pl-5 text-base leading-relaxed text-body sm:text-lg"
+              className="card-surface rounded-xl px-5 py-4 text-base leading-relaxed text-muted"
             >
               {item}
             </li>
@@ -54,8 +58,8 @@ export default async function AboutPage({ params }: Props) {
         </ul>
       </FadeUp>
 
-      <FadeUp className="mt-14">
-        <Link href="/contact" className="btn-accent">
+      <FadeUp className="mt-12 text-center">
+        <Link href="/contact" className="btn-primary">
           {t("cta")}
         </Link>
       </FadeUp>

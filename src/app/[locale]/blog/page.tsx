@@ -36,16 +36,16 @@ export default async function BlogIndexPage({ params }: Props) {
       </FadeUp>
 
       {posts.length === 0 ? (
-        <p className="mt-8 text-muted">{t("empty")}</p>
+        <p className="mt-8 text-center text-muted">{t("empty")}</p>
       ) : (
-        <ul className="mt-4 space-y-0 border-t border-hairline">
+        <ul className="mx-auto mt-4 grid max-w-4xl gap-4">
           {posts.map((post, i) => (
             <FadeUp key={post.slug} delay={i * 0.04}>
-              <li className="border-b border-hairline py-9">
-                <p className="text-xs font-bold uppercase tracking-[0.14em] text-muted">
+              <li className="card-surface rounded-xl p-6 transition-colors hover:bg-surface-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-subtle">
                   {post.date} · {post.readingMinutes} {t("minRead")}
                 </p>
-                <h2 className="mt-3 font-display text-2xl font-bold sm:text-3xl">
+                <h2 className="mt-3 text-2xl font-semibold text-foreground">
                   <Link
                     href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }}
                     className="hover:text-primary"
@@ -53,12 +53,12 @@ export default async function BlogIndexPage({ params }: Props) {
                     {post.title}
                   </Link>
                 </h2>
-                <p className="mt-3 max-w-2xl text-base leading-relaxed text-body">
+                <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">
                   {post.description}
                 </p>
                 <Link
                   href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }}
-                  className="mt-4 inline-block text-sm font-bold text-primary"
+                  className="mt-4 inline-block text-sm font-semibold text-primary"
                 >
                   {t("readMore")} →
                 </Link>

@@ -33,7 +33,7 @@ export default async function ContactPage({ params }: Props) {
         <FadeUp>
           <PageHero title={t("title")} intro={t("intro")} />
         </FadeUp>
-        <FadeUp delay={0.08} className="rounded-2xl bg-surface p-6 ring-1 ring-hairline sm:p-8">
+        <FadeUp delay={0.08} className="card-surface rounded-xl p-6 sm:p-8">
           <ContactForm />
         </FadeUp>
       </div>

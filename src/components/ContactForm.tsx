@@ -36,19 +36,19 @@ export function ContactForm() {
   }
 
   const field =
-    "w-full rounded-xl border border-hairline bg-canvas px-3.5 py-3 text-sm text-ink outline-none focus:border-primary";
+    "w-full rounded-lg border border-border bg-surface px-3.5 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-[3px] focus:ring-primary/20";
 
   return (
     <div>
       <form onSubmit={onSubmit} className="space-y-4">
         <div>
-          <label htmlFor="name" className="mb-1.5 block text-sm font-semibold text-ink">
+          <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-foreground">
             {t("name")}
           </label>
           <input id="name" name="name" required className={field} autoComplete="name" />
         </div>
         <div>
-          <label htmlFor="email" className="mb-1.5 block text-sm font-semibold text-ink">
+          <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-foreground">
             {t("email")}
           </label>
           <input
@@ -61,27 +61,21 @@ export function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="company" className="mb-1.5 block text-sm font-semibold text-ink">
+          <label htmlFor="company" className="mb-1.5 block text-sm font-medium text-foreground">
             {t("company")}
           </label>
           <input id="company" name="company" className={field} autoComplete="organization" />
         </div>
         <div>
-          <label htmlFor="message" className="mb-1.5 block text-sm font-semibold text-ink">
+          <label htmlFor="message" className="mb-1.5 block text-sm font-medium text-foreground">
             {t("message")}
           </label>
-          <textarea
-            id="message"
-            name="message"
-            required
-            rows={5}
-            className={field}
-          />
+          <textarea id="message" name="message" required rows={5} className={field} />
         </div>
         <button
           type="submit"
           disabled={status === "sending"}
-          className="btn-accent w-full disabled:opacity-60 sm:w-auto"
+          className="btn-primary w-full disabled:opacity-60 sm:w-auto"
         >
           {status === "sending" ? t("sending") : t("submit")}
         </button>
@@ -93,7 +87,7 @@ export function ContactForm() {
         </p>
       ) : null}
       {status === "error" ? (
-        <p className="mt-4 text-sm text-error" role="alert">
+        <p className="mt-4 text-sm text-danger" role="alert">
           {t("error")}
         </p>
       ) : null}
@@ -101,7 +95,7 @@ export function ContactForm() {
       <p className="mt-6 text-sm text-muted">
         {t("mailtoHint")}{" "}
         <a
-          className="text-primary underline underline-offset-2"
+          className="font-medium text-primary underline underline-offset-2"
           href={`mailto:${siteConfig.contactEmail}`}
         >
           {siteConfig.contactEmail}

@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useTranslations, useLocale } from "next-intl";
+import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
-import { Link, usePathname } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { LanguageToggle } from "./LanguageToggle";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { href: "/features" as const, key: "features" as const },
@@ -16,61 +17,43 @@ const navItems = [
 
 export function Header() {
   const t = useTranslations("Nav");
-  const pathname = usePathname();
-  const locale = useLocale();
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const isHome = pathname === "/";
-
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname, locale]);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const overHero = isHome && !scrolled && !open;
-  const barClass = overHero
-    ? "absolute inset-x-0 top-0 z-50 border-transparent bg-transparent"
-    : "sticky top-0 z-50 border-b border-hairline bg-white/80 backdrop-blur-xl";
-
-  const ink = overHero ? "text-white" : "text-ink";
-  const muted = overHero ? "text-white/75 hover:text-white" : "text-body hover:text-ink";
 
   return (
-    <header className={barClass}>
-      <div className="mx-auto flex h-[4.25rem] max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <Link
-          href="/"
-          className={`font-display text-[1.65rem] font-extrabold tracking-tight ${ink}`}
-        >
-          GarageApp
+    <header className="fixed top-0 right-0 left-0 z-50 border-b border-border bg-navbar backdrop-blur-md">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
+        <Link href="/" className="flex items-center gap-2.5">
+          <span className="brand-mark h-8 w-8 text-sm" aria-hidden>
+            G
+          </span>
+          <span className="font-display text-lg font-semibold tracking-tight text-foreground">
+            GarageApp
+          </span>
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex" aria-label="Main">
+        <nav className="hidden items-center gap-6 md:flex" aria-label="Main">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`text-[0.92rem] font-semibold ${muted}`}
+              className="text-sm font-medium text-muted transition-colors hover:text-foreground"
             >
               {t(item.key)}
             </Link>
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <LanguageToggle light={overHero} />
-          <Link href="/contact" className="btn-accent hidden sm:inline-flex !py-2.5 !px-4 text-sm">
+        <div className="flex items-center gap-2.5">
+          <ThemeToggle />
+          <div className="hidden sm:block">
+            <LanguageToggle />
+          </div>
+          <Link href="/contact" className="btn-primary hidden !h-9 !px-4 !text-sm sm:inline-flex">
             {t("cta")}
           </Link>
           <button
             type="button"
-            className={`inline-flex items-center justify-center rounded-lg p-2 md:hidden ${ink}`}
+            className="inline-flex items-center justify-center rounded-lg p-2 text-muted transition-colors hover:text-foreground md:hidden"
             aria-label={open ? t("closeMenu") : t("openMenu")}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
@@ -81,18 +64,22 @@ export function Header() {
       </div>
 
       {open ? (
-        <div className="border-t border-hairline bg-surface md:hidden">
+        <div className="border-t border-border bg-surface md:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 sm:px-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-xl px-2 py-2.5 text-base font-semibold text-ink"
+                onClick={() => setOpen(false)}
+                className="rounded-lg px-2 py-2.5 text-base font-medium text-foreground"
               >
                 {t(item.key)}
               </Link>
             ))}
-            <Link href="/contact" className="btn-accent mt-2 text-center">
+            <div className="flex items-center gap-3 px-2 py-2">
+              <LanguageToggle />
+            </div>
+            <Link href="/contact" onClick={() => setOpen(false)} className="btn-primary mt-1">
               {t("cta")}
             </Link>
           </nav>

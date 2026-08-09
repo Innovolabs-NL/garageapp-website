@@ -47,18 +47,18 @@ export default async function BlogPostPage({ params }: Props) {
   const t = await getTranslations("Blog");
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-      <Link href="/blog" className="text-sm font-bold text-primary">
+    <article className="mx-auto max-w-3xl px-6 py-12 sm:py-16">
+      <Link href="/blog" className="text-sm font-semibold text-primary">
         ← {t("back")}
       </Link>
-      <p className="mt-10 text-xs font-bold uppercase tracking-[0.14em] text-muted">
+      <p className="mt-10 text-xs font-semibold uppercase tracking-[0.14em] text-muted">
         {post.date} · {post.readingMinutes} {t("minRead")}
       </p>
-      <h1 className="mt-4 font-display text-4xl font-extrabold leading-[1.08] sm:text-5xl">
+      <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
         {post.title}
       </h1>
-      <p className="mt-5 text-lg leading-relaxed text-body">{post.description}</p>
-      <div className="prose-blog mt-10 border-t border-hairline pt-10">
+      <p className="mt-5 text-lg leading-relaxed text-muted">{post.description}</p>
+      <div className="prose-blog mt-10 border-t border-border pt-10">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
       </div>
     </article>

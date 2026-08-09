@@ -30,7 +30,7 @@ export default async function PrivacyPage({ params }: Props) {
     <PageWrap>
       <FadeUp>
         <PageHero title={t("title")} intro={t("updated")} />
-        <div className="mt-2 max-w-3xl space-y-5 text-base leading-relaxed text-body sm:text-lg">
+        <div className="mx-auto mt-2 max-w-3xl space-y-5 text-base leading-relaxed text-muted sm:text-lg">
           <p>{t("p1")}</p>
           <p>{t("p2")}</p>
           <p>{t("p3")}</p>
