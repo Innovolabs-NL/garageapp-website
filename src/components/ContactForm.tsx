@@ -36,19 +36,19 @@ export function ContactForm() {
   }
 
   const field =
-    "w-full rounded-sm border border-hairline bg-canvas px-3 py-2.5 text-sm text-ink outline-none focus:border-primary";
+    "w-full rounded-xl border border-hairline bg-canvas px-3.5 py-3 text-sm text-ink outline-none focus:border-primary";
 
   return (
     <div>
       <form onSubmit={onSubmit} className="space-y-4">
         <div>
-          <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-ink">
+          <label htmlFor="name" className="mb-1.5 block text-sm font-semibold text-ink">
             {t("name")}
           </label>
           <input id="name" name="name" required className={field} autoComplete="name" />
         </div>
         <div>
-          <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-ink">
+          <label htmlFor="email" className="mb-1.5 block text-sm font-semibold text-ink">
             {t("email")}
           </label>
           <input
@@ -61,13 +61,13 @@ export function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="company" className="mb-1.5 block text-sm font-medium text-ink">
+          <label htmlFor="company" className="mb-1.5 block text-sm font-semibold text-ink">
             {t("company")}
           </label>
           <input id="company" name="company" className={field} autoComplete="organization" />
         </div>
         <div>
-          <label htmlFor="message" className="mb-1.5 block text-sm font-medium text-ink">
+          <label htmlFor="message" className="mb-1.5 block text-sm font-semibold text-ink">
             {t("message")}
           </label>
           <textarea
@@ -81,7 +81,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="rounded-sm bg-primary px-5 py-2.5 text-sm font-medium text-on-primary hover:bg-primary-active disabled:opacity-60"
+          className="btn-accent w-full disabled:opacity-60 sm:w-auto"
         >
           {status === "sending" ? t("sending") : t("submit")}
         </button>

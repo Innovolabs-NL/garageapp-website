@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { FadeUp } from "@/components/FadeUp";
+import { PageHero, PageWrap } from "@/components/PageHero";
 import { siteConfig } from "@/lib/site";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -13,7 +14,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t("featuresTitle"),
     description: t("featuresDescription"),
     alternates: {
-      canonical: `${siteConfig.url}/${locale}/functies`,
       languages: {
         nl: `${siteConfig.url}/nl/functies`,
         en: `${siteConfig.url}/en/features`,
@@ -37,37 +37,31 @@ export default async function FeaturesPage({ params }: Props) {
   const t = await getTranslations("Features");
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+    <PageWrap>
       <FadeUp>
-        <h1 className="font-display text-4xl font-semibold sm:text-5xl">
-          {t("title")}
-        </h1>
-        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-body">
-          {t("intro")}
-        </p>
+        <PageHero title={t("title")} intro={t("intro")} />
       </FadeUp>
 
-      <div className="mt-14 grid gap-0 border-t border-hairline md:grid-cols-2">
+      <div className="mt-4 space-y-0">
         {features.map(([title, body], i) => (
-          <FadeUp
-            key={title}
-            delay={(i % 2) * 0.05}
-            className="border-b border-hairline py-8 md:odd:border-r md:odd:pr-10 md:even:pl-10"
-          >
-            <h2 className="font-display text-2xl font-semibold">{t(title)}</h2>
-            <p className="mt-3 text-sm leading-relaxed text-body">{t(body)}</p>
+          <FadeUp key={title} delay={(i % 3) * 0.04}>
+            <article className="grid gap-3 border-b border-hairline py-10 md:grid-cols-[minmax(0,14rem)_1fr] md:gap-12">
+              <h2 className="font-display text-2xl font-bold sm:text-3xl">
+                {t(title)}
+              </h2>
+              <p className="max-w-2xl text-base leading-relaxed text-body sm:text-lg">
+                {t(body)}
+              </p>
+            </article>
           </FadeUp>
         ))}
       </div>
 
       <FadeUp className="mt-14">
-        <Link
-          href="/contact"
-          className="inline-flex rounded-sm bg-primary px-5 py-2.5 text-sm font-medium text-on-primary hover:bg-primary-active"
-        >
+        <Link href="/contact" className="btn-accent">
           {t("cta")}
         </Link>
       </FadeUp>
-    </div>
+    </PageWrap>
   );
 }

@@ -24,7 +24,7 @@ Toggle language in the header; path is preserved when possible.
 
 - UI copy: `src/messages/nl.json`, `src/messages/en.json`
 - Blog articles (Markdown + frontmatter): `content/blog/nl/`, `content/blog/en/`
-- Design contract: `DESIGN.md`
+- Visual system: Syne + Manrope, cool canvas, charcoal night sections, amber CTAs
 
 ## Contact form
 

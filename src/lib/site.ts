@@ -7,6 +7,7 @@ export const siteConfig = {
     "Garage software for repair shops — inspections, work orders, time tracking, and invoicing in one system.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://garageapp.nl",
   contactEmail: process.env.CONTACT_TO_EMAIL ?? "hello@innovolabs.nl",
+  // Workshop bay atmosphere — replace with owned photography when available
   heroImage:
     "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=2400&q=80",
 } as const;

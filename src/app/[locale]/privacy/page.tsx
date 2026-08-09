@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FadeUp } from "@/components/FadeUp";
+import { PageHero, PageWrap } from "@/components/PageHero";
 import { siteConfig } from "@/lib/site";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -26,13 +27,10 @@ export default async function PrivacyPage({ params }: Props) {
   const t = await getTranslations("Privacy");
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
+    <PageWrap>
       <FadeUp>
-        <h1 className="font-display text-4xl font-semibold sm:text-5xl">
-          {t("title")}
-        </h1>
-        <p className="mt-3 text-sm text-muted">{t("updated")}</p>
-        <div className="mt-10 space-y-5 text-base leading-relaxed text-body">
+        <PageHero title={t("title")} intro={t("updated")} />
+        <div className="mt-2 max-w-3xl space-y-5 text-base leading-relaxed text-body sm:text-lg">
           <p>{t("p1")}</p>
           <p>{t("p2")}</p>
           <p>{t("p3")}</p>
@@ -40,6 +38,6 @@ export default async function PrivacyPage({ params }: Props) {
           <p>{t("p5")}</p>
         </div>
       </FadeUp>
-    </div>
+    </PageWrap>
   );
 }

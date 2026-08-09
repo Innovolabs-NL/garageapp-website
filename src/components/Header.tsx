@@ -19,27 +19,44 @@ export function Header() {
   const pathname = usePathname();
   const locale = useLocale();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const isHome = pathname === "/";
 
   useEffect(() => {
     setOpen(false);
   }, [pathname, locale]);
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const overHero = isHome && !scrolled && !open;
+  const barClass = overHero
+    ? "absolute inset-x-0 top-0 z-50 border-transparent bg-transparent"
+    : "sticky top-0 z-50 border-b border-hairline bg-mist backdrop-blur-xl";
+
+  const ink = overHero ? "text-white" : "text-ink";
+  const muted = overHero ? "text-white/75 hover:text-white" : "text-body hover:text-ink";
+
   return (
-    <header className="sticky top-0 z-50 border-b border-hairline bg-canvas/95">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
+    <header className={barClass}>
+      <div className="mx-auto flex h-[4.25rem] max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <Link
           href="/"
-          className="font-display text-2xl font-semibold tracking-tight text-ink"
+          className={`font-display text-[1.65rem] font-extrabold tracking-tight ${ink}`}
         >
           GarageApp
         </Link>
 
-        <nav className="hidden items-center gap-7 md:flex" aria-label="Main">
+        <nav className="hidden items-center gap-8 md:flex" aria-label="Main">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-body hover:text-ink"
+              className={`text-[0.92rem] font-semibold ${muted}`}
             >
               {t(item.key)}
             </Link>
@@ -47,16 +64,13 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <LanguageToggle />
-          <Link
-            href="/contact"
-            className="hidden rounded-sm bg-primary px-3.5 py-2 text-sm font-medium text-on-primary hover:bg-primary-active sm:inline-flex"
-          >
+          <LanguageToggle light={overHero} />
+          <Link href="/contact" className="btn-accent hidden sm:inline-flex !py-2.5 !px-4 text-sm">
             {t("cta")}
           </Link>
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-sm p-2 text-ink md:hidden"
+            className={`inline-flex items-center justify-center rounded-lg p-2 md:hidden ${ink}`}
             aria-label={open ? t("closeMenu") : t("openMenu")}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
@@ -67,21 +81,18 @@ export function Header() {
       </div>
 
       {open ? (
-        <div className="border-t border-hairline bg-canvas md:hidden">
+        <div className="border-t border-hairline bg-surface md:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 sm:px-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-sm px-2 py-2.5 text-base font-medium text-ink"
+                className="rounded-xl px-2 py-2.5 text-base font-semibold text-ink"
               >
                 {t(item.key)}
               </Link>
             ))}
-            <Link
-              href="/contact"
-              className="mt-2 rounded-sm bg-primary px-3 py-2.5 text-center text-sm font-medium text-on-primary"
-            >
+            <Link href="/contact" className="btn-accent mt-2 text-center">
               {t("cta")}
             </Link>
           </nav>

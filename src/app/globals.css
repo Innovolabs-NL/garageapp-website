@@ -1,18 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --canvas: #ffffff;
-  --surface: #f5f5f7;
-  --ink: #1d1d1f;
-  --body: #424245;
-  --muted: #86868b;
-  --primary: #1f3a5f;
-  --primary-active: #162a45;
-  --hairline: rgba(29, 29, 31, 0.08);
-  --success: #248a3d;
-  --warning: #b25000;
-  --error: #d70015;
+  --canvas: #f4f6f8;
+  --surface: #ffffff;
+  --ink: #0c1118;
+  --body: #3a4450;
+  --muted: #7a8492;
+  --primary: #1f4fd8;
+  --primary-active: #183db0;
+  --accent: #f0a11a;
+  --accent-ink: #1a1204;
+  --hairline: rgba(12, 17, 24, 0.1);
+  --success: #1f8a4c;
+  --warning: #c97810;
+  --error: #d12b2b;
   --on-primary: #ffffff;
+  --night: #0c1118;
+  --night-2: #161d28;
+  --mist: rgba(244, 246, 248, 0.72);
 }
 
 @theme inline {
@@ -23,14 +28,18 @@
   --color-muted: var(--muted);
   --color-primary: var(--primary);
   --color-primary-active: var(--primary-active);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
   --color-hairline: var(--hairline);
   --color-success: var(--success);
   --color-warning: var(--warning);
   --color-error: var(--error);
   --color-on-primary: var(--on-primary);
-  --font-display: var(--font-cormorant);
-  --font-sans: var(--font-inter);
-  --font-mono: var(--font-jetbrains);
+  --color-night: var(--night);
+  --color-night-2: var(--night-2);
+  --color-mist: var(--mist);
+  --font-display: var(--font-syne);
+  --font-sans: var(--font-manrope);
 }
 
 html {
@@ -38,38 +47,113 @@ html {
 }
 
 body {
-  background: var(--canvas);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(31, 79, 216, 0.08), transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, rgba(240, 161, 26, 0.07), transparent 50%),
+    var(--canvas);
   color: var(--body);
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-manrope), system-ui, sans-serif;
 }
 
 h1,
 h2,
 h3,
 .font-display {
-  font-family: var(--font-cormorant), Georgia, serif;
+  font-family: var(--font-syne), system-ui, sans-serif;
   color: var(--ink);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.035em;
+  font-weight: 700;
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--primary) 22%, white);
+  background: color-mix(in srgb, var(--accent) 45%, white);
   color: var(--ink);
+}
+
+.noise-overlay {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.7rem;
+  background: var(--primary);
+  color: var(--on-primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.9rem 1.4rem;
+}
+
+.btn-primary:hover {
+  background: var(--primary-active);
+}
+
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.7rem;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.9rem 1.4rem;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.9rem 1.4rem;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.page-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.page-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 42rem;
+  height: 42rem;
+  transform: translate(-30%, -40%);
+  background: radial-gradient(circle, rgba(31, 79, 216, 0.12), transparent 65%);
+  pointer-events: none;
 }
 
 .prose-blog h2 {
-  font-family: var(--font-cormorant), Georgia, serif;
+  font-family: var(--font-syne), system-ui, sans-serif;
   font-size: 1.75rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 2.5rem;
   margin-bottom: 0.75rem;
   color: var(--ink);
+  letter-spacing: -0.03em;
 }
 
 .prose-blog h3 {
-  font-family: var(--font-cormorant), Georgia, serif;
-  font-size: 1.35rem;
-  font-weight: 600;
+  font-family: var(--font-syne), system-ui, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   color: var(--ink);
@@ -77,7 +161,7 @@ h3,
 
 .prose-blog p {
   margin-bottom: 1.15rem;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .prose-blog ul {
@@ -99,12 +183,30 @@ h3,
 
 .prose-blog strong {
   color: var(--ink);
-  font-weight: 600;
+  font-weight: 700;
+}
+
+@keyframes hero-drift {
+  from {
+    transform: scale(1.05) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.12) translate3d(-1.5%, -1%, 0);
+  }
+}
+
+.hero-media {
+  animation: hero-drift 22s ease-in-out alternate infinite;
+  will-change: transform;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .hero-media {
+    animation: none;
   }
 
   *,

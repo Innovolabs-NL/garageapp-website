@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { FadeUp } from "@/components/FadeUp";
+import { PageHero, PageWrap } from "@/components/PageHero";
 import { getAllPosts } from "@/lib/blog";
 import { siteConfig } from "@/lib/site";
 
@@ -29,25 +30,22 @@ export default async function BlogIndexPage({ params }: Props) {
   const posts = getAllPosts(locale);
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
+    <PageWrap>
       <FadeUp>
-        <h1 className="font-display text-4xl font-semibold sm:text-5xl">
-          {t("title")}
-        </h1>
-        <p className="mt-4 text-lg leading-relaxed text-body">{t("intro")}</p>
+        <PageHero title={t("title")} intro={t("intro")} />
       </FadeUp>
 
       {posts.length === 0 ? (
-        <p className="mt-12 text-muted">{t("empty")}</p>
+        <p className="mt-8 text-muted">{t("empty")}</p>
       ) : (
-        <ul className="mt-12 space-y-0 border-t border-hairline">
+        <ul className="mt-4 space-y-0 border-t border-hairline">
           {posts.map((post, i) => (
             <FadeUp key={post.slug} delay={i * 0.04}>
-              <li className="border-b border-hairline py-8">
-                <p className="font-mono text-xs text-muted">
+              <li className="border-b border-hairline py-9">
+                <p className="text-xs font-bold uppercase tracking-[0.14em] text-muted">
                   {post.date} · {post.readingMinutes} {t("minRead")}
                 </p>
-                <h2 className="mt-2 font-display text-2xl font-semibold">
+                <h2 className="mt-3 font-display text-2xl font-bold sm:text-3xl">
                   <Link
                     href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }}
                     className="hover:text-primary"
@@ -55,20 +53,20 @@ export default async function BlogIndexPage({ params }: Props) {
                     {post.title}
                   </Link>
                 </h2>
-                <p className="mt-2 text-sm leading-relaxed text-body">
+                <p className="mt-3 max-w-2xl text-base leading-relaxed text-body">
                   {post.description}
                 </p>
                 <Link
                   href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }}
-                  className="mt-4 inline-block text-sm font-medium text-primary underline underline-offset-2"
+                  className="mt-4 inline-block text-sm font-bold text-primary"
                 >
-                  {t("readMore")}
+                  {t("readMore")} →
                 </Link>
               </li>
             </FadeUp>
           ))}
         </ul>
       )}
-    </div>
+    </PageWrap>
   );
 }
