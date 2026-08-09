@@ -49,7 +49,8 @@ export default async function HomePage({ params }: Props) {
             sizes="100vw"
           />
         </div>
-        <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(8,12,20,0.9)_0%,rgba(8,12,20,0.45)_100%)]" />
+        <div className="absolute inset-0 bg-night/85" />
+        <div className="absolute inset-0 bg-gradient-to-r from-night via-night/70 to-transparent" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(240,161,26,0.18),transparent_42%)]" />
         <div className="noise-overlay" />
 
