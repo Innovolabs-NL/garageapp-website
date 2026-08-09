@@ -36,7 +36,7 @@ export function ContactForm() {
   }
 
   const field =
-    "w-full rounded-sm border border-hairline bg-canvas px-3 py-2.5 text-sm text-ink outline-none transition focus:border-primary";
+    "w-full rounded-sm border border-hairline bg-canvas px-3 py-2.5 text-sm text-ink outline-none focus:border-primary";
 
   return (
     <div>
@@ -81,7 +81,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="rounded-sm bg-primary px-5 py-2.5 text-sm font-medium text-on-primary transition-colors hover:bg-primary-active disabled:opacity-60"
+          className="rounded-sm bg-primary px-5 py-2.5 text-sm font-medium text-on-primary hover:bg-primary-active disabled:opacity-60"
         >
           {status === "sending" ? t("sending") : t("submit")}
         </button>

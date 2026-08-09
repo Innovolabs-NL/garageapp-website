@@ -67,13 +67,13 @@ export default async function HomePage({ params }: Props) {
           <FadeUp delay={0.2} className="mt-8 flex flex-wrap gap-3">
             <Link
               href="/contact"
-              className="rounded-sm bg-white px-5 py-2.5 text-sm font-semibold text-primary transition hover:bg-surface"
+              className="rounded-sm bg-white px-5 py-2.5 text-sm font-semibold text-primary hover:bg-surface"
             >
               {t("ctaPrimary")}
             </Link>
             <Link
               href="/features"
-              className="rounded-sm border border-white/40 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-white/10"
+              className="rounded-sm border border-white/40 px-5 py-2.5 text-sm font-medium text-white hover:bg-white/10"
             >
               {t("ctaSecondary")}
             </Link>
@@ -132,7 +132,7 @@ export default async function HomePage({ params }: Props) {
           <p className="mt-3 max-w-xl text-body">{t("finalCtaBody")}</p>
           <Link
             href="/contact"
-            className="mt-8 inline-flex rounded-sm bg-primary px-5 py-2.5 text-sm font-medium text-on-primary transition-colors hover:bg-primary-active"
+            className="mt-8 inline-flex rounded-sm bg-primary px-5 py-2.5 text-sm font-medium text-on-primary hover:bg-primary-active"
           >
             {t("finalCtaButton")}
           </Link>

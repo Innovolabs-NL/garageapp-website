@@ -15,7 +15,7 @@ export function LanguageToggle() {
   return (
     <button
       type="button"
-      className="rounded-sm border border-hairline px-2.5 py-1.5 text-xs font-semibold uppercase tracking-wide text-ink transition-colors hover:bg-surface"
+      className="rounded-sm border border-hairline px-2.5 py-1.5 text-xs font-semibold uppercase tracking-wide text-ink hover:bg-surface"
       onClick={() => {
         router.replace(
           // Current route always matches pathname + params together

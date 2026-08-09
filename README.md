@@ -28,7 +28,7 @@ Toggle language in the header; path is preserved when possible.
 
 ## Contact form
 
-`POST /api/contact` sends via [Resend](https://resend.com) when `RESEND_API_KEY` is set. Without the key, submissions are logged and still return success (local/dev).
+`POST /api/contact` sends via [Resend](https://resend.com) when `RESEND_API_KEY` is set. Without the key, the API returns 503 and the form shows an error — use the mailto link on the contact page as fallback.
 
 Copy `.env.example` → `.env.local`:
 

@@ -50,7 +50,7 @@ export function Header() {
           <LanguageToggle />
           <Link
             href="/contact"
-            className="hidden rounded-sm bg-primary px-3.5 py-2 text-sm font-medium text-on-primary transition-colors hover:bg-primary-active sm:inline-flex"
+            className="hidden rounded-sm bg-primary px-3.5 py-2 text-sm font-medium text-on-primary hover:bg-primary-active sm:inline-flex"
           >
             {t("cta")}
           </Link>
