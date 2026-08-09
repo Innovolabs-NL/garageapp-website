@@ -133,8 +133,9 @@ export default async function HomePage({ params }: Props) {
 
       <section className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
         <FadeUp>
-          <div className="relative overflow-hidden rounded-[2rem] bg-[linear-gradient(135deg,#183db0_0%,#1f4fd8_45%,#0c1118_100%)] px-8 py-14 text-white sm:px-14 sm:py-16">
-            <div className="absolute -right-10 top-0 h-56 w-56 rounded-full bg-accent/30 blur-3xl" />
+          <div className="relative overflow-hidden rounded-2xl bg-night px-8 py-14 text-white sm:px-14 sm:py-16">
+            <div className="absolute inset-0 bg-primary/40" />
+            <div className="absolute -right-10 top-0 h-56 w-56 rounded-full bg-accent/25 blur-3xl" />
             <div className="relative">
               <h2 className="max-w-2xl font-display text-3xl font-extrabold text-white sm:text-5xl">
                 {t("finalCtaTitle")}
