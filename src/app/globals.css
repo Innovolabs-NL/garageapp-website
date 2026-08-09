@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  --canvas: #ffffff;
+  --surface: #f5f5f7;
+  --ink: #1d1d1f;
+  --body: #424245;
+  --muted: #86868b;
+  --primary: #1f3a5f;
+  --primary-active: #162a45;
+  --hairline: rgba(29, 29, 31, 0.08);
+  --success: #248a3d;
+  --warning: #b25000;
+  --error: #d70015;
+  --on-primary: #ffffff;
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-body: var(--body);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-active: var(--primary-active);
+  --color-hairline: var(--hairline);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+  --color-on-primary: var(--on-primary);
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--canvas);
+  color: var(--body);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-cormorant), Georgia, serif;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--primary) 22%, white);
+  color: var(--ink);
+}
+
+.prose-blog h2 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--ink);
+}
+
+.prose-blog h3 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--ink);
+}
+
+.prose-blog p {
+  margin-bottom: 1.15rem;
+  line-height: 1.7;
+}
+
+.prose-blog ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 1.15rem;
+}
+
+.prose-blog li {
+  margin-bottom: 0.4rem;
+  line-height: 1.65;
+}
+
+.prose-blog a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose-blog strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
