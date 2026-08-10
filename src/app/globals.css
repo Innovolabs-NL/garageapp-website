@@ -166,8 +166,262 @@ body {
 }
 
 .cta-band {
+  position: relative;
   background: #16233a;
   color: #eef2f8;
+  overflow: hidden;
+}
+
+.cta-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(105deg, rgba(12, 18, 32, 0.92) 0%, rgba(12, 18, 32, 0.72) 55%, rgba(12, 18, 32, 0.55) 100%),
+    var(--cta-image) center / cover no-repeat;
+  z-index: 0;
+}
+
+.cta-band > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Garage motifs --------------------------------------------------- */
+
+.hero-media {
+  position: relative;
+  isolation: isolate;
+  /* Bleed under the fixed header so chrome sits on the photo */
+  margin-top: -4rem;
+  min-height: min(92vh, 820px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: var(--t-foreground);
+  background: var(--t-surface-2);
+}
+
+.hero-media__image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+/* Light theme: soft veil so the bright shop photo reads with the rest of the UI */
+.hero-media__shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--t-background) 72%, transparent) 0%,
+      color-mix(in srgb, var(--t-background) 35%, transparent) 38%,
+      color-mix(in srgb, var(--t-background) 78%, transparent) 78%,
+      color-mix(in srgb, var(--t-background) 94%, transparent) 100%
+    ),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--t-background) 55%, transparent) 0%,
+      transparent 58%
+    );
+}
+
+html[data-theme="dark"] .hero-media {
+  color: #f4f6fa;
+  background: #0c1220;
+}
+
+html[data-theme="dark"] .hero-media__shade {
+  background:
+    linear-gradient(180deg, rgba(8, 12, 20, 0.55) 0%, rgba(8, 12, 20, 0.28) 35%, rgba(8, 12, 20, 0.62) 68%, rgba(8, 12, 20, 0.92) 100%),
+    linear-gradient(90deg, rgba(8, 12, 20, 0.55) 0%, transparent 52%);
+}
+
+.hero-media__flow {
+  border-top: 1px solid var(--t-border);
+  background: color-mix(in srgb, var(--t-surface) 82%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+html[data-theme="dark"] .hero-media__flow {
+  border-top-color: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-media .eyebrow {
+  color: var(--t-muted);
+}
+
+html[data-theme="dark"] .hero-media .eyebrow {
+  color: rgba(244, 246, 250, 0.72);
+}
+
+.hero-media .marker {
+  box-shadow: inset 0 -0.32em 0 0 color-mix(in srgb, #f0a11a 55%, transparent);
+}
+
+.btn-on-media {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 0 1.65rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--t-border-strong);
+  background: color-mix(in srgb, var(--t-surface) 70%, transparent);
+  color: var(--t-foreground);
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+
+.btn-on-media:hover {
+  background: var(--t-surface);
+  border-color: var(--t-border-strong);
+}
+
+html[data-theme="dark"] .btn-on-media {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: transparent;
+  color: #f4f6fa;
+}
+
+html[data-theme="dark"] .btn-on-media:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+/* Header over media — only darken chrome in dark theme */
+html[data-theme="dark"] .site-header[data-over-media="true"] {
+  border-color: transparent;
+  background: linear-gradient(180deg, rgba(8, 12, 20, 0.55) 0%, rgba(8, 12, 20, 0.12) 100%);
+  backdrop-filter: none;
+  color: #f4f6fa;
+}
+
+html[data-theme="dark"] .site-header[data-over-media="true"] .text-foreground {
+  color: #f4f6fa;
+}
+
+html[data-theme="dark"] .site-header[data-over-media="true"] .text-muted {
+  color: rgba(244, 246, 250, 0.72);
+}
+
+html[data-theme="dark"] .site-header[data-over-media="true"] .text-muted:hover,
+html[data-theme="dark"] .site-header[data-over-media="true"] nav a:hover {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .site-header[data-over-media="true"] .border-border {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+html[data-theme="dark"] .site-header[data-over-media="true"] .bg-surface {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="dark"] .site-header[data-over-media="true"] .site-header__menu {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(8, 12, 20, 0.92);
+  backdrop-filter: blur(12px);
+}
+
+html[data-theme="dark"] .site-header[data-over-media="true"] .btn-primary {
+  background: #f4f6fa;
+  color: #0c1220;
+}
+
+html[data-theme="dark"] .site-header[data-over-media="true"] .btn-primary:hover {
+  background: #ffffff;
+}
+
+/* Light theme over bright hero: slightly clearer frosted bar */
+html:not([data-theme="dark"]) .site-header[data-over-media="true"] {
+  border-color: color-mix(in srgb, var(--t-border) 80%, transparent);
+  background: color-mix(in srgb, var(--t-navbar) 92%, transparent);
+}
+
+.kenteken {
+  display: inline-flex;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: 0.35rem;
+  border: 1.5px solid #1a1a1a;
+  background: #f7c948;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+  font-family: var(--font-grotesk), ui-monospace, monospace;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.kenteken__eu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.15rem;
+  width: 1.35rem;
+  padding: 0.25rem 0 0.3rem;
+  background: #003399;
+  color: #fff;
+  font-size: 0.45rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.kenteken__stars {
+  font-size: 0.55rem;
+  line-height: 1;
+  color: #fc0;
+}
+
+.kenteken__code {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.55rem 0.35rem;
+  font-size: 0.95rem;
+}
+
+.bay-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 0.35rem;
+  border: 1px solid var(--t-border-strong);
+  background: var(--t-surface-2);
+  padding: 0.2rem 0.55rem;
+  font-size: 0.7rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--t-foreground);
+}
+
+.garage-texture {
+  background-image:
+    linear-gradient(var(--t-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--t-border) 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-position: -1px -1px;
+  opacity: 0.35;
+}
+
+.icon-bay {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--t-border);
+  background: var(--t-surface);
+  color: var(--t-primary);
 }
 
 /* --- Blog prose ------------------------------------------------------ */

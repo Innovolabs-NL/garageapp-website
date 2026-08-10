@@ -29,6 +29,8 @@ Toggle language in the header; path is preserved when possible.
 
 Bold editorial: Space Grotesk display type over Inter body, GarageApp slate (`#1F3A5F`) as the brand anchor, amber marker accents, and rule-line layouts instead of card grids. Light and dark mode are both supported — the toggle in the header persists to `localStorage` and defaults to the OS preference (tokens live in `src/app/globals.css`, boot script in `src/lib/theme.ts`).
 
+Garage DNA: full-bleed workshop photography in the hero/CTA, Dutch `kenteken` plates + job board, and workshop icons on how-it-works / features. Swap stock URLs in `src/lib/site.ts` for owned photography when ready.
+
 ## Contact form
 
 `POST /api/contact` sends via [Resend](https://resend.com) when `RESEND_API_KEY` is set. Without the key, the API returns 503 and the form shows an error — use the mailto link on the contact page as fallback.

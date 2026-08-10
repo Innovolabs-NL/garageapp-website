@@ -1,67 +1,59 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "motion/react";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-
-const fadeUp = {
-  initial: { opacity: 0, y: 18 },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const },
-  },
-};
+import { siteConfig } from "@/lib/site";
 
 export function HomeHero() {
   const t = useTranslations("Home");
   const flow = [t("flow1"), t("flow2"), t("flow3"), t("flow4"), t("flow5")];
 
   return (
-    <section className="relative overflow-hidden">
-      <div className="mx-auto max-w-6xl px-4 pt-20 pb-14 sm:px-6 sm:pt-32 sm:pb-20">
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={{ animate: { transition: { staggerChildren: 0.09 } } }}
-        >
-          <motion.p variants={fadeUp} className="eyebrow">
-            {t("badge")}
-          </motion.p>
-
-          <motion.h1
-            variants={fadeUp}
-            className="mt-8 max-w-4xl font-display text-[clamp(2.75rem,8vw,5.5rem)] font-bold leading-[0.98] tracking-[-0.03em] text-foreground"
-          >
-            {t("headlineStart")}{" "}
-            <span className="marker">{t("headlineMark")}</span>
-          </motion.h1>
-
-          <motion.p
-            variants={fadeUp}
-            className="mt-7 max-w-xl text-lg leading-relaxed sm:text-xl"
-          >
-            {t("subhead")}
-          </motion.p>
-
-          <motion.div variants={fadeUp} className="mt-10 flex flex-wrap items-center gap-3">
-            <Link href="/contact" className="btn-primary">
-              {t("ctaPrimary")}
-            </Link>
-            <Link href="/features" className="btn-secondary">
-              {t("ctaSecondary")}
-            </Link>
-          </motion.div>
-        </motion.div>
+    <section className="hero-media">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={siteConfig.images.hero}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[center_40%]"
+        />
+        <div className="hero-media__shade" aria-hidden />
       </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.5 }}
-        className="rule border-b border-border"
-      >
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pt-28 pb-14 sm:px-6 sm:pt-36 sm:pb-16">
+        <p className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+          GarageApp
+        </p>
+
+        <p className="eyebrow mt-6">{t("badge")}</p>
+
+        <h1 className="mt-6 max-w-4xl font-display text-[clamp(2.6rem,7.5vw,5.25rem)] font-bold leading-[0.98] tracking-[-0.03em] text-foreground">
+          {t("headlineStart")}{" "}
+          <span className="marker">{t("headlineMark")}</span>
+        </h1>
+
+        <p className="mt-7 max-w-xl text-lg leading-relaxed text-muted sm:text-xl">
+          {t("subhead")}
+        </p>
+
+        <div className="mt-10 flex flex-wrap items-center gap-3">
+          <Link
+            href="/contact"
+            className="inline-flex h-12 items-center justify-center rounded-lg bg-accent px-7 text-base font-semibold text-[#1a1204] transition-[filter] hover:brightness-105"
+          >
+            {t("ctaPrimary")}
+          </Link>
+          <Link href="/features" className="btn-on-media">
+            {t("ctaSecondary")}
+          </Link>
+        </div>
+      </div>
+
+      <div className="hero-media__flow relative z-10">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <ol className="flex flex-wrap items-center gap-x-3 gap-y-2 py-5 sm:gap-x-4">
             {flow.map((stage, i) => (
@@ -77,7 +69,7 @@ export function HomeHero() {
             ))}
           </ol>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

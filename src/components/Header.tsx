@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { LanguageToggle } from "./LanguageToggle";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -17,10 +17,34 @@ const navItems = [
 
 export function Header() {
   const t = useTranslations("Nav");
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [overMedia, setOverMedia] = useState(pathname === "/");
+
+  useEffect(() => {
+    function update() {
+      const hero = document.querySelector(".hero-media");
+      if (!hero) {
+        setOverMedia(false);
+        return;
+      }
+      setOverMedia(hero.getBoundingClientRect().bottom > 72);
+    }
+
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    return () => {
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
+    };
+  }, [pathname]);
 
   return (
-    <header className="fixed top-0 right-0 left-0 z-50 border-b border-border bg-navbar backdrop-blur-md">
+    <header
+      data-over-media={overMedia ? "true" : "false"}
+      className="site-header fixed top-0 right-0 left-0 z-50 border-b border-border bg-navbar backdrop-blur-md"
+    >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2.5">
           <span className="brand-mark h-8 w-8 text-sm" aria-hidden>
@@ -48,7 +72,10 @@ export function Header() {
           <div className="hidden sm:block">
             <LanguageToggle />
           </div>
-          <Link href="/contact" className="btn-primary hidden !h-9 !px-4 !text-sm sm:inline-flex">
+          <Link
+            href="/contact"
+            className="btn-primary hidden !h-9 !px-4 !text-sm sm:inline-flex"
+          >
             {t("cta")}
           </Link>
           <button
@@ -64,7 +91,7 @@ export function Header() {
       </div>
 
       {open ? (
-        <div className="border-t border-border bg-surface md:hidden">
+        <div className="site-header__menu border-t border-border bg-surface md:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 sm:px-6">
             {navItems.map((item) => (
               <Link
@@ -79,7 +106,11 @@ export function Header() {
             <div className="flex items-center gap-3 px-2 py-2">
               <LanguageToggle />
             </div>
-            <Link href="/contact" onClick={() => setOpen(false)} className="btn-primary mt-1">
+            <Link
+              href="/contact"
+              onClick={() => setOpen(false)}
+              className="btn-primary mt-1"
+            >
               {t("cta")}
             </Link>
           </nav>

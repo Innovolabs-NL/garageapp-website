@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { FadeUp } from "@/components/FadeUp";
-import { PageHero, PageWrap } from "@/components/PageHero";
 import { FeaturesGrid } from "@/components/FeaturesGrid";
 import { siteConfig } from "@/lib/site";
 
@@ -25,14 +23,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function FeaturesPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("Features");
 
-  return (
-    <PageWrap>
-      <FadeUp>
-        <PageHero title={t("title")} intro={t("intro")} />
-      </FadeUp>
-      <FeaturesGrid />
-    </PageWrap>
-  );
+  return <FeaturesGrid />;
 }
