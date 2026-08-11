@@ -10,6 +10,9 @@ export const siteConfig = {
   /** Workshop photography — replace with owned shots when available */
   images: {
     hero: "https://images.unsplash.com/photo-1727893119356-1702fe921cf9?auto=format&fit=crop&w=2400&q=80",
+    /** Bright shop floor — same series as `hero`, distinct angle for Functies */
+    featuresHero:
+      "https://images.unsplash.com/photo-1727893141025-35d62b3f4a03?auto=format&fit=crop&w=2400&q=80",
     floor:
       "https://images.unsplash.com/photo-1727893294198-e85137574f5b?auto=format&fit=crop&w=1600&q=80",
     tools:

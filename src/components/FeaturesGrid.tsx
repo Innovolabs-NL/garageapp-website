@@ -39,7 +39,7 @@ const beats = [
     body: "beat4Body",
     status: "beat4Status",
     kind: "image" as const,
-    image: siteConfig.images.tools,
+    image: siteConfig.images.floor,
   },
 ] as const;
 
@@ -51,12 +51,12 @@ export function FeaturesGrid() {
       <section className="hero-media overflow-hidden border-b border-border">
         <div className="absolute inset-0 z-0">
           <Image
-            src={siteConfig.images.hero}
+            src={siteConfig.images.featuresHero}
             alt=""
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[center_45%]"
+            className="object-cover object-[center_40%]"
           />
           <div className="hero-media__shade" aria-hidden />
         </div>
