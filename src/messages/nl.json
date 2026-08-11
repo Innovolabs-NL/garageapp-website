@@ -24,7 +24,8 @@
     "cta": "Demo aanvragen",
     "privacy": "Privacy",
     "openMenu": "Menu openen",
-    "closeMenu": "Menu sluiten"
+    "closeMenu": "Menu sluiten",
+    "language": "Taal"
   },
   "Footer": {
     "tagline": "Garage software voor Nederlandse werkplaatsen.",
@@ -140,23 +141,41 @@
     "inventoryBody": "Houd onderdelen en producten bij voor je werkplaats. Op de werkopdracht: uit voorraad of bestelling — voorraad boekt af bij goedkeuring van het werkplan."
   },
   "Pricing": {
+    "eyebrow": "Prijzen",
     "title": "Prijzen die bij jouw garage passen",
     "intro": "Geen vaste publieke prijslijst. We stemmen licentie en onboarding af op aantal gebruikers en vestigingen.",
+    "cta": "Plan een demo",
+    "ctaSecondary": "Bekijk functies",
+    "pathEyebrow": "Traject",
+    "pathTitle": "Van eerste gesprek tot groei",
+    "pathIntro": "Drie stappen. Geen verborgen staffel online — wel een duidelijk pad van kennismaken tot opschalen.",
     "demoTitle": "Demo",
     "demoBody": "Korte online walkthrough van jouw flow: keuring → werkorder → factuur.",
+    "demoInc1": "Live in jouw werkopdracht-flow",
+    "demoInc2": "Vragen over portaal, uren en factuur",
+    "demoInc3": "Geen verplichting, geen prijsdruk",
+    "demoCta": "Demo aanvragen",
     "pilotTitle": "Pilot",
     "pilotBody": "Start met één vestiging. Data-import en training inbegrepen in overleg.",
+    "pilotInc1": "Eén vestiging live",
+    "pilotInc2": "Data-import en onboarding in overleg",
+    "pilotInc3": "Training voor vloer én backoffice",
+    "pilotCta": "Start een pilot",
     "scaleTitle": "Groei",
     "scaleBody": "Multi-tenant klaar wanneer je uitbreidt naar meer vestigingen.",
+    "scaleInc1": "Meerdere vestigingen / tenants",
+    "scaleInc2": "Zelfde flow, geschaalde licentie",
+    "scaleInc3": "Begeleiding bij uitrol",
+    "scaleCta": "Bespreek groei",
     "popular": "Meest gekozen",
+    "faqEyebrow": "FAQ",
     "faqTitle": "Veelgestelde vragen",
     "faq1Q": "Is er een maandabonnement?",
     "faq1A": "Ja, typisch SaaS-abonnement per vestiging of gebruiker — exacte staffel tijdens de demo.",
     "faq2Q": "Werkt het offline?",
     "faq2A": "GarageApp is een webapp (Blazor). Stabiel internet op de werkplaats wordt aangeraden.",
     "faq3Q": "Kunnen klanten zelf inplannen?",
-    "faq3A": "Online boeken door klanten zit niet in v1. Status en goedkeuring wel via het portaal.",
-    "cta": "Plan een demo"
+    "faq3A": "Online boeken door klanten zit niet in v1. Status en goedkeuring wel via het portaal."
   },
   "About": {
     "title": "Gebouwd voor Nederlandse garages",

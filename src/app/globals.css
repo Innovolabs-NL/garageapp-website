@@ -344,6 +344,34 @@ html:not([data-theme="dark"]) .site-header[data-over-media="true"] {
   background: color-mix(in srgb, var(--t-navbar) 92%, transparent);
 }
 
+/* Mobile menu open: solid chrome so the hero doesn't bleed through */
+.site-header[data-menu-open="true"] {
+  border-color: var(--t-border);
+  background: var(--t-surface);
+  backdrop-filter: none;
+  color: var(--t-foreground);
+}
+
+.site-header[data-menu-open="true"] .site-header__menu {
+  border-color: var(--t-border);
+  background: var(--t-surface);
+  backdrop-filter: none;
+}
+
+html[data-theme="dark"] .site-header[data-menu-open="true"] {
+  border-color: var(--t-border);
+  background: var(--t-surface);
+  color: var(--t-foreground);
+}
+
+html[data-theme="dark"] .site-header[data-menu-open="true"] .text-foreground {
+  color: var(--t-foreground);
+}
+
+html[data-theme="dark"] .site-header[data-menu-open="true"] .text-muted {
+  color: var(--t-muted);
+}
+
 .kenteken {
   display: inline-flex;
   align-items: stretch;

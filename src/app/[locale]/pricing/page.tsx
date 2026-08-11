@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { FadeUp } from "@/components/FadeUp";
 import { FaqJsonLd } from "@/components/JsonLd";
-import { PageHero, PageWrap } from "@/components/PageHero";
 import { PricingContent } from "@/components/PricingContent";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -25,7 +23,7 @@ export default async function PricingPage({ params }: Props) {
   const t = await getTranslations("Pricing");
 
   return (
-    <PageWrap>
+    <>
       <FaqJsonLd
         items={[
           { question: t("faq1Q"), answer: t("faq1A") },
@@ -33,10 +31,7 @@ export default async function PricingPage({ params }: Props) {
           { question: t("faq3Q"), answer: t("faq3A") },
         ]}
       />
-      <FadeUp>
-        <PageHero title={t("title")} intro={t("intro")} />
-      </FadeUp>
       <PricingContent />
-    </PageWrap>
+    </>
   );
 }

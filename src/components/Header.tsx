@@ -15,11 +15,28 @@ const navItems = [
   { href: "/contact" as const, key: "contact" as const },
 ];
 
+function isActivePath(pathname: string, href: string) {
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
 export function Header() {
   const t = useTranslations("Nav");
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [overMedia, setOverMedia] = useState(pathname === "/");
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [open]);
 
   useEffect(() => {
     function update() {
@@ -42,11 +59,12 @@ export function Header() {
 
   return (
     <header
-      data-over-media={overMedia ? "true" : "false"}
+      data-over-media={overMedia && !open ? "true" : "false"}
+      data-menu-open={open ? "true" : "false"}
       className="site-header fixed top-0 right-0 left-0 z-50 border-b border-border bg-navbar backdrop-blur-md"
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2.5">
+        <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
           <span className="brand-mark h-8 w-8 text-sm" aria-hidden>
             G
           </span>
@@ -69,12 +87,12 @@ export function Header() {
 
         <div className="flex items-center gap-2.5">
           <ThemeToggle />
-          <div className="hidden sm:block">
+          <div className="hidden md:block">
             <LanguageToggle />
           </div>
           <Link
             href="/contact"
-            className="btn-primary hidden !h-9 !px-4 !text-sm sm:inline-flex"
+            className="hidden h-9 items-center justify-center rounded-lg bg-accent px-4 text-sm font-semibold text-[#1a1204] transition-[filter] hover:brightness-105 md:inline-flex"
           >
             {t("cta")}
           </Link>
@@ -92,27 +110,53 @@ export function Header() {
 
       {open ? (
         <div className="site-header__menu border-t border-border bg-surface md:hidden">
-          <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 sm:px-6">
-            {navItems.map((item) => (
+          <nav
+            className="mx-auto flex min-h-[calc(100dvh-4rem)] max-w-6xl flex-col px-4 pb-8 pt-3 sm:px-6"
+            aria-label="Mobile"
+          >
+            <ul className="flex flex-col">
+              {navItems.map((item) => {
+                const active = isActivePath(pathname, item.href);
+                return (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      aria-current={active ? "page" : undefined}
+                      className={`flex items-center gap-3 border-b border-border py-4 font-display text-[1.35rem] font-semibold tracking-[-0.02em] transition-colors ${
+                        active
+                          ? "text-foreground"
+                          : "text-muted hover:text-foreground"
+                      }`}
+                    >
+                      <span
+                        className={`h-5 w-1 shrink-0 rounded-full ${
+                          active ? "bg-accent" : "bg-transparent"
+                        }`}
+                        aria-hidden
+                      />
+                      {t(item.key)}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+
+            <div className="mt-auto flex flex-col gap-4 pt-8">
+              <div className="flex items-center justify-between gap-3">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted">
+                  {t("language")}
+                </p>
+                <LanguageToggle />
+              </div>
               <Link
-                key={item.href}
-                href={item.href}
+                href="/contact"
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-2 py-2.5 text-base font-medium text-foreground"
+                className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-accent px-7 text-base font-semibold text-[#1a1204] transition-[filter] hover:brightness-105"
               >
-                {t(item.key)}
+                {t("cta")}
               </Link>
-            ))}
-            <div className="flex items-center gap-3 px-2 py-2">
-              <LanguageToggle />
             </div>
-            <Link
-              href="/contact"
-              onClick={() => setOpen(false)}
-              className="btn-primary mt-1"
-            >
-              {t("cta")}
-            </Link>
           </nav>
         </div>
       ) : null}

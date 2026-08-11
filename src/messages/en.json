@@ -24,7 +24,8 @@
     "cta": "Request demo",
     "privacy": "Privacy",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "language": "Language"
   },
   "Footer": {
     "tagline": "Garage software for repair shops.",
@@ -140,23 +141,41 @@
     "inventoryBody": "Keep parts and products for your shop. On the work order: from stock or as an order — stock deducts when the work plan is approved."
   },
   "Pricing": {
+    "eyebrow": "Pricing",
     "title": "Pricing that fits your garage",
     "intro": "No fixed public price list. We align licensing and onboarding to users and locations.",
+    "cta": "Book a demo",
+    "ctaSecondary": "See features",
+    "pathEyebrow": "Path",
+    "pathTitle": "From first call to scale",
+    "pathIntro": "Three steps. No hidden public tiers — a clear path from intro to expansion.",
     "demoTitle": "Demo",
     "demoBody": "A short walkthrough of your flow: inspection → work order → invoice.",
+    "demoInc1": "Live in your work-order flow",
+    "demoInc2": "Questions on portal, hours, and invoicing",
+    "demoInc3": "No obligation, no hard sell",
+    "demoCta": "Request a demo",
     "pilotTitle": "Pilot",
     "pilotBody": "Start with one location. Data import and training included by agreement.",
+    "pilotInc1": "One location live",
+    "pilotInc2": "Data import and onboarding by agreement",
+    "pilotInc3": "Training for floor and back office",
+    "pilotCta": "Start a pilot",
     "scaleTitle": "Scale",
     "scaleBody": "Multi-tenant ready when you expand to more shops.",
+    "scaleInc1": "Multiple locations / tenants",
+    "scaleInc2": "Same flow, scaled licensing",
+    "scaleInc3": "Rollout support",
+    "scaleCta": "Talk about scale",
     "popular": "Most popular",
+    "faqEyebrow": "FAQ",
     "faqTitle": "FAQ",
     "faq1Q": "Is there a monthly subscription?",
     "faq1A": "Yes — typically SaaS per location or user. Exact tiers during the demo.",
     "faq2Q": "Does it work offline?",
     "faq2A": "GarageApp is a web app (Blazor). Stable shop internet is recommended.",
     "faq3Q": "Can customers self-book?",
-    "faq3A": "Customer online booking is not in v1. Status and approval are available via the portal.",
-    "cta": "Book a demo"
+    "faq3A": "Customer online booking is not in v1. Status and approval are available via the portal."
   },
   "About": {
     "title": "Built for repair shops",
