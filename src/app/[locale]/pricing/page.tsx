@@ -1,25 +1,22 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FadeUp } from "@/components/FadeUp";
+import { FaqJsonLd } from "@/components/JsonLd";
 import { PageHero, PageWrap } from "@/components/PageHero";
 import { PricingContent } from "@/components/PricingContent";
-import { siteConfig } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Meta" });
-  return {
+  return buildPageMetadata({
+    locale,
     title: t("pricingTitle"),
     description: t("pricingDescription"),
-    alternates: {
-      languages: {
-        nl: `${siteConfig.url}/nl/prijzen`,
-        en: `${siteConfig.url}/en/pricing`,
-      },
-    },
-  };
+    href: "/pricing",
+  });
 }
 
 export default async function PricingPage({ params }: Props) {
@@ -29,6 +26,13 @@ export default async function PricingPage({ params }: Props) {
 
   return (
     <PageWrap>
+      <FaqJsonLd
+        items={[
+          { question: t("faq1Q"), answer: t("faq1A") },
+          { question: t("faq2Q"), answer: t("faq2A") },
+          { question: t("faq3Q"), answer: t("faq3A") },
+        ]}
+      />
       <FadeUp>
         <PageHero title={t("title")} intro={t("intro")} />
       </FadeUp>

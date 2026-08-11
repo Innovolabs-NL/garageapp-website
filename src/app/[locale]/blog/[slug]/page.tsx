@@ -4,9 +4,11 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Link } from "@/i18n/navigation";
+import { BlogPostingJsonLd } from "@/components/JsonLd";
+import { getAlternateBlogSlug } from "@/lib/blog-translations";
 import { getPost, getPostSlugs } from "@/lib/blog";
 import { routing } from "@/i18n/routing";
-import { siteConfig } from "@/lib/site";
+import { buildBlogPostMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -22,20 +24,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const post = getPost(locale, slug);
   if (!post) return {};
-  return {
-    title: `${post.title} — GarageApp`,
+  return buildBlogPostMetadata({
+    locale,
+    slug,
+    title: post.title,
     description: post.description,
     keywords: post.keywords,
-    alternates: {
-      canonical: `${siteConfig.url}/${locale}/blog/${slug}`,
-    },
-    openGraph: {
-      title: post.title,
-      description: post.description,
-      type: "article",
-      publishedTime: post.date,
-    },
-  };
+    publishedTime: post.date,
+    alternateSlug: getAlternateBlogSlug(locale, slug),
+  });
 }
 
 export default async function BlogPostPage({ params }: Props) {
@@ -45,9 +42,18 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   const t = await getTranslations("Blog");
+  const alternateSlug = getAlternateBlogSlug(locale, slug);
+  const otherLocale = locale === "nl" ? "en" : "nl";
 
   return (
     <article className="mx-auto max-w-3xl px-6 py-12 sm:py-16">
+      <BlogPostingJsonLd
+        locale={locale}
+        title={post.title}
+        description={post.description}
+        slug={slug}
+        datePublished={post.date}
+      />
       <Link href="/blog" className="text-sm font-semibold text-primary">
         ← {t("back")}
       </Link>
@@ -61,6 +67,19 @@ export default async function BlogPostPage({ params }: Props) {
       <div className="prose-blog mt-10 border-t border-border pt-10">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
       </div>
+      {alternateSlug ? (
+        <p className="mt-12 border-t border-border pt-8 text-sm text-muted">
+          <Link
+            href={{ pathname: "/blog/[slug]", params: { slug: alternateSlug } }}
+            locale={otherLocale}
+            className="font-semibold text-primary"
+          >
+            {locale === "nl"
+              ? "Read this article in English"
+              : "Lees dit artikel in het Nederlands"}
+          </Link>
+        </p>
+      ) : null}
     </article>
   );
 }

@@ -3,23 +3,19 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { FadeUp } from "@/components/FadeUp";
 import { PageHero, PageWrap } from "@/components/PageHero";
-import { siteConfig } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Meta" });
-  return {
+  return buildPageMetadata({
+    locale,
     title: t("aboutTitle"),
     description: t("aboutDescription"),
-    alternates: {
-      languages: {
-        nl: `${siteConfig.url}/nl/over-ons`,
-        en: `${siteConfig.url}/en/about`,
-      },
-    },
-  };
+    href: "/about",
+  });
 }
 
 export default async function AboutPage({ params }: Props) {

@@ -13,31 +13,19 @@ import { HomeHero } from "@/components/home/HomeHero";
 import { HomeBayBoard } from "@/components/home/HomeBayBoard";
 import { HomeCta } from "@/components/home/HomeCta";
 import { siteConfig } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Meta" });
-  return {
+  return buildPageMetadata({
+    locale,
     title: t("homeTitle"),
     description: t("homeDescription"),
-    alternates: {
-      canonical: `${siteConfig.url}/${locale}`,
-      languages: {
-        nl: `${siteConfig.url}/nl`,
-        en: `${siteConfig.url}/en`,
-      },
-    },
-    openGraph: {
-      title: t("homeTitle"),
-      description: t("homeDescription"),
-      url: `${siteConfig.url}/${locale}`,
-      siteName: "GarageApp",
-      locale: locale === "nl" ? "nl_NL" : "en_US",
-      type: "website",
-    },
-  };
+    href: "/",
+  });
 }
 
 const stepIcons = [Wrench, FileSignature, Receipt] as const;

@@ -2,23 +2,19 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FadeUp } from "@/components/FadeUp";
 import { PageHero, PageWrap } from "@/components/PageHero";
-import { siteConfig } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Meta" });
-  return {
+  return buildPageMetadata({
+    locale,
     title: t("privacyTitle"),
     description: t("privacyDescription"),
-    alternates: {
-      languages: {
-        nl: `${siteConfig.url}/nl/privacy`,
-        en: `${siteConfig.url}/en/privacy`,
-      },
-    },
-  };
+    href: "/privacy",
+  });
 }
 
 export default async function PrivacyPage({ params }: Props) {

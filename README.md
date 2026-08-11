@@ -44,6 +44,14 @@ CONTACT_TO_EMAIL=hello@innovolabs.nl
 CONTACT_FROM_EMAIL=GarageApp <onboarding@resend.dev>
 ```
 
+## SEO
+
+- `metadataBase` + per-page canonical / hreflang (`x-default` → NL)
+- Generated Open Graph image (`/opengraph-image`), icons
+- Sitemap with language alternates and real blog dates; `robots.txt`
+- JSON-LD: Organization, WebSite, SoftwareApplication; BlogPosting + breadcrumbs on posts; FAQPage on pricing
+- NL↔EN blog pairs live in `src/lib/blog-translations.ts` (update when adding bilingual posts)
+
 ## Deploy (Vercel)
 
 1. Import `Innovolabs-NL/garageapp-website` in Vercel

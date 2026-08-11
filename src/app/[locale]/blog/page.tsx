@@ -4,23 +4,19 @@ import { Link } from "@/i18n/navigation";
 import { FadeUp } from "@/components/FadeUp";
 import { PageHero, PageWrap } from "@/components/PageHero";
 import { getAllPosts } from "@/lib/blog";
-import { siteConfig } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Meta" });
-  return {
+  return buildPageMetadata({
+    locale,
     title: t("blogTitle"),
     description: t("blogDescription"),
-    alternates: {
-      languages: {
-        nl: `${siteConfig.url}/nl/blog`,
-        en: `${siteConfig.url}/en/blog`,
-      },
-    },
-  };
+    href: "/blog",
+  });
 }
 
 export default async function BlogIndexPage({ params }: Props) {
