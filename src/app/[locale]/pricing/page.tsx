@@ -29,6 +29,7 @@ export default async function PricingPage({ params }: Props) {
           { question: t("faq1Q"), answer: t("faq1A") },
           { question: t("faq2Q"), answer: t("faq2A") },
           { question: t("faq3Q"), answer: t("faq3A") },
+          { question: t("faq4Q"), answer: t("faq4A") },
         ]}
       />
       <PricingContent />
