@@ -10,7 +10,7 @@ const appUrl = envUrl(
 );
 
 export const siteConfig = {
-  name: "GarageApp",
+  name: "Motivox",
   company: "Innovolabs",
   descriptionNl:
     "Eén systeem voor de hele job — intake, keuring, goedkeuring, werk op de vloer, uren, onderdelen en factuur — zonder iets over te typen.",

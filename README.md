@@ -1,6 +1,6 @@
-# GarageApp website
+# Motivox website
 
-Dutch-first marketing site for [GarageApp](https://github.com/Innovolabs-NL/GarageApp) — brochure pages + SEO blog. Built with Next.js, `next-intl`, and Tailwind.
+Dutch-first marketing site for [Motivox](https://app.motivox.nl) — brochure pages + SEO blog. Built with Next.js, `next-intl`, and Tailwind.
 
 ## Local development
 
@@ -27,7 +27,7 @@ Toggle language in the header; path is preserved when possible.
 
 ## Visual system
 
-Bold editorial: Space Grotesk display type over Inter body, GarageApp slate (`#1F3A5F`) as the brand anchor, amber marker accents, and rule-line layouts instead of card grids. Light and dark mode are both supported — the toggle in the header persists to `localStorage` and defaults to the OS preference (tokens live in `src/app/globals.css`, boot script in `src/lib/theme.ts`).
+Bold editorial: Space Grotesk display type over Inter body, MotivoX navy (`#0B1220`) with electric blue accent (`#0165FD`), and rule-line layouts instead of card grids. Light and dark mode are both supported — the toggle in the header persists to `localStorage` and defaults to the OS preference (tokens live in `src/app/globals.css`, boot script in `src/lib/theme.ts`). Logos live in `public/brand/`.
 
 Garage DNA: full-bleed workshop photography in the hero/CTA, Dutch `kenteken` plates + job board, and workshop icons on how-it-works / features. Swap stock URLs in `src/lib/site.ts` for owned photography when ready.
 
@@ -42,7 +42,7 @@ NEXT_PUBLIC_SITE_URL=https://www.motivox.nl
 NEXT_PUBLIC_APP_URL=https://app.motivox.nl
 RESEND_API_KEY=
 CONTACT_TO_EMAIL=hello@innovolabs.nl
-CONTACT_FROM_EMAIL=GarageApp <onboarding@resend.dev>
+CONTACT_FROM_EMAIL=Motivox <onboarding@resend.dev>
 ```
 
 ## SEO

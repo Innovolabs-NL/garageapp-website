@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
   const apiKey = process.env.RESEND_API_KEY;
   const to = process.env.CONTACT_TO_EMAIL ?? siteConfig.contactEmail;
   const from =
-    process.env.CONTACT_FROM_EMAIL ?? "GarageApp <onboarding@resend.dev>";
+    process.env.CONTACT_FROM_EMAIL ?? "Motivox <onboarding@resend.dev>";
 
   if (!apiKey) {
     return NextResponse.json(
@@ -47,7 +47,7 @@ export async function POST(req: NextRequest) {
     from,
     to: [to],
     replyTo: email,
-    subject: `GarageApp contact: ${name}${company ? ` (${company})` : ""}`,
+    subject: `Motivox contact: ${name}${company ? ` (${company})` : ""}`,
     text: `Name: ${name}\nEmail: ${email}\nCompany: ${company || "—"}\n\n${message}`,
   });
 

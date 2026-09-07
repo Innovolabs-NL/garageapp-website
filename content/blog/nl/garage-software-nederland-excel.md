@@ -27,9 +27,9 @@ Echte garage software koppelt de jobcyclus:
 
 Zonder die keten blijft digitaal werken een schijnverbetering.
 
-## Waar GarageApp op inzet
+## Waar Motivox op inzet
 
-GarageApp is gebouwd voor Nederlandse autoreparatiebedrijven: Nederlands-eerst, rollen voor backoffice, technicus en klantportaal, en multi-tenant architectuur wanneer je groeit.
+Motivox is gebouwd voor Nederlandse autoreparatiebedrijven: Nederlands-eerst, rollen voor backoffice, technicus en klantportaal, en multi-tenant architectuur wanneer je groeit.
 
 ## Volgende stap
 

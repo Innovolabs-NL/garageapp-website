@@ -23,4 +23,4 @@ Digitizing isn’t “install a package.” It’s choosing processes, agreeing 
 
 Online booking from the homepage and payment gateways without setup can wait. The core win is inspection → quote → approval → hours → invoice. An appointment slot *after* approval belongs in that chain.
 
-Start a GarageApp trial and walk this checklist for your shop.
+Start a Motivox trial and walk this checklist for your shop.

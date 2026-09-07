@@ -12,4 +12,4 @@ An inspection is more than a quick look under the car. It’s when you record wh
 
 Digital checklists bring consistency, traceability, and a faster path to the work plan. Statuses (OK / attention / urgent) become the proposal. The customer then approves digitally — including a signature — so “what was agreed” is clear later.
 
-GarageApp supports tenant-scoped checklists, inspections, and digital customer approval in the same job flow.
+Motivox supports tenant-scoped checklists, inspections, and digital customer approval in the same job flow.

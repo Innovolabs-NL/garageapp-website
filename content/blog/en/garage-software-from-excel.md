@@ -18,7 +18,7 @@ It’s **fragmentation**. Intake in one file, inspection in Word, hours on a sli
 
 Real garage software connects the job lifecycle: customer and vehicle → inspection → work plan and approval → work order and schedule → time tracking → invoice (PDF) and customer visibility.
 
-GarageApp is built for that chain — Dutch-first, with office, technician, and customer portals sharing one source of truth.
+Motivox is built for that chain — Dutch-first, with office, technician, and customer portals sharing one source of truth.
 
 ## Next step
 

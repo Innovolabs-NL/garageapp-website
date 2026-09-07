@@ -7,7 +7,7 @@ import { FadeUp } from "@/components/FadeUp";
 import { AppLink } from "@/components/AppLink";
 import { HomeCta } from "@/components/home/HomeCta";
 
-/** Matches GarageApp Stripe plans (excl. VAT). */
+/** Matches Motivox Stripe plans (excl. VAT). */
 const plans = [
   {
     id: "zzp" as const,
@@ -79,12 +79,12 @@ export function PricingContent() {
                 <article
                   className={`relative flex h-full flex-col rounded-xl border bg-surface p-6 sm:p-8 ${
                     plan.featured
-                      ? "border-accent shadow-[0_0_0_1px_color-mix(in_srgb,#f0a11a_35%,transparent)]"
+                      ? "border-accent shadow-[0_0_0_1px_color-mix(in_srgb,#0165fd_35%,transparent)]"
                       : "border-border"
                   }`}
                 >
                   {plan.featured ? (
-                    <span className="absolute -top-3 left-6 rounded bg-accent px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-[#1a1204]">
+                    <span className="absolute -top-3 left-6 rounded bg-accent px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-white">
                       {t("recommended")}
                     </span>
                   ) : null}
@@ -125,7 +125,7 @@ export function PricingContent() {
                     href="register"
                     className={`mt-8 inline-flex h-11 w-full items-center justify-center rounded-lg text-sm font-semibold transition-[filter] hover:brightness-105 ${
                       plan.featured
-                        ? "bg-accent text-[#1a1204]"
+                        ? "bg-accent text-white"
                         : "border border-border-strong bg-surface text-foreground"
                     }`}
                   >

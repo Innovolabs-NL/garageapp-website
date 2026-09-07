@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { AppLink } from "./AppLink";
+import { BrandLogo } from "./BrandLogo";
 import { LanguageToggle } from "./LanguageToggle";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -65,13 +66,13 @@ export function Header() {
       className="site-header fixed top-0 right-0 left-0 z-50 border-b border-border bg-navbar backdrop-blur-md"
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <span className="brand-mark h-8 w-8 text-sm" aria-hidden>
-            G
-          </span>
-          <span className="font-display text-lg font-semibold tracking-tight text-foreground">
-            GarageApp
-          </span>
+        <Link
+          href="/"
+          className="flex items-center"
+          onClick={() => setOpen(false)}
+          aria-label="Motivox"
+        >
+          <BrandLogo className="h-9 w-auto sm:h-10" priority />
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex" aria-label="Main">
@@ -99,7 +100,7 @@ export function Header() {
           </AppLink>
           <AppLink
             href="register"
-            className="hidden h-9 items-center justify-center rounded-lg bg-accent px-4 text-sm font-semibold text-[#1a1204] transition-[filter] hover:brightness-105 md:inline-flex"
+            className="hidden h-9 items-center justify-center rounded-lg bg-accent px-4 text-sm font-semibold text-white transition-[filter] hover:brightness-110 md:inline-flex"
           >
             {t("cta")}
           </AppLink>
@@ -166,7 +167,7 @@ export function Header() {
               <AppLink
                 href="register"
                 onClick={() => setOpen(false)}
-                className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-accent px-7 text-base font-semibold text-[#1a1204] transition-[filter] hover:brightness-105"
+                className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-accent px-7 text-base font-semibold text-white transition-[filter] hover:brightness-110"
               >
                 {t("cta")}
               </AppLink>

@@ -25,4 +25,4 @@ Inloggen of een beveiligde link, plus tijdelijke tokenlinks voor specifieke jobs
 
 ## Minder ruis, meer vertrouwen
 
-De klantreis is goedkeuren → inplannen → volgen → betalen (online als Mollie of Tikkie is gekoppeld). Wanneer klanten zelf kunnen meekijken, daalt de druk op de telefoon. GarageApp levert een klantportaal naast kantoor en werkplaats — één databron.
+De klantreis is goedkeuren → inplannen → volgen → betalen (online als Mollie of Tikkie is gekoppeld). Wanneer klanten zelf kunnen meekijken, daalt de druk op de telefoon. Motivox levert een klantportaal naast kantoor en werkplaats — één databron.

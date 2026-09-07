@@ -24,4 +24,4 @@ Configureerbare secties en items, notities per punt, concept versus definitief, 
 
 Het keuringsrapport voedt het werkplan. De klant keurt digitaal goed (inclusief handtekening). Zo voorkom je discussie later over “wat is afgesproken”.
 
-GarageApp ondersteunt tenant-scoped checklists, inspecties en digitaal klantakkoord als onderdeel van dezelfde jobflow.
+Motivox ondersteunt tenant-scoped checklists, inspecties en digitaal klantakkoord als onderdeel van dezelfde jobflow.

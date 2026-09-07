@@ -27,4 +27,4 @@ Koude zelfboeking vanaf de homepage en betaalgateways zonder configuratie. De ke
 
 ## Hulp nodig?
 
-Start een proefperiode van GarageApp en loop deze checklist door — gericht op jouw garage, niet op een generieke slide.
+Start een proefperiode van Motivox en loop deze checklist door — gericht op jouw garage, niet op een generieke slide.

@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { AppLink } from "@/components/AppLink";
+import { BrandLogo } from "@/components/BrandLogo";
 
 export async function Footer() {
   const t = await getTranslations("Footer");
@@ -11,14 +12,9 @@ export async function Footer() {
     <footer className="mt-auto border-t border-border bg-surface">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2.5">
-            <span className="brand-mark h-8 w-8 text-sm" aria-hidden>
-              G
-            </span>
-            <p className="font-display text-[1.05rem] font-semibold tracking-tight text-foreground">
-              GarageApp
-            </p>
-          </div>
+          <Link href="/" aria-label="Motivox" className="inline-flex">
+            <BrandLogo className="h-10 w-auto" />
+          </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
             {t("tagline")}
           </p>

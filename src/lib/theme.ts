@@ -1,6 +1,6 @@
 export type ColorTheme = "light" | "dark";
 
-export const THEME_STORAGE_KEY = "garageapp.website.theme";
+export const THEME_STORAGE_KEY = "motivox.website.theme";
 
 /** Runs before paint to avoid a theme flash. */
 export const THEME_BOOT_SCRIPT = `(function(){var t="light";try{var s=localStorage.getItem(${JSON.stringify(

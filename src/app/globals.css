@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 /*
-  GarageApp marketing — bold editorial system.
-  Brand slate from the Blazor app (#1F3A5F), amber marker accent,
+  Motivox marketing — bold editorial system.
+  MotivoX navy + electric blue accent (#0165FD),
   Space Grotesk display over Inter body. Light + dark via html[data-theme].
 */
 
@@ -17,7 +17,7 @@
   --color-border-strong: var(--t-border-strong);
   --color-primary: var(--t-primary);
   --color-primary-container: var(--t-primary-container);
-  --color-accent: #f0a11a;
+  --color-accent: #0165fd;
   --color-navbar: var(--t-navbar);
   --color-danger: var(--t-danger);
   --color-success: var(--t-success);
@@ -36,16 +36,16 @@
   --t-subtle: #8b94a1;
   --t-border: #e3e7ec;
   --t-border-strong: #c9d1db;
-  --t-primary: #1f3a5f;
-  --t-primary-container: #e8eef4;
+  --t-primary: #0b1220;
+  --t-primary-container: #e8eef8;
   --t-navbar: rgba(246, 247, 249, 0.85);
   --t-danger: #c62828;
   --t-success: #1b7f4a;
 
-  --btn-primary-bg: #1f3a5f;
-  --btn-primary-bg-hover: #162a45;
+  --btn-primary-bg: #0b1220;
+  --btn-primary-bg-hover: #060910;
   --btn-primary-fg: #ffffff;
-  --brand-mark-bg: #1f3a5f;
+  --brand-mark-bg: #0b1220;
   --brand-mark-fg: #ffffff;
 }
 
@@ -60,16 +60,16 @@ html[data-theme="dark"] {
   --t-subtle: #64707f;
   --t-border: #222b39;
   --t-border-strong: #344052;
-  --t-primary: #a8c3ea;
-  --t-primary-container: rgba(168, 195, 234, 0.12);
+  --t-primary: #7eb0ff;
+  --t-primary-container: rgba(1, 101, 253, 0.16);
   --t-navbar: rgba(11, 15, 22, 0.8);
   --t-danger: #ef6f6f;
   --t-success: #4fbf82;
 
-  --btn-primary-bg: #edf1f7;
-  --btn-primary-bg-hover: #ffffff;
-  --btn-primary-fg: #0b0f16;
-  --brand-mark-bg: #2e4e7e;
+  --btn-primary-bg: #0165fd;
+  --btn-primary-bg-hover: #0052d6;
+  --btn-primary-fg: #ffffff;
+  --brand-mark-bg: #0165fd;
   --brand-mark-fg: #ffffff;
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 ::selection {
-  background: color-mix(in srgb, #f0a11a 55%, transparent);
+  background: color-mix(in srgb, #0165fd 45%, transparent);
   color: var(--t-foreground);
 }
 
@@ -106,11 +106,11 @@ body {
   content: "";
   width: 1.75rem;
   height: 2px;
-  background: #f0a11a;
+  background: #0165fd;
 }
 
 .marker {
-  box-shadow: inset 0 -0.32em 0 0 color-mix(in srgb, #f0a11a 45%, transparent);
+  box-shadow: inset 0 -0.32em 0 0 color-mix(in srgb, #0165fd 40%, transparent);
 }
 
 .brand-mark {
@@ -260,7 +260,7 @@ html[data-theme="dark"] .hero-media .eyebrow {
 }
 
 .hero-media .marker {
-  box-shadow: inset 0 -0.32em 0 0 color-mix(in srgb, #f0a11a 55%, transparent);
+  box-shadow: inset 0 -0.32em 0 0 color-mix(in srgb, #0165fd 50%, transparent);
 }
 
 .btn-on-media {

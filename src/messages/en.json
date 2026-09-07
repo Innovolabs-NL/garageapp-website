@@ -1,18 +1,18 @@
 {
   "Meta": {
-    "homeTitle": "GarageApp — Garage software for repair shops",
+    "homeTitle": "Motivox — Garage software for repair shops",
     "homeDescription": "One system for the whole job: intake, inspection, approval, work on the floor, hours, parts, and invoice — without retyping anything.",
-    "featuresTitle": "Features — GarageApp",
+    "featuresTitle": "Features — Motivox",
     "featuresDescription": "From inspection to invoice: digital quotes, mechanic app, customer portal, hours, parts, and a Dutch invoice.",
-    "pricingTitle": "Pricing & plans — GarageApp",
+    "pricingTitle": "Pricing & plans — Motivox",
     "pricingDescription": "30-day trial. Then ZZP €35 or Garage €80 per month excl. VAT — billed via Stripe in the app.",
-    "aboutTitle": "About — GarageApp by Innovolabs",
-    "aboutDescription": "GarageApp is built by Innovolabs for Dutch auto repair businesses — VAT, KvK, APK, and consumables.",
-    "contactTitle": "Contact — GarageApp",
-    "contactDescription": "Get in touch with questions about GarageApp. To start a trial, sign up in the app.",
-    "privacyTitle": "Privacy — GarageApp",
-    "privacyDescription": "How GarageApp and Innovolabs handle personal data.",
-    "blogTitle": "Blog — GarageApp",
+    "aboutTitle": "About — Motivox by Innovolabs",
+    "aboutDescription": "Motivox is built by Innovolabs for Dutch auto repair businesses — VAT, KvK, APK, and consumables.",
+    "contactTitle": "Contact — Motivox",
+    "contactDescription": "Get in touch with questions about Motivox. To start a trial, sign up in the app.",
+    "privacyTitle": "Privacy — Motivox",
+    "privacyDescription": "How Motivox and Innovolabs handle personal data.",
+    "blogTitle": "Blog — Motivox",
     "blogDescription": "Articles on garage software, digitalization, and workshop workflows."
   },
   "Nav": {
@@ -37,7 +37,7 @@
   },
   "Home": {
     "badge": "Built for Dutch repair shops",
-    "brand": "GarageApp",
+    "brand": "Motivox",
     "headline": "One system for the whole job.",
     "headlineStart": "One system for",
     "headlineMark": "the whole job.",
@@ -219,12 +219,12 @@
     "faq3Q": "Is there a contract term?",
     "faq3A": "No — cancel monthly via the Stripe customer portal in the app.",
     "faq4Q": "Can customers pay online?",
-    "faq4A": "Yes, when your shop has connected Mollie or Tikkie. That is separate from your GarageApp subscription."
+    "faq4A": "Yes, when your shop has connected Mollie or Tikkie. That is separate from your Motivox subscription."
   },
   "About": {
     "title": "Built for Dutch repair shops",
-    "intro": "GarageApp is an Innovolabs product — made to replace Excel/Access workflows without disrupting the floor.",
-    "storyTitle": "Why GarageApp",
+    "intro": "Motivox is an Innovolabs product — made to replace Excel/Access workflows without disrupting the floor.",
+    "storyTitle": "Why Motivox",
     "storyBody": "One chain: customer → car → inspection → quote → work order → hours → parts → invoice. Built for Dutch garages: VAT, KvK, APK, consumables. Dutch first, English available. Your shop, your data.",
     "valuesTitle": "What we stand for",
     "value1": "Dutch-first — UI and processes for the local market, including invoice identity.",
@@ -250,7 +250,7 @@
   "Privacy": {
     "title": "Privacy",
     "updated": "Last updated: August 2026",
-    "p1": "Innovolabs (“we”) process personal data you share via this website or GarageApp to answer contact requests and deliver the service.",
+    "p1": "Innovolabs (“we”) process personal data you share via this website or Motivox to answer contact requests and deliver the service.",
     "p2": "Contact form data (name, email, message) is used only to respond. We do not sell data to third parties.",
     "p3": "For the SaaS environment, separate processor terms apply with customer garages (tenants). Each shop sees only its own data. Ask us for the current DPA.",
     "p4": "In the app, shops can submit export and delete or anonymize requests. For access, correction, or deletion via this website: use the form or the email on this site.",

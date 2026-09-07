@@ -1,18 +1,18 @@
 {
   "Meta": {
-    "homeTitle": "GarageApp — Garage software voor werkplaatsen",
+    "homeTitle": "Motivox — Garage software voor werkplaatsen",
     "homeDescription": "Eén systeem voor de hele job: intake, keuring, goedkeuring, werk op de vloer, uren, onderdelen en factuur — zonder iets over te typen.",
-    "featuresTitle": "Functies — GarageApp",
+    "featuresTitle": "Functies — Motivox",
     "featuresDescription": "Van keuring tot factuur: digitale offerte, monteur-app, klantportaal, uren, onderdelen en Nederlandse factuur.",
-    "pricingTitle": "Prijzen & abonnementen — GarageApp",
+    "pricingTitle": "Prijzen & abonnementen — Motivox",
     "pricingDescription": "30 dagen proefperiode. Daarna ZZP €35 of Garagebedrijf €80 per maand excl. BTW — via Stripe in de app.",
-    "aboutTitle": "Over ons — GarageApp door Innovolabs",
-    "aboutDescription": "GarageApp is gebouwd door Innovolabs voor Nederlandse autoreparatiebedrijven — BTW, KvK, APK en kleinmateriaal.",
-    "contactTitle": "Contact — GarageApp",
-    "contactDescription": "Neem contact op met vragen over GarageApp. Voor een proefperiode meld je je aan in de app.",
-    "privacyTitle": "Privacy — GarageApp",
-    "privacyDescription": "Hoe GarageApp en Innovolabs omgaan met persoonsgegevens.",
-    "blogTitle": "Blog — GarageApp",
+    "aboutTitle": "Over ons — Motivox door Innovolabs",
+    "aboutDescription": "Motivox is gebouwd door Innovolabs voor Nederlandse autoreparatiebedrijven — BTW, KvK, APK en kleinmateriaal.",
+    "contactTitle": "Contact — Motivox",
+    "contactDescription": "Neem contact op met vragen over Motivox. Voor een proefperiode meld je je aan in de app.",
+    "privacyTitle": "Privacy — Motivox",
+    "privacyDescription": "Hoe Motivox en Innovolabs omgaan met persoonsgegevens.",
+    "blogTitle": "Blog — Motivox",
     "blogDescription": "Artikelen over garage software, digitalisering en werkplaatsprocessen in Nederland."
   },
   "Nav": {
@@ -37,7 +37,7 @@
   },
   "Home": {
     "badge": "Voor Nederlandse werkplaatsen",
-    "brand": "GarageApp",
+    "brand": "Motivox",
     "headline": "Eén systeem voor de hele job.",
     "headlineStart": "Eén systeem voor",
     "headlineMark": "de hele job.",
@@ -219,12 +219,12 @@
     "faq3Q": "Zit er een contractduur?",
     "faq3A": "Nee — maandelijks opzegbaar via het Stripe-klantportaal in de app.",
     "faq4Q": "Kan de klant online betalen?",
-    "faq4A": "Ja, wanneer jouw zaak Mollie of Tikkie heeft gekoppeld. Dat is apart van je eigen GarageApp-abonnement."
+    "faq4A": "Ja, wanneer jouw zaak Mollie of Tikkie heeft gekoppeld. Dat is apart van je eigen Motivox-abonnement."
   },
   "About": {
     "title": "Gebouwd voor Nederlandse garages",
-    "intro": "GarageApp is een product van Innovolabs — gemaakt om Excel- en Access-workflows te vervangen zonder de werkplaats te verstoren.",
-    "storyTitle": "Waarom GarageApp",
+    "intro": "Motivox is een product van Innovolabs — gemaakt om Excel- en Access-workflows te vervangen zonder de werkplaats te verstoren.",
+    "storyTitle": "Waarom Motivox",
     "storyBody": "Eén keten: klant → auto → keuring → offerte → werkbon → uren → onderdelen → factuur. Gebouwd voor NL-garages: BTW, KvK, APK, kleinmateriaal. Nederlands eerst, Engels beschikbaar. Eigen zaak, eigen data.",
     "valuesTitle": "Waar we voor staan",
     "value1": "Nederlands eerst — UI en processen voor de lokale markt, inclusief factuuridentiteit.",
@@ -250,7 +250,7 @@
   "Privacy": {
     "title": "Privacy",
     "updated": "Laatst bijgewerkt: augustus 2026",
-    "p1": "Innovolabs (“wij”) verwerkt persoonsgegevens die je via deze website of GarageApp deelt, om contactverzoeken te beantwoorden en de dienst te leveren.",
+    "p1": "Innovolabs (“wij”) verwerkt persoonsgegevens die je via deze website of Motivox deelt, om contactverzoeken te beantwoorden en de dienst te leveren.",
     "p2": "Contactformuliergegevens (naam, e-mail, bericht) gebruiken we alleen om te reageren. We verkopen geen gegevens aan derden.",
     "p3": "Voor de SaaS-omgeving gelden aparte verwerkersafspraken met klant-garages (tenants). Elke zaak ziet alleen eigen data. Vraag ons om de actuele verwerkersovereenkomst.",
     "p4": "In de app kunnen zaken export- en verwijder- of anonimiseerverzoeken indienen. Voor inzage, correctie of verwijdering via deze website: gebruik het contactformulier of het e-mailadres op deze site.",

@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "GarageApp — garage software voor werkplaatsen";
+export const alt = "Motivox — garage software voor werkplaatsen";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -14,7 +14,7 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "linear-gradient(135deg, #0c1220 0%, #1F3A5F 55%, #243d5c 100%)",
+          background: "linear-gradient(135deg, #05070d 0%, #0b1220 55%, #0f1a2e 100%)",
           padding: 72,
           fontFamily: "system-ui, sans-serif",
         }}
@@ -31,8 +31,8 @@ export default function OpenGraphImage() {
               width: 64,
               height: 64,
               borderRadius: 14,
-              background: "#F5A623",
-              color: "#1a1204",
+              background: "#0165fd",
+              color: "#ffffff",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -40,17 +40,17 @@ export default function OpenGraphImage() {
               fontWeight: 700,
             }}
           >
-            G
+            M
           </div>
           <div
             style={{
               fontSize: 40,
               fontWeight: 700,
               color: "#eef2f8",
-              letterSpacing: "-0.02em",
+              letterSpacing: "0.18em",
             }}
           >
-            GarageApp
+            MOTIVOX
           </div>
         </div>
 
@@ -89,7 +89,7 @@ export default function OpenGraphImage() {
           }}
         >
           <span>Innovolabs</span>
-          <span style={{ color: "#F5A623", fontWeight: 600 }}>www.motivox.nl</span>
+          <span style={{ color: "#0165fd", fontWeight: 600 }}>www.motivox.nl</span>
         </div>
       </div>
     ),

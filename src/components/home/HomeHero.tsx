@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { AppLink } from "@/components/AppLink";
+import { BrandLogo } from "@/components/BrandLogo";
 import { siteConfig } from "@/lib/site";
 
 export function HomeHero() {
@@ -26,11 +27,9 @@ export function HomeHero() {
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pt-28 pb-14 sm:px-6 sm:pt-36 sm:pb-16">
-        <p className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-          GarageApp
-        </p>
+        <BrandLogo className="h-24 w-auto sm:h-32" priority />
 
-        <p className="eyebrow mt-6">{t("badge")}</p>
+        <p className="eyebrow mt-8">{t("badge")}</p>
 
         <h1 className="mt-6 max-w-4xl font-display text-[clamp(2.6rem,7.5vw,5.25rem)] font-bold leading-[0.98] tracking-[-0.03em] text-foreground">
           {t("headlineStart")}{" "}
@@ -44,7 +43,7 @@ export function HomeHero() {
         <div className="mt-10 flex flex-wrap items-center gap-3">
           <AppLink
             href="register"
-            className="inline-flex h-12 items-center justify-center rounded-lg bg-accent px-7 text-base font-semibold text-[#1a1204] transition-[filter] hover:brightness-105"
+            className="inline-flex h-12 items-center justify-center rounded-lg bg-accent px-7 text-base font-semibold text-white transition-[filter] hover:brightness-110"
           >
             {t("ctaPrimary")}
           </AppLink>
