@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Check } from "lucide-react";
 import { Link } from "@/i18n/navigation";
@@ -8,18 +7,33 @@ import { FadeUp } from "@/components/FadeUp";
 import { AppLink } from "@/components/AppLink";
 import { HomeCta } from "@/components/home/HomeCta";
 
-/** Monthly list price in EUR — yearly = 10× monthly (2 months free). */
-const PLAN_PRICE = 129;
-
-const includes = [
-  "planInc1",
-  "planInc2",
-  "planInc3",
-  "planInc4",
-  "planInc5",
-  "planInc6",
-  "planInc7",
-  "planInc8",
+/** Matches GarageApp Stripe plans (excl. VAT). */
+const plans = [
+  {
+    id: "zzp" as const,
+    price: 35,
+    featured: false,
+    features: [
+      "zzpFeatSeats",
+      "featExtraSeats",
+      "featWorkorders",
+      "featInvoices",
+      "featPortal",
+    ] as const,
+  },
+  {
+    id: "garage" as const,
+    price: 80,
+    featured: true,
+    features: [
+      "garageFeatSeats",
+      "featExtraSeats",
+      "featWorkorders",
+      "featInvoices",
+      "featPortal",
+      "featTeam",
+    ] as const,
+  },
 ] as const;
 
 const faqs = [
@@ -28,6 +42,8 @@ const faqs = [
   ["faq3Q", "faq3A"],
   ["faq4Q", "faq4A"],
 ] as const;
+
+const trust = ["trustCancel", "trustPay", "trustInvoice"] as const;
 
 function formatEuro(amount: number) {
   return new Intl.NumberFormat("nl-NL", {
@@ -39,10 +55,6 @@ function formatEuro(amount: number) {
 
 export function PricingContent() {
   const t = useTranslations("Pricing");
-  const [billing, setBilling] = useState<"monthly" | "yearly">("monthly");
-  const display =
-    billing === "yearly" ? Math.round((PLAN_PRICE * 10) / 12) : PLAN_PRICE;
-  const billedYearly = PLAN_PRICE * 10;
 
   return (
     <>
@@ -56,93 +68,88 @@ export function PricingContent() {
             {t("intro")}
           </p>
           <p className="mx-auto mt-3 max-w-xl text-sm text-muted">{t("trialNote")}</p>
-
-          <div
-            className="mx-auto mt-10 inline-flex items-center rounded-lg border border-border bg-surface p-1"
-            role="group"
-            aria-label={t("billingLabel")}
-          >
-            <button
-              type="button"
-              onClick={() => setBilling("monthly")}
-              className={`rounded-md px-4 py-2 text-sm font-semibold transition-colors ${
-                billing === "monthly"
-                  ? "bg-[var(--btn-primary-bg)] text-[var(--btn-primary-fg)]"
-                  : "text-muted hover:text-foreground"
-              }`}
-            >
-              {t("billingMonthly")}
-            </button>
-            <button
-              type="button"
-              onClick={() => setBilling("yearly")}
-              className={`rounded-md px-4 py-2 text-sm font-semibold transition-colors ${
-                billing === "yearly"
-                  ? "bg-[var(--btn-primary-bg)] text-[var(--btn-primary-fg)]"
-                  : "text-muted hover:text-foreground"
-              }`}
-            >
-              {t("billingYearly")}
-              <span className="ml-2 rounded bg-accent px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-[#1a1204]">
-                {t("billingSave")}
-              </span>
-            </button>
-          </div>
         </div>
       </section>
 
       <section className="border-b border-border bg-surface-2/40">
-        <div className="mx-auto max-w-lg px-4 py-14 sm:px-6 sm:py-20">
-          <FadeUp>
-            <article className="relative flex flex-col rounded-xl border border-accent bg-surface p-6 shadow-[0_0_0_1px_color-mix(in_srgb,#f0a11a_35%,transparent)] sm:p-8">
-              <div>
-                <h2 className="font-display text-xl font-semibold tracking-tight text-foreground">
-                  {t("planTitle")}
-                </h2>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
-                  {t("planBody")}
-                </p>
-              </div>
-
-              <div className="mt-6 border-t border-border pt-6">
-                <div className="flex items-end gap-1.5">
-                  <p className="font-display text-4xl font-bold tracking-[-0.03em] text-foreground sm:text-5xl">
-                    {formatEuro(display)}
-                  </p>
-                  <p className="mb-1.5 text-sm text-muted">{t("perMonth")}</p>
-                </div>
-                <p className="mt-1 text-sm text-muted">
-                  {billing === "yearly"
-                    ? t("billedYearly", { amount: formatEuro(billedYearly) })
-                    : t("billedMonthly")}
-                </p>
-              </div>
-
-              <ul className="mt-8 space-y-3">
-                {includes.map((key) => (
-                  <li
-                    key={key}
-                    className="flex items-start gap-2.5 text-sm leading-relaxed text-foreground"
-                  >
-                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-container text-primary">
-                      <Check size={12} strokeWidth={2.75} aria-hidden />
+        <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 sm:py-20">
+          <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
+            {plans.map((plan, i) => (
+              <FadeUp key={plan.id} delay={i * 0.05}>
+                <article
+                  className={`relative flex h-full flex-col rounded-xl border bg-surface p-6 sm:p-8 ${
+                    plan.featured
+                      ? "border-accent shadow-[0_0_0_1px_color-mix(in_srgb,#f0a11a_35%,transparent)]"
+                      : "border-border"
+                  }`}
+                >
+                  {plan.featured ? (
+                    <span className="absolute -top-3 left-6 rounded bg-accent px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-[#1a1204]">
+                      {t("recommended")}
                     </span>
-                    {t(key)}
-                  </li>
-                ))}
-              </ul>
+                  ) : null}
 
-              <AppLink
-                href="register"
-                className="mt-8 inline-flex h-11 w-full items-center justify-center rounded-lg bg-accent text-sm font-semibold text-[#1a1204] transition-[filter] hover:brightness-105"
-              >
-                {t("planCta")}
-              </AppLink>
-            </article>
-          </FadeUp>
+                  <div>
+                    <h2 className="font-display text-xl font-semibold tracking-tight text-foreground">
+                      {t(`${plan.id}Title`)}
+                    </h2>
+                    <p className="mt-2 text-sm leading-relaxed text-muted">
+                      {t(`${plan.id}Tagline`)}
+                    </p>
+                  </div>
+
+                  <div className="mt-6 border-t border-border pt-6">
+                    <div className="flex items-end gap-1.5">
+                      <p className="font-display text-4xl font-bold tracking-[-0.03em] text-foreground sm:text-5xl">
+                        {formatEuro(plan.price)}
+                      </p>
+                      <p className="mb-1.5 text-sm text-muted">{t("perMonthExVat")}</p>
+                    </div>
+                  </div>
+
+                  <ul className="mt-8 flex-1 space-y-3">
+                    {plan.features.map((key) => (
+                      <li
+                        key={key}
+                        className="flex items-start gap-2.5 text-sm leading-relaxed text-foreground"
+                      >
+                        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-container text-primary">
+                          <Check size={12} strokeWidth={2.75} aria-hidden />
+                        </span>
+                        {t(key)}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <AppLink
+                    href="register"
+                    className={`mt-8 inline-flex h-11 w-full items-center justify-center rounded-lg text-sm font-semibold transition-[filter] hover:brightness-105 ${
+                      plan.featured
+                        ? "bg-accent text-[#1a1204]"
+                        : "border border-border-strong bg-surface text-foreground"
+                    }`}
+                  >
+                    {t("planCta")}
+                  </AppLink>
+                </article>
+              </FadeUp>
+            ))}
+          </div>
 
           <FadeUp className="mt-10 text-center">
-            <p className="text-sm text-muted">{t("finePrint")}</p>
+            <p className="text-sm text-muted">{t("extraSeats")}</p>
+            <ul className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted">
+              {trust.map((key) => (
+                <li key={key} className="flex items-center gap-2">
+                  <span
+                    className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent"
+                    aria-hidden
+                  />
+                  {t(key)}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-6 text-sm text-muted">{t("finePrint")}</p>
             <Link
               href="/contact"
               className="mt-4 inline-flex text-sm font-semibold text-foreground underline decoration-border-strong underline-offset-4 hover:decoration-accent"
