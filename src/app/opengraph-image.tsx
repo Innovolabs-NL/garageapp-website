@@ -89,7 +89,7 @@ export default function OpenGraphImage() {
           }}
         >
           <span>Innovolabs</span>
-          <span style={{ color: "#F5A623", fontWeight: 600 }}>garageapp.nl</span>
+          <span style={{ color: "#F5A623", fontWeight: 600 }}>www.motivox.nl</span>
         </div>
       </div>
     ),

@@ -6,7 +6,7 @@ function envUrl(value: string | undefined, fallback: string) {
 
 const appUrl = envUrl(
   process.env.NEXT_PUBLIC_APP_URL,
-  "https://app.garageapp.nl",
+  "https://app.motivox.nl",
 );
 
 export const siteConfig = {
@@ -16,7 +16,7 @@ export const siteConfig = {
     "Eén systeem voor de hele job — intake, keuring, goedkeuring, werk op de vloer, uren, onderdelen en factuur — zonder iets over te typen.",
   descriptionEn:
     "One system for the whole job — intake, inspection, approval, work on the floor, hours, parts, and invoice — without retyping anything.",
-  url: envUrl(process.env.NEXT_PUBLIC_SITE_URL, "https://garageapp.nl"),
+  url: envUrl(process.env.NEXT_PUBLIC_SITE_URL, "https://www.motivox.nl"),
   appUrl,
   registerUrl: `${appUrl}/Identity/Account/Register?utm_source=website`,
   loginUrl: `${appUrl}/Identity/Account/Login`,

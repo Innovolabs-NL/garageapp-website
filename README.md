@@ -38,8 +38,8 @@ Garage DNA: full-bleed workshop photography in the hero/CTA, Dutch `kenteken` pl
 Copy `.env.example` → `.env.local`:
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://garageapp.nl
-NEXT_PUBLIC_APP_URL=https://app.garageapp.nl
+NEXT_PUBLIC_SITE_URL=https://www.motivox.nl
+NEXT_PUBLIC_APP_URL=https://app.motivox.nl
 RESEND_API_KEY=
 CONTACT_TO_EMAIL=hello@innovolabs.nl
 CONTACT_FROM_EMAIL=GarageApp <onboarding@resend.dev>
@@ -58,7 +58,7 @@ CONTACT_FROM_EMAIL=GarageApp <onboarding@resend.dev>
 1. Import `Innovolabs-NL/garageapp-website` in Vercel
 2. Set the env vars above
 3. Deploy (framework: Next.js)
-4. Optional: attach domain `garageapp.nl` / `www`
+4. Optional: attach domain `www.motivox.nl` / `motivox.nl`
 
 ## Scripts
 
