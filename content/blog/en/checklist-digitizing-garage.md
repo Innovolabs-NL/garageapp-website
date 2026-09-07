@@ -21,6 +21,6 @@ Digitizing isn’t “install a package.” It’s choosing processes, agreeing 
 7. Train techs on time first; back office on invoicing next
 8. Measure status calls, invoice errors, time-to-invoice
 
-Online booking and payment gateways can wait. The core win is inspection → hours → invoice.
+Online booking from the homepage and payment gateways without setup can wait. The core win is inspection → quote → approval → hours → invoice. An appointment slot *after* approval belongs in that chain.
 
-Book a GarageApp demo and walk this checklist for your shop.
+Start a GarageApp trial and walk this checklist for your shop.

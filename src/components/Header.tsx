@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
+import { AppLink } from "./AppLink";
 import { LanguageToggle } from "./LanguageToggle";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -90,12 +91,18 @@ export function Header() {
           <div className="hidden md:block">
             <LanguageToggle />
           </div>
-          <Link
-            href="/contact"
+          <AppLink
+            href="login"
+            className="hidden text-sm font-medium text-muted transition-colors hover:text-foreground md:inline"
+          >
+            {t("login")}
+          </AppLink>
+          <AppLink
+            href="register"
             className="hidden h-9 items-center justify-center rounded-lg bg-accent px-4 text-sm font-semibold text-[#1a1204] transition-[filter] hover:brightness-105 md:inline-flex"
           >
             {t("cta")}
-          </Link>
+          </AppLink>
           <button
             type="button"
             className="inline-flex items-center justify-center rounded-lg p-2 text-muted transition-colors hover:text-foreground md:hidden"
@@ -149,13 +156,20 @@ export function Header() {
                 </p>
                 <LanguageToggle />
               </div>
-              <Link
-                href="/contact"
+              <AppLink
+                href="login"
+                onClick={() => setOpen(false)}
+                className="inline-flex h-12 w-full items-center justify-center rounded-lg border border-border-strong text-base font-semibold text-foreground"
+              >
+                {t("login")}
+              </AppLink>
+              <AppLink
+                href="register"
                 onClick={() => setOpen(false)}
                 className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-accent px-7 text-base font-semibold text-[#1a1204] transition-[filter] hover:brightness-105"
               >
                 {t("cta")}
-              </Link>
+              </AppLink>
             </div>
           </nav>
         </div>

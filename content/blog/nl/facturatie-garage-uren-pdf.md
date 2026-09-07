@@ -18,6 +18,6 @@ Een pro-forma helpt om bedragen te checken met de klant zonder een “echte” f
 
 Elke render hoort bewaard te worden (tenant-scoped opslag). De klant krijgt bij voorkeur een **veilige app-link** naar download, niet standaard een PDF-bijlage die in inboxes verdwijnt.
 
-## Bron = goedgekeurde uren
+## Bron = goedgekeurde uren + onderdelen
 
-Wanneer timesheets eerst worden goedgekeurd, is de factuurlijn geen gok meer. Dat is precies de flow die GarageApp afdwingt.
+Wanneer timesheets eerst worden goedgekeurd, is de factuurlijn geen gok meer. Grote onderdelen komen van de werkbon; kleinmateriaal is een instelbaar percentage van arbeidsloon (standaard 8%). Nederlandse factuuridentiteit (KvK, BTW-id, IBAN, logo) en export als CSV of UBL horen daarbij. Dat is precies de flow die GarageApp afdwingt.

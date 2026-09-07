@@ -1,11 +1,18 @@
+const appUrl = (
+  process.env.NEXT_PUBLIC_APP_URL ?? "https://app.garageapp.nl"
+).replace(/\/$/, "");
+
 export const siteConfig = {
   name: "GarageApp",
   company: "Innovolabs",
   descriptionNl:
-    "Garage software voor Nederlandse werkplaatsen — keuring, werkorders, uren en facturen in één systeem.",
+    "Eén systeem voor de hele job — intake, keuring, goedkeuring, werk op de vloer, uren, onderdelen en factuur — zonder iets over te typen.",
   descriptionEn:
-    "Garage software for repair shops — inspections, work orders, time tracking, and invoicing in one system.",
+    "One system for the whole job — intake, inspection, approval, work on the floor, hours, parts, and invoice — without retyping anything.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://garageapp.nl",
+  appUrl,
+  registerUrl: `${appUrl}/Identity/Account/Register?utm_source=website`,
+  loginUrl: `${appUrl}/Identity/Account/Login`,
   contactEmail: process.env.CONTACT_TO_EMAIL ?? "hello@innovolabs.nl",
   /** Workshop photography — replace with owned shots when available */
   images: {

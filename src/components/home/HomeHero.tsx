@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import { AppLink } from "@/components/AppLink";
 import { siteConfig } from "@/lib/site";
 
 export function HomeHero() {
@@ -41,12 +42,12 @@ export function HomeHero() {
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-3">
-          <Link
-            href="/contact"
+          <AppLink
+            href="register"
             className="inline-flex h-12 items-center justify-center rounded-lg bg-accent px-7 text-base font-semibold text-[#1a1204] transition-[filter] hover:brightness-105"
           >
             {t("ctaPrimary")}
-          </Link>
+          </AppLink>
           <Link href="/features" className="btn-on-media">
             {t("ctaSecondary")}
           </Link>

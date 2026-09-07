@@ -13,15 +13,16 @@ Elke “is mijn auto klaar?”-oproep kost tijd — voor de klant én voor de ba
 ## Wat klanten willen zien
 
 - Status van de job
-- Keuring / werkplan (waar relevant)
+- Keuring / offerte (waar relevant)
+- Afspraakslot ná goedkeuring
 - Facturen (samenvatting + PDF-download)
 
-Niet: interne notities of half afgeronde backoffice-details.
+Niet: interne notities of half afgeronde kantoordetails. Niet: zelf een reparatie boeken vanaf de straat.
 
 ## Veilige toegang
 
-OTP of magic-link login, plus tijdelijke tokenlinks voor specifieke jobs of downloads, houden de drempel laag zonder wachtwoordchaos.
+Inloggen of een beveiligde link, plus tijdelijke tokenlinks voor specifieke jobs of downloads, houden de drempel laag zonder wachtwoordchaos.
 
 ## Minder ruis, meer vertrouwen
 
-Wanneer klanten zelf kunnen meekijken, daalt de druk op de telefoon en stijgt het gevoel van professionaliteit. GarageApp levert een klantportaal naast de backoffice- en tech-portals — één databron.
+De klantreis is goedkeuren → inplannen → volgen → betalen (online als Mollie of Tikkie is gekoppeld). Wanneer klanten zelf kunnen meekijken, daalt de druk op de telefoon. GarageApp levert een klantportaal naast kantoor en werkplaats — één databron.

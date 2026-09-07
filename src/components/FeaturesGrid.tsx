@@ -2,10 +2,11 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { ClipboardCheck, Clock, FileText, Package, PenLine } from "lucide-react";
+import { Clock, FileText, PenLine, Plug } from "lucide-react";
 import { FadeUp } from "@/components/FadeUp";
 import { Kenteken } from "@/components/Kenteken";
 import { LiveTimer } from "@/components/LiveTimer";
+import { FeatureGrid } from "@/components/FeatureGrid";
 import { HomeCta } from "@/components/home/HomeCta";
 import { siteConfig } from "@/lib/site";
 
@@ -17,7 +18,7 @@ const beats = [
     title: "beat1Title",
     body: "beat1Body",
     status: "beat1Status",
-    kind: "draft" as const,
+    kind: "inspect" as const,
   },
   {
     n: "02",
@@ -41,6 +42,35 @@ const beats = [
     kind: "image" as const,
     image: siteConfig.images.floor,
   },
+] as const;
+
+const officeItems = [
+  "officeItem1",
+  "officeItem2",
+  "officeItem3",
+  "officeItem4",
+  "officeItem5",
+  "officeItem6",
+  "officeItem7",
+  "officeItem8",
+] as const;
+
+const techItems = [
+  "techItem1",
+  "techItem2",
+  "techItem3",
+  "techItem4",
+  "techItem5",
+  "techItem6",
+] as const;
+
+const custItems = [
+  "custItem1",
+  "custItem2",
+  "custItem3",
+  "custItem4",
+  "custItem5",
+  "custItem6",
 ] as const;
 
 export function FeaturesGrid() {
@@ -109,7 +139,7 @@ export function FeaturesGrid() {
                 delay={0.05}
                 className={`lg:col-span-7 ${flip ? "lg:order-1" : ""}`}
               >
-                {beat.kind === "draft" ? (
+                {beat.kind === "inspect" ? (
                   <div className="card-surface relative overflow-hidden rounded-xl p-8 sm:p-10">
                     <div
                       className="pointer-events-none absolute inset-0 garage-texture"
@@ -121,12 +151,28 @@ export function FeaturesGrid() {
                         <span className="bay-chip">{t("draftChip")}</span>
                       </div>
                       <p className="mt-8 font-display text-2xl font-semibold text-foreground">
-                        {t("draftCardTitle")}
+                        {t("inspectCardTitle")}
                       </p>
-                      <ul className="mt-5 space-y-2 text-sm text-muted">
-                        <li>— {t("draftLine1")}</li>
-                        <li>— {t("draftLine2")}</li>
-                        <li>— {t("draftLine3")}</li>
+                      <ul className="mt-5 space-y-3 text-sm">
+                        {(
+                          [
+                            ["inspectLine1", "inspectStatus1", "text-accent"],
+                            ["inspectLine2", "inspectStatus2", "text-success"],
+                            ["inspectLine3", "inspectStatus3", "text-success"],
+                          ] as const
+                        ).map(([line, status, tone]) => (
+                          <li
+                            key={line}
+                            className="flex items-baseline justify-between gap-4 border-b border-border pb-2 text-muted last:border-0"
+                          >
+                            <span>{t(line)}</span>
+                            <span
+                              className={`text-xs font-semibold uppercase tracking-[0.12em] ${tone}`}
+                            >
+                              {t(status)}
+                            </span>
+                          </li>
+                        ))}
                       </ul>
                       <p className="mt-8 text-xs font-semibold uppercase tracking-[0.16em] text-muted">
                         {t(beat.status)}
@@ -213,44 +259,68 @@ export function FeaturesGrid() {
         );
       })}
 
-      <section className="relative overflow-hidden border-b border-border bg-surface py-20 sm:py-28">
+      <FeatureGrid eyebrow={t("gridEyebrow")} title={t("gridTitle")} />
+
+      <section className="border-b border-border bg-surface py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <FadeUp>
+            <p className="eyebrow">{t("audienceEyebrow")}</p>
+            <h2 className="mt-5 max-w-3xl font-display text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
+              {t("audienceTitle")}
+            </h2>
+          </FadeUp>
+          <div className="mt-14 grid gap-10 lg:grid-cols-3 lg:gap-8">
+            {(
+              [
+                ["officeTitle", officeItems],
+                ["techTitle", techItems],
+                ["custTitle", custItems],
+              ] as const
+            ).map(([titleKey, keys], i) => (
+              <FadeUp key={titleKey} delay={i * 0.05}>
+                <article className="rule pt-6">
+                  <h3 className="font-display text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
+                    {t(titleKey)}
+                  </h3>
+                  <ul className="mt-5 space-y-3 text-sm leading-relaxed text-muted sm:text-base">
+                    {keys.map((key) => (
+                      <li key={key} className="flex gap-2.5">
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden />
+                        <span>{t(key)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  {titleKey === "custTitle" ? (
+                    <p className="mt-6 text-xs font-semibold uppercase tracking-[0.14em] text-accent">
+                      {t("journeyLabel")}: {t("journey")}
+                    </p>
+                  ) : null}
+                </article>
+              </FadeUp>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden border-b border-border py-20 sm:py-28">
         <div
           className="pointer-events-none absolute inset-0 garage-texture"
           aria-hidden
         />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
           <FadeUp>
-            <p className="eyebrow">{t("asideEyebrow")}</p>
-            <h2 className="mt-5 max-w-3xl font-display text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
-              {t("asideTitle")}
-            </h2>
-            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
-              {t("asideBody")}
-            </p>
-            <div className="mt-12 grid gap-6 sm:grid-cols-2">
-              <article className="card-surface rounded-xl p-6">
-                <span className="icon-bay">
-                  <ClipboardCheck size={18} aria-hidden />
-                </span>
-                <h3 className="mt-5 font-display text-xl font-semibold text-foreground">
-                  {t("inspectionTitle")}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted">
-                  {t("inspectionBody")}
-                </p>
-              </article>
-              <article className="card-surface rounded-xl p-6">
-                <span className="icon-bay">
-                  <Package size={18} aria-hidden />
-                </span>
-                <h3 className="mt-5 font-display text-xl font-semibold text-foreground">
-                  {t("inventoryTitle")}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted">
-                  {t("inventoryBody")}
-                </p>
-              </article>
+            <p className="eyebrow">{t("integrationsEyebrow")}</p>
+            <div className="mt-5 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+              <h2 className="max-w-xl font-display text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
+                {t("integrationsTitle")}
+              </h2>
+              <span className="icon-bay shrink-0">
+                <Plug size={18} aria-hidden />
+              </span>
             </div>
+            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
+              {t("integrationsBody")}
+            </p>
           </FadeUp>
         </div>
       </section>

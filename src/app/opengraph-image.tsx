@@ -65,7 +65,7 @@ export default function OpenGraphImage() {
               maxWidth: 900,
             }}
           >
-            Garage software voor werkplaatsen
+            Eén systeem voor de hele job
           </div>
           <div
             style={{
@@ -75,7 +75,7 @@ export default function OpenGraphImage() {
               lineHeight: 1.35,
             }}
           >
-            Werkorders, uren en facturen in één systeem — met klantportaal.
+            Intake, keuring, uren, onderdelen en factuur — zonder overtypen.
           </div>
         </div>
 

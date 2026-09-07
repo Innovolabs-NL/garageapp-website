@@ -12,4 +12,4 @@ Invoicing is the end of the job — and a common error point when hours are copi
 
 Use pro-forma to check amounts, then final invoices with proper numbering and statuses (Draft → Sent → Paid). Store every PDF render tenant-scoped. Prefer a secure app download link over PDF attachments that vanish in inboxes.
 
-When timesheets are approved first, invoice lines stop being a guess — the flow GarageApp enforces.
+When timesheets are approved first, invoice lines stop being a guess. Large parts come from the work order; consumables are a configurable percent of labor (default 8%). Dutch invoice identity (KvK, VAT ID, IBAN, logo) and CSV or UBL export belong in the same flow — the one GarageApp enforces.

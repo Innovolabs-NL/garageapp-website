@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
 import { FadeUp } from "@/components/FadeUp";
+import { AppLink } from "@/components/AppLink";
 import { PageHero, PageWrap } from "@/components/PageHero";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -55,9 +55,9 @@ export default async function AboutPage({ params }: Props) {
       </FadeUp>
 
       <FadeUp className="mt-12 text-center">
-        <Link href="/contact" className="btn-primary">
+        <AppLink href="register" className="btn-primary">
           {t("cta")}
-        </Link>
+        </AppLink>
       </FadeUp>
     </PageWrap>
   );

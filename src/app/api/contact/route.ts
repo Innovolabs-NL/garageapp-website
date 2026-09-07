@@ -47,7 +47,7 @@ export async function POST(req: NextRequest) {
     from,
     to: [to],
     replyTo: email,
-    subject: `GarageApp demo: ${name}${company ? ` (${company})` : ""}`,
+    subject: `GarageApp contact: ${name}${company ? ` (${company})` : ""}`,
     text: `Name: ${name}\nEmail: ${email}\nCompany: ${company || "—"}\n\n${message}`,
   });
 

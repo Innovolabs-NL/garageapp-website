@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { AppLink } from "@/components/AppLink";
 
 export async function Footer() {
   const t = await getTranslations("Footer");
@@ -45,6 +46,16 @@ export async function Footer() {
               <Link href="/blog" className="transition-colors hover:text-foreground">
                 {nav("blog")}
               </Link>
+            </li>
+            <li>
+              <AppLink href="login" className="transition-colors hover:text-foreground">
+                {nav("login")}
+              </AppLink>
+            </li>
+            <li>
+              <AppLink href="register" className="transition-colors hover:text-foreground">
+                {nav("cta")}
+              </AppLink>
             </li>
           </ul>
         </div>

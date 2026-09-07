@@ -9,6 +9,7 @@ import {
   Wrench,
 } from "lucide-react";
 import { FadeUp } from "@/components/FadeUp";
+import { FeatureGrid } from "@/components/FeatureGrid";
 import { HomeHero } from "@/components/home/HomeHero";
 import { HomeBayBoard } from "@/components/home/HomeBayBoard";
 import { HomeCta } from "@/components/home/HomeCta";
@@ -46,6 +47,7 @@ export default async function HomePage({ params }: Props) {
     <>
       <HomeHero />
       <HomeBayBoard />
+      <FeatureGrid eyebrow={t("gridEyebrow")} title={t("gridTitle")} />
 
       <section className="py-20 sm:py-28">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">

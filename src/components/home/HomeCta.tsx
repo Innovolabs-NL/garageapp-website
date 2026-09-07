@@ -2,8 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Link } from "@/i18n/navigation";
 import { FadeUp } from "@/components/FadeUp";
+import { AppLink } from "@/components/AppLink";
 import { siteConfig } from "@/lib/site";
 
 export function HomeCta() {
@@ -33,12 +33,12 @@ export function HomeCta() {
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/70">
             {t("finalCtaBody")}
           </p>
-          <Link
-            href="/contact"
+          <AppLink
+            href="register"
             className="mt-9 inline-flex h-12 items-center justify-center rounded-lg bg-accent px-7 text-base font-semibold text-[#1a1204] transition-[filter] hover:brightness-105"
           >
             {t("finalCtaButton")}
-          </Link>
+          </AppLink>
         </FadeUp>
       </div>
     </section>

@@ -5,62 +5,21 @@ import { useTranslations } from "next-intl";
 import { Check } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { FadeUp } from "@/components/FadeUp";
+import { AppLink } from "@/components/AppLink";
 import { HomeCta } from "@/components/home/HomeCta";
 
-/** Monthly list prices in EUR — yearly = 10× monthly (2 months free).
- *  Anchored to NL/EU workshop SaaS comps; COGS assume Hetzner Cloud.
- *  See canvases/pricing-research.canvas.tsx */
-const PLAN_PRICES = {
-  starter: 79,
-  pro: 129,
-  business: 219,
-} as const;
+/** Monthly list price in EUR — yearly = 10× monthly (2 months free). */
+const PLAN_PRICE = 129;
 
-const plans = [
-  {
-    id: "starter" as const,
-    title: "starterTitle",
-    body: "starterBody",
-    includes: [
-      "starterInc1",
-      "starterInc2",
-      "starterInc3",
-      "starterInc4",
-      "starterInc5",
-    ] as const,
-    cta: "starterCta",
-    featured: false,
-  },
-  {
-    id: "pro" as const,
-    title: "proTitle",
-    body: "proBody",
-    includes: [
-      "proInc1",
-      "proInc2",
-      "proInc3",
-      "proInc4",
-      "proInc5",
-      "proInc6",
-    ] as const,
-    cta: "proCta",
-    featured: true,
-  },
-  {
-    id: "business" as const,
-    title: "businessTitle",
-    body: "businessBody",
-    includes: [
-      "businessInc1",
-      "businessInc2",
-      "businessInc3",
-      "businessInc4",
-      "businessInc5",
-      "businessInc6",
-    ] as const,
-    cta: "businessCta",
-    featured: false,
-  },
+const includes = [
+  "planInc1",
+  "planInc2",
+  "planInc3",
+  "planInc4",
+  "planInc5",
+  "planInc6",
+  "planInc7",
+  "planInc8",
 ] as const;
 
 const faqs = [
@@ -81,6 +40,9 @@ function formatEuro(amount: number) {
 export function PricingContent() {
   const t = useTranslations("Pricing");
   const [billing, setBilling] = useState<"monthly" | "yearly">("monthly");
+  const display =
+    billing === "yearly" ? Math.round((PLAN_PRICE * 10) / 12) : PLAN_PRICE;
+  const billedYearly = PLAN_PRICE * 10;
 
   return (
     <>
@@ -93,6 +55,7 @@ export function PricingContent() {
           <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-muted">
             {t("intro")}
           </p>
+          <p className="mx-auto mt-3 max-w-xl text-sm text-muted">{t("trialNote")}</p>
 
           <div
             className="mx-auto mt-10 inline-flex items-center rounded-lg border border-border bg-surface p-1"
@@ -129,87 +92,54 @@ export function PricingContent() {
       </section>
 
       <section className="border-b border-border bg-surface-2/40">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
-          <div className="grid items-stretch gap-5 lg:grid-cols-3 lg:gap-6">
-            {plans.map((plan, i) => {
-              const monthly = PLAN_PRICES[plan.id];
-              const display =
-                billing === "yearly"
-                  ? Math.round((monthly * 10) / 12)
-                  : monthly;
-              const billedYearly = monthly * 10;
+        <div className="mx-auto max-w-lg px-4 py-14 sm:px-6 sm:py-20">
+          <FadeUp>
+            <article className="relative flex flex-col rounded-xl border border-accent bg-surface p-6 shadow-[0_0_0_1px_color-mix(in_srgb,#f0a11a_35%,transparent)] sm:p-8">
+              <div>
+                <h2 className="font-display text-xl font-semibold tracking-tight text-foreground">
+                  {t("planTitle")}
+                </h2>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  {t("planBody")}
+                </p>
+              </div>
 
-              return (
-                <FadeUp key={plan.id} delay={i * 0.05} className="h-full">
-                  <article
-                    className={`relative flex h-full flex-col rounded-xl border p-6 sm:p-7 ${
-                      plan.featured
-                        ? "border-accent bg-surface shadow-[0_0_0_1px_color-mix(in_srgb,#f0a11a_35%,transparent)]"
-                        : "border-border bg-surface"
-                    }`}
+              <div className="mt-6 border-t border-border pt-6">
+                <div className="flex items-end gap-1.5">
+                  <p className="font-display text-4xl font-bold tracking-[-0.03em] text-foreground sm:text-5xl">
+                    {formatEuro(display)}
+                  </p>
+                  <p className="mb-1.5 text-sm text-muted">{t("perMonth")}</p>
+                </div>
+                <p className="mt-1 text-sm text-muted">
+                  {billing === "yearly"
+                    ? t("billedYearly", { amount: formatEuro(billedYearly) })
+                    : t("billedMonthly")}
+                </p>
+              </div>
+
+              <ul className="mt-8 space-y-3">
+                {includes.map((key) => (
+                  <li
+                    key={key}
+                    className="flex items-start gap-2.5 text-sm leading-relaxed text-foreground"
                   >
-                    {plan.featured ? (
-                      <span className="absolute -top-3 left-6 inline-flex rounded-md bg-accent px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-[#1a1204]">
-                        {t("popular")}
-                      </span>
-                    ) : null}
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-container text-primary">
+                      <Check size={12} strokeWidth={2.75} aria-hidden />
+                    </span>
+                    {t(key)}
+                  </li>
+                ))}
+              </ul>
 
-                    <div>
-                      <h2 className="font-display text-xl font-semibold tracking-tight text-foreground">
-                        {t(plan.title)}
-                      </h2>
-                      <p className="mt-2 min-h-[2.75rem] text-sm leading-relaxed text-muted">
-                        {t(plan.body)}
-                      </p>
-                    </div>
-
-                    <div className="mt-6 border-t border-border pt-6">
-                      <div className="flex items-end gap-1.5">
-                        <p className="font-display text-4xl font-bold tracking-[-0.03em] text-foreground sm:text-5xl">
-                          {formatEuro(display)}
-                        </p>
-                        <p className="mb-1.5 text-sm text-muted">
-                          {t("perMonth")}
-                        </p>
-                      </div>
-                      <p className="mt-1 text-sm text-muted">
-                        {billing === "yearly"
-                          ? t("billedYearly", {
-                              amount: formatEuro(billedYearly),
-                            })
-                          : t("billedMonthly")}
-                      </p>
-                    </div>
-
-                    <ul className="mt-8 flex-1 space-y-3">
-                      {plan.includes.map((key) => (
-                        <li
-                          key={key}
-                          className="flex items-start gap-2.5 text-sm leading-relaxed text-foreground"
-                        >
-                          <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-container text-primary">
-                            <Check size={12} strokeWidth={2.75} aria-hidden />
-                          </span>
-                          {t(key)}
-                        </li>
-                      ))}
-                    </ul>
-
-                    <Link
-                      href="/contact"
-                      className={`mt-8 inline-flex h-11 w-full items-center justify-center rounded-lg text-sm font-semibold transition-[filter] ${
-                        plan.featured
-                          ? "bg-accent text-[#1a1204] hover:brightness-105"
-                          : "bg-[var(--btn-primary-bg)] text-[var(--btn-primary-fg)] hover:brightness-110"
-                      }`}
-                    >
-                      {t(plan.cta)}
-                    </Link>
-                  </article>
-                </FadeUp>
-              );
-            })}
-          </div>
+              <AppLink
+                href="register"
+                className="mt-8 inline-flex h-11 w-full items-center justify-center rounded-lg bg-accent text-sm font-semibold text-[#1a1204] transition-[filter] hover:brightness-105"
+              >
+                {t("planCta")}
+              </AppLink>
+            </article>
+          </FadeUp>
 
           <FadeUp className="mt-10 text-center">
             <p className="text-sm text-muted">{t("finePrint")}</p>

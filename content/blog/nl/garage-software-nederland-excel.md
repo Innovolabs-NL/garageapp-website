@@ -33,4 +33,4 @@ GarageApp is gebouwd voor Nederlandse autoreparatiebedrijven: Nederlands-eerst, 
 
 ## Volgende stap
 
-Inventariseer waar jullie nu overtypen. Vraag daarna een demo: laat precies die flow zien, niet een generieke feature-tour.
+Inventariseer waar jullie nu overtypen. Start daarna een proefperiode: laat precies die flow zien, niet een generieke feature-tour.

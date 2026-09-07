@@ -23,8 +23,8 @@ Digitaliseren is geen “pakket installeren”. Het is processen kiezen, rollen 
 
 ## Wat je mag uitstellen
 
-Online klantboekingen en betaalgateways zijn nuttig, maar niet nodig om de kern (keuring → uren → factuur) te verbeteren.
+Koude zelfboeking vanaf de homepage en betaalgateways zonder configuratie. De kern is keuring → offerte → akkoord → uren → factuur. Een afspraakslot ná goedkeuring hoort wél bij die keten.
 
 ## Hulp nodig?
 
-Plan een demo van GarageApp en loop deze checklist samen door — gericht op jouw garage, niet op een generieke slide.
+Start een proefperiode van GarageApp en loop deze checklist door — gericht op jouw garage, niet op een generieke slide.

@@ -39,6 +39,7 @@ Copy `.env.example` → `.env.local`:
 
 ```bash
 NEXT_PUBLIC_SITE_URL=https://garageapp.nl
+NEXT_PUBLIC_APP_URL=https://app.garageapp.nl
 RESEND_API_KEY=
 CONTACT_TO_EMAIL=hello@innovolabs.nl
 CONTACT_FROM_EMAIL=GarageApp <onboarding@resend.dev>
