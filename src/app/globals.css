@@ -484,6 +484,12 @@ html[data-theme="dark"] .site-header[data-menu-open="true"] .text-muted {
   margin-bottom: 1.1rem;
 }
 
+.prose-blog ol {
+  list-style: decimal;
+  padding-left: 1.25rem;
+  margin-bottom: 1.1rem;
+}
+
 .prose-blog li {
   margin-bottom: 0.35rem;
   line-height: 1.65;
@@ -498,6 +504,28 @@ html[data-theme="dark"] .site-header[data-menu-open="true"] .text-muted {
 .prose-blog strong {
   color: var(--t-foreground);
   font-weight: 650;
+}
+
+.prose-blog table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.25rem;
+  font-size: 0.95em;
+}
+
+.prose-blog th,
+.prose-blog td {
+  border: 1px solid var(--t-border);
+  padding: 0.55rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.prose-blog th {
+  color: var(--t-foreground);
+  font-weight: 650;
+  background: var(--t-surface);
 }
 
 @media (prefers-reduced-motion: reduce) {

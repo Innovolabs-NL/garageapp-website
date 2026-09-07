@@ -21,6 +21,6 @@ Digitizing isn’t “install a package.” It’s choosing processes, agreeing 
 7. Train techs on time first; back office on invoicing next
 8. Measure status calls, invoice errors, time-to-invoice
 
-Online booking from the homepage and payment gateways without setup can wait. The core win is inspection → quote → approval → hours → invoice. An appointment slot *after* approval belongs in that chain.
+Cold online booking from the homepage and payment gateways without setup can wait. Motivox does not offer street-side self-booking; customers pick a slot only after quote approval. Online pay for repair invoices needs Mollie or Tikkie connected by the shop. The core win is inspection → quote → approval → hours → invoice.
 
 Start a Motivox trial and walk this checklist for your shop.

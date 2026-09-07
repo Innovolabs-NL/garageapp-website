@@ -11,7 +11,8 @@ const appUrl = envUrl(
 
 export const siteConfig = {
   name: "Motivox",
-  company: "Innovolabs",
+  company: "Innovolabs B.V.",
+  kvk: "97588911",
   descriptionNl:
     "Eén systeem voor de hele job — intake, keuring, goedkeuring, werk op de vloer, uren, onderdelen en factuur — zonder iets over te typen.",
   descriptionEn:

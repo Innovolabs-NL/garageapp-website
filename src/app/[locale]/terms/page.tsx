@@ -15,17 +15,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "Meta" });
   return buildPageMetadata({
     locale,
-    title: t("privacyTitle"),
-    description: t("privacyDescription"),
-    href: "/privacy",
+    title: t("termsTitle"),
+    description: t("termsDescription"),
+    href: "/terms",
   });
 }
 
-export default async function PrivacyPage({ params }: Props) {
+export default async function TermsPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("Privacy");
-  const doc = getLegalDoc(locale, "privacy");
+  const t = await getTranslations("Terms");
+  const doc = getLegalDoc(locale, "terms");
   if (!doc) notFound();
 
   return (

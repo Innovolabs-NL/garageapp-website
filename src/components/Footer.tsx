@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { AppLink } from "@/components/AppLink";
 import { BrandLogo } from "@/components/BrandLogo";
+import { siteConfig } from "@/lib/site";
 
 export async function Footer() {
   const t = await getTranslations("Footer");
@@ -19,8 +20,9 @@ export async function Footer() {
             {t("tagline")}
           </p>
           <p className="mt-6 text-xs text-subtle">
-            © {year} Innovolabs. {t("rights")}
+            © {year} {siteConfig.company}. {t("rights")}
           </p>
+          <p className="mt-1 text-xs text-subtle">{t("legalLine")}</p>
         </div>
 
         <div>
@@ -74,6 +76,11 @@ export async function Footer() {
             <li>
               <Link href="/privacy" className="transition-colors hover:text-foreground">
                 {nav("privacy")}
+              </Link>
+            </li>
+            <li>
+              <Link href="/terms" className="transition-colors hover:text-foreground">
+                {nav("terms")}
               </Link>
             </li>
           </ul>

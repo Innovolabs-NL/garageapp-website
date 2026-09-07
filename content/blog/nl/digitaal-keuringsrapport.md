@@ -14,7 +14,7 @@ Een keuring is meer dan “even kijken onder de auto”. Het is het moment waaro
 
 - **Consistentie:** dezelfde checklist per type keuring
 - **Traceerbaarheid:** wie heeft wat wanneer genoteerd
-- **Snelheid naar werkplan:** statussen (OK / aandacht / urgent) vormen de basis van het voorstel
+- **Snelheid naar werkplan:** statussen (OK / aandacht / urgent / n.v.t.) vormen de basis van het voorstel
 
 ## Wat je in een digitaal rapport wilt
 
@@ -24,4 +24,4 @@ Configureerbare secties en items, notities per punt, concept versus definitief, 
 
 Het keuringsrapport voedt het werkplan. De klant keurt digitaal goed (inclusief handtekening). Zo voorkom je discussie later over “wat is afgesproken”.
 
-Motivox ondersteunt tenant-scoped checklists, inspecties en digitaal klantakkoord als onderdeel van dezelfde jobflow.
+Motivox ondersteunt tenant-scoped checklists, inspecties en digitaal klantakkoord als onderdeel van dezelfde jobflow. Kentekenopzoeking via RDW vult voertuiggegevens en APK-datum; dat is geen gecertificeerde APK-keuringsstationsoftware.

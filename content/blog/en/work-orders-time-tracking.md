@@ -10,4 +10,4 @@ keywords:
 
 The core promise is simple: **a technician sees the work order and logs hours; the back office turns that into an invoice — without re-keying.**
 
-Work orders should inherit line items from the approved plan. Scheduling assigns techs and blocks. Time supports a timer (one running at a time) and manual entry, then timesheet approval. Approved hours become the clean source for pro-forma and final invoices.
+Work orders should inherit line items from the approved plan. Scheduling assigns techs and blocks. In the technician web portal, time supports a timer (one running at a time) and manual entry, plus photos or video on a work line; then timesheet approval. Approved hours become the clean source for pro-forma and final invoices.

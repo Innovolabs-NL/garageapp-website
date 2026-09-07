@@ -20,7 +20,7 @@ Wijs technici toe en plan blokken. De tech ziet alleen wat relevant is; de plann
 
 ## Uren: timer én handmatig
 
-Op de vloer telt snelheid. Een timer (met hoogstens één lopende timer) én handmatige correctie houden de realiteit bij. Daarna: goedkeuring of afwijzing van timesheets door de backoffice — met reden bij afwijzing.
+Op de vloer telt snelheid. In het monteurportaal (web) houden een timer (hoogstens één lopende timer) én handmatige correctie de realiteit bij; foto’s of video kunnen bij een werkregel. Daarna: goedkeuring of afwijzing van timesheets door de backoffice — met reden bij afwijzing.
 
 ## Waarom dit facturatie redt
 

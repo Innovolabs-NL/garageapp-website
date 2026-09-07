@@ -11,6 +11,7 @@ const staticPaths = [
   "/about",
   "/contact",
   "/privacy",
+  "/terms",
   "/blog",
 ] as const satisfies readonly Pathnames[];
 
@@ -21,6 +22,7 @@ const staticPriority: Record<(typeof staticPaths)[number], number> = {
   "/about": 0.6,
   "/contact": 0.7,
   "/privacy": 0.3,
+  "/terms": 0.3,
   "/blog": 0.8,
 };
 

@@ -29,7 +29,7 @@ Zonder die keten blijft digitaal werken een schijnverbetering.
 
 ## Waar Motivox op inzet
 
-Motivox is gebouwd voor Nederlandse autoreparatiebedrijven: Nederlands-eerst, rollen voor backoffice, technicus en klantportaal, en multi-tenant architectuur wanneer je groeit.
+Motivox is gebouwd voor Nederlandse autoreparatiebedrijven: Nederlands-eerst, drie **web**portalen (kantoor, monteur en klant), en multi-tenant architectuur wanneer je groeit. Het is geen aparte native iOS-/Android-app.
 
 ## Volgende stap
 

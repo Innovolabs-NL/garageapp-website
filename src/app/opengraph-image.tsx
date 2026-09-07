@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { siteConfig } from "@/lib/site";
 
 export const alt = "Motivox — garage software voor werkplaatsen";
 export const size = { width: 1200, height: 630 };
@@ -88,7 +89,7 @@ export default function OpenGraphImage() {
             fontSize: 22,
           }}
         >
-          <span>Innovolabs</span>
+          <span>{siteConfig.company}</span>
           <span style={{ color: "#0165fd", fontWeight: 600 }}>www.motivox.nl</span>
         </div>
       </div>

@@ -23,7 +23,7 @@ Digitaliseren is geen “pakket installeren”. Het is processen kiezen, rollen 
 
 ## Wat je mag uitstellen
 
-Koude zelfboeking vanaf de homepage en betaalgateways zonder configuratie. De kern is keuring → offerte → akkoord → uren → factuur. Een afspraakslot ná goedkeuring hoort wél bij die keten.
+Koude zelfboeking vanaf de homepage en betaalgateways zonder configuratie. Motivox biedt geen zelfboeking vanaf de straat; de klant kiest een slot pas ná offerte-akkoord. Online betalen van reparatiefacturen vereist dat de zaak Mollie of Tikkie koppelt. De kern is keuring → offerte → akkoord → uren → factuur.
 
 ## Hulp nodig?
 
