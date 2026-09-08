@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "7PB5ANFZgJOfP0cBg3eWXAVYIbHoOHYkHekRTu6RGAU",
+  },
 };
 
 /** Root shell — html/body live in [locale]/layout for correct lang. */
