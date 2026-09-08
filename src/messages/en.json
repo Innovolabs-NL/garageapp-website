@@ -228,6 +228,7 @@
   "About": {
     "title": "Built for Dutch repair shops",
     "intro": "Motivox is a product of Innovolabs B.V. — made to replace Excel/Access workflows without disrupting the floor.",
+    "companyLink": "Visit Innovolabs →",
     "storyTitle": "Why Motivox",
     "storyBody": "One chain: customer → car → inspection → quote → work order → hours → parts → invoice. Built for Dutch garages: VAT, KvK, APK reminders, consumables. Dutch first, English available. Your shop, your data. Three web portals — office, technician, and customer — not a separate native mobile app.",
     "valuesTitle": "What we stand for",

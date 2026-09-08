@@ -20,9 +20,25 @@ export async function Footer() {
             {t("tagline")}
           </p>
           <p className="mt-6 text-xs text-subtle">
-            © {year} {siteConfig.company}. {t("rights")}
+            © {year}{" "}
+            <a
+              href={siteConfig.companyUrl}
+              className="transition-colors hover:text-foreground"
+            >
+              {siteConfig.company}
+            </a>
+            . {t("rights")}
           </p>
-          <p className="mt-1 text-xs text-subtle">{t("legalLine")}</p>
+          <p className="mt-1 text-xs text-subtle">
+            <a
+              href={siteConfig.companyUrl}
+              className="transition-colors hover:text-foreground"
+            >
+              {siteConfig.company}
+            </a>
+            {" · "}
+            KvK {siteConfig.kvk}
+          </p>
         </div>
 
         <div>
@@ -67,6 +83,14 @@ export async function Footer() {
               <Link href="/about" className="transition-colors hover:text-foreground">
                 {nav("about")}
               </Link>
+            </li>
+            <li>
+              <a
+                href={siteConfig.companyUrl}
+                className="transition-colors hover:text-foreground"
+              >
+                Innovolabs
+              </a>
             </li>
             <li>
               <Link href="/contact" className="transition-colors hover:text-foreground">

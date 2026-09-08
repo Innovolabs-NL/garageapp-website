@@ -4,6 +4,7 @@ import { FadeUp } from "@/components/FadeUp";
 import { AppLink } from "@/components/AppLink";
 import { PageHero, PageWrap } from "@/components/PageHero";
 import { buildPageMetadata } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -27,6 +28,15 @@ export default async function AboutPage({ params }: Props) {
     <PageWrap>
       <FadeUp>
         <PageHero title={t("title")} intro={t("intro")} />
+      </FadeUp>
+
+      <FadeUp className="mx-auto mt-2 max-w-3xl text-center">
+        <a
+          href={siteConfig.companyUrl}
+          className="text-sm font-medium text-accent transition-colors hover:text-foreground"
+        >
+          {t("companyLink")}
+        </a>
       </FadeUp>
 
       <FadeUp className="mx-auto mt-4 max-w-3xl">

@@ -13,9 +13,10 @@ export function JsonLd({ locale }: { locale: string }) {
         "@type": "Organization",
         "@id": `${siteConfig.url}/#organization`,
         name: siteConfig.company,
-        url: siteConfig.url,
+        url: siteConfig.companyUrl,
         email: siteConfig.contactEmail,
         logo: absoluteUrl("/icon"),
+        sameAs: [siteConfig.companyUrl],
       },
       {
         "@type": "WebSite",
@@ -77,7 +78,7 @@ export function BlogPostingJsonLd({
     publisher: {
       "@type": "Organization",
       name: siteConfig.company,
-      url: siteConfig.url,
+      url: siteConfig.companyUrl,
     },
   };
 
