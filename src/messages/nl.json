@@ -2,12 +2,38 @@
   "Meta": {
     "homeTitle": "Motivox — Garage software voor werkplaatsen",
     "homeDescription": "Eén systeem voor de hele job: intake, keuring, goedkeuring, werk op de vloer, uren, onderdelen en factuur — zonder iets over te typen.",
+    "homeKeywords": [
+      "garage software",
+      "werkplaats software",
+      "garage software Nederland",
+      "werkplaatsmanagement",
+      "monteurportaal",
+      "Motivox"
+    ],
     "featuresTitle": "Functies — Motivox",
     "featuresDescription": "Van keuring tot factuur: digitale offerte, monteurportaal, klantportaal, uren, onderdelen en Nederlandse factuur.",
+    "featuresKeywords": [
+      "garage software functies",
+      "digitaal keuringsrapport",
+      "werkorder software",
+      "klantportaal garage",
+      "urenregistratie werkplaats"
+    ],
     "pricingTitle": "Prijzen & abonnementen — Motivox",
     "pricingDescription": "30 dagen proefperiode. Daarna ZZP €35 of Garagebedrijf €80 per maand excl. BTW — via Stripe in Motivox.",
+    "pricingKeywords": [
+      "garage software prijs",
+      "werkplaats software kosten",
+      "garage software abonnement",
+      "ZZP garage software"
+    ],
     "aboutTitle": "Over ons — Motivox door Innovolabs B.V.",
     "aboutDescription": "Motivox is gebouwd door Innovolabs B.V. voor Nederlandse autoreparatiebedrijven — BTW, KvK, APK-herinneringen en kleinmateriaal.",
+    "aboutKeywords": [
+      "Innovolabs",
+      "Motivox",
+      "garage software Nederland"
+    ],
     "contactTitle": "Contact — Motivox",
     "contactDescription": "Neem contact op met vragen over Motivox. Voor een proefperiode meld je je aan in Motivox.",
     "privacyTitle": "Privacybeleid — Motivox",
@@ -15,7 +41,12 @@
     "termsTitle": "Algemene voorwaarden — Motivox",
     "termsDescription": "Voorwaarden voor het gebruik van Motivox, het garage-softwareproduct van Innovolabs B.V.",
     "blogTitle": "Blog — Motivox",
-    "blogDescription": "Artikelen over garage software, digitalisering en werkplaatsprocessen in Nederland."
+    "blogDescription": "Artikelen over garage software, digitalisering en werkplaatsprocessen in Nederland.",
+    "blogKeywords": [
+      "garage software blog",
+      "werkplaats digitaliseren",
+      "garage software Nederland"
+    ]
   },
   "Nav": {
     "features": "Functies",
@@ -85,6 +116,8 @@
     "portalTitle": "Goedkeuren, inplannen, volgen, betalen.",
     "portalBody": "De klant tekent de offerte, kiest daarna een afspraakslot (geen koude zelfboeking), volgt de reparatie en downloadt de factuur. Online betalen als jij Mollie of Tikkie hebt gekoppeld.",
     "portalImageAlt": "Technicus aan het werk in een garagewerkplaats",
+    "heroImageAlt": "Werkplaatsvloer van een Nederlandse garage — context voor Motivox garage software",
+    "ctaImageAlt": "Gereedschap en werkplaatsomgeving bij een autoreparatiebedrijf",
     "rolesEyebrow": "Drie rollen",
     "rolesFocus": "Kantoor, monteur en klant",
     "rolesSub": "Iedereen in hetzelfde systeem — met precies de tools die bij hun rol horen.",
@@ -94,12 +127,26 @@
     "roleTechBody": "Eigen webportaal: dashboard en planning, werkbon, keuring op de vloer, timer of handmatige uren, foto’s en video bij de regel.",
     "roleCustTitle": "Klant",
     "roleCustBody": "Offerte tekenen, slot kiezen ná akkoord, status volgen, factuur downloaden — via login of beveiligde link.",
+    "faqEyebrow": "Veelgestelde vragen",
+    "faqTitle": "Kort over Motivox",
+    "faq1Q": "Wat is Motivox?",
+    "faq1A": "Motivox is Nederlandse garage- en werkplaatssoftware (SaaS) van Innovolabs B.V. Eén systeem voor intake, keuring, goedkeuring, werk op de vloer, uren, onderdelen en factuur — zonder overtypen.",
+    "faq2Q": "Is er een proefperiode?",
+    "faq2A": "Ja. Na aanmelden krijg je 30 dagen proefperiode. Er is geen verplicht demogesprek; je start zelf via onboarding.",
+    "faq3Q": "Welke portalen zijn er?",
+    "faq3A": "Drie webportalen op één bron van waarheid: kantoor (backoffice), monteur en klant. Geen aparte native iOS- of Android-app.",
+    "faq4Q": "Wat kost het?",
+    "faq4A": "ZZP €35 of Garagebedrijf €80 per maand excl. BTW. Extra seats €4 per maand. Facturatie via Stripe met Nederlandse BTW-factuur.",
+    "faq5Q": "Hoe zit het met BTW en betalen?",
+    "faq5A": "Je Motivox-abonnement loopt via Stripe (iDEAL, SEPA of kaart); Stripe Tax voegt BTW toe. Klanten kunnen online betalen als jij Mollie of Tikkie koppelt.",
     "finalCtaTitle": "Klaar om de hele job in één systeem te zetten?",
     "finalCtaBody": "Meld je aan. Je krijgt een proefperiode, daarna onboarding met bedrijfsgegevens, tarieven en logo.",
     "finalCtaButton": "Proefperiode starten"
   },
   "Features": {
     "eyebrow": "Functies",
+    "heroImageAlt": "Heldere werkplaatsvloer — Motivox garage software voor intake tot factuur",
+    "floorImageAlt": "Monteurs aan het werk op de garagevloer",
     "title": "Alles wat de zaak nodig heeft",
     "intro": "Kantoor, monteur en klantportaal — één keten van intake tot factuur.",
     "storyTitle": "De Golf staat buiten. Remmen piepen.",

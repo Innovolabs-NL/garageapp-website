@@ -33,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const href of staticPaths) {
       entries.push({
         url: absoluteUrl(localePath(locale, href)),
-        lastModified: new Date("2026-08-10"),
+        lastModified: new Date(),
         changeFrequency: href === "/" || href === "/blog" ? "weekly" : "monthly",
         priority: staticPriority[href],
         alternates: {

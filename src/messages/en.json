@@ -2,12 +2,37 @@
   "Meta": {
     "homeTitle": "Motivox — Garage software for repair shops",
     "homeDescription": "One system for the whole job: intake, inspection, approval, work on the floor, hours, parts, and invoice — without retyping anything.",
+    "homeKeywords": [
+      "garage software",
+      "workshop software",
+      "auto repair shop software",
+      "technician portal",
+      "Motivox"
+    ],
     "featuresTitle": "Features — Motivox",
     "featuresDescription": "From inspection to invoice: digital quotes, technician portal, customer portal, hours, parts, and a Dutch invoice.",
+    "featuresKeywords": [
+      "garage software features",
+      "digital inspection report",
+      "work order software",
+      "customer portal garage",
+      "workshop time tracking"
+    ],
     "pricingTitle": "Pricing & plans — Motivox",
     "pricingDescription": "30-day trial. Then ZZP €35 or Garage €80 per month excl. VAT — billed via Stripe in Motivox.",
+    "pricingKeywords": [
+      "garage software pricing",
+      "workshop software cost",
+      "garage software subscription",
+      "solo garage software"
+    ],
     "aboutTitle": "About — Motivox by Innovolabs B.V.",
     "aboutDescription": "Motivox is built by Innovolabs B.V. for Dutch auto repair businesses — VAT, KvK, APK reminders, and consumables.",
+    "aboutKeywords": [
+      "Innovolabs",
+      "Motivox",
+      "Dutch garage software"
+    ],
     "contactTitle": "Contact — Motivox",
     "contactDescription": "Get in touch with questions about Motivox. To start a trial, sign up in Motivox.",
     "privacyTitle": "Privacy policy — Motivox",
@@ -15,7 +40,12 @@
     "termsTitle": "Terms of service — Motivox",
     "termsDescription": "Terms for using Motivox, the garage software product of Innovolabs B.V.",
     "blogTitle": "Blog — Motivox",
-    "blogDescription": "Articles on garage software, digitalization, and workshop workflows."
+    "blogDescription": "Articles on garage software, digitalization, and workshop workflows.",
+    "blogKeywords": [
+      "garage software blog",
+      "workshop digitalization",
+      "auto repair software"
+    ]
   },
   "Nav": {
     "features": "Features",
@@ -85,6 +115,8 @@
     "portalTitle": "Approve, book, track, pay.",
     "portalBody": "Customers sign the quote, then pick an appointment slot (no cold self-booking), follow the repair, and download the invoice. Online pay if you connected Mollie or Tikkie.",
     "portalImageAlt": "Technician working in a garage workshop",
+    "heroImageAlt": "Dutch auto repair shop floor — context for Motivox garage software",
+    "ctaImageAlt": "Tools and workshop environment at an auto repair shop",
     "rolesEyebrow": "Three roles",
     "rolesFocus": "Office, technician, and customer",
     "rolesSub": "Everyone works in one system — with exactly the tools their role needs.",
@@ -94,12 +126,26 @@
     "roleTechBody": "Own web portal: dashboard and schedule, work order, inspection on the floor, timer or manual hours, photos and video on the line.",
     "roleCustTitle": "Customer",
     "roleCustBody": "Sign the quote, pick a slot after approval, follow status, download the invoice — via login or a secure link.",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Motivox in short",
+    "faq1Q": "What is Motivox?",
+    "faq1A": "Motivox is Dutch-first garage workshop software (SaaS) by Innovolabs B.V. One system for intake, inspection, approval, shop-floor work, hours, parts, and invoice — without retyping.",
+    "faq2Q": "Is there a trial?",
+    "faq2A": "Yes. After sign-up you get a 30-day trial. No mandatory demo call — you start yourself via onboarding.",
+    "faq3Q": "Which portals are included?",
+    "faq3A": "Three web portals on one source of truth: back office, technician, and customer. There is no separate native iOS or Android app.",
+    "faq4Q": "What does it cost?",
+    "faq4A": "ZZP €35 or Garage €80 per month excl. VAT. Extra seats €4 per month. Billing via Stripe with a Dutch VAT invoice.",
+    "faq5Q": "How do VAT and payments work?",
+    "faq5A": "Your Motivox subscription runs through Stripe (iDEAL, SEPA, or card); Stripe Tax adds VAT. Customers can pay online if you connect Mollie or Tikkie.",
     "finalCtaTitle": "Ready to run the whole job in one system?",
     "finalCtaBody": "Sign up. You get a trial, then onboarding with company details, rates, and logo.",
     "finalCtaButton": "Start trial"
   },
   "Features": {
     "eyebrow": "Features",
+    "heroImageAlt": "Bright shop floor — Motivox garage software from intake to invoice",
+    "floorImageAlt": "Technicians working on the garage floor",
     "title": "Everything the shop needs",
     "intro": "Office, technician, and customer portal — one chain from intake to invoice.",
     "storyTitle": "The Golf is outside. Brakes squeal.",

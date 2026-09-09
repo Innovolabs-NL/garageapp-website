@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FadeUp } from "@/components/FadeUp";
 import { AppLink } from "@/components/AppLink";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import { PageHero, PageWrap } from "@/components/PageHero";
-import { buildPageMetadata } from "@/lib/seo";
+import { absoluteUrl, buildPageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -16,6 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t("aboutTitle"),
     description: t("aboutDescription"),
     href: "/about",
+    keywords: t.raw("aboutKeywords") as string[],
   });
 }
 
@@ -23,9 +25,20 @@ export default async function AboutPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("About");
+  const tNav = await getTranslations("Nav");
+  const homeLabel = locale === "nl" ? "Start" : "Home";
 
   return (
     <PageWrap>
+      <BreadcrumbJsonLd
+        items={[
+          { name: homeLabel, url: absoluteUrl(`/${locale}`) },
+          {
+            name: tNav("about"),
+            url: absoluteUrl(locale === "nl" ? "/nl/over-ons" : "/en/about"),
+          },
+        ]}
+      />
       <FadeUp>
         <PageHero title={t("title")} intro={t("intro")} />
       </FadeUp>

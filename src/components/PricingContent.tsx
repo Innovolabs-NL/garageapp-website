@@ -6,12 +6,13 @@ import { Link } from "@/i18n/navigation";
 import { FadeUp } from "@/components/FadeUp";
 import { AppLink } from "@/components/AppLink";
 import { HomeCta } from "@/components/home/HomeCta";
+import { siteConfig } from "@/lib/site";
 
 /** Matches Motivox Stripe plans (excl. VAT). */
 const plans = [
   {
     id: "zzp" as const,
-    price: 35,
+    price: siteConfig.pricing.zzpMonthly,
     featured: false,
     features: [
       "zzpFeatSeats",
@@ -23,7 +24,7 @@ const plans = [
   },
   {
     id: "garage" as const,
-    price: 80,
+    price: siteConfig.pricing.garageMonthly,
     featured: true,
     features: [
       "garageFeatSeats",

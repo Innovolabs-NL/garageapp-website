@@ -24,6 +24,14 @@ export const siteConfig = {
   loginUrl: `${appUrl}/Identity/Account/Login`,
   contactEmail:
     process.env.CONTACT_TO_EMAIL?.trim() || "hello@innovolabs.nl",
+  /** Stripe plan prices excl. VAT — keep in sync with PricingContent. */
+  pricing: {
+    currency: "EUR",
+    zzpMonthly: 35,
+    garageMonthly: 80,
+    extraSeatMonthly: 4,
+    trialDays: 30,
+  },
   /** Workshop photography — replace with owned shots when available */
   images: {
     hero: "https://images.unsplash.com/photo-1727893119356-1702fe921cf9?auto=format&fit=crop&w=2400&q=80",

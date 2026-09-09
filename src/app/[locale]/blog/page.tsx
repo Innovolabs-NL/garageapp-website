@@ -16,6 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t("blogTitle"),
     description: t("blogDescription"),
     href: "/blog",
+    keywords: t.raw("blogKeywords") as string[],
   });
 }
 

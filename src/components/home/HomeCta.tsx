@@ -15,7 +15,7 @@ export function HomeCta() {
       <div className="absolute inset-0 z-0">
         <Image
           src={siteConfig.images.tools}
-          alt=""
+          alt={t("ctaImageAlt")}
           fill
           sizes="100vw"
           className="object-cover object-center opacity-45"

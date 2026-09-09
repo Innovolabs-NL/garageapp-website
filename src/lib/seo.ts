@@ -28,6 +28,13 @@ export function languageAlternates(href: AppHref): Record<string, string> {
   return languages;
 }
 
+const defaultOgImage = {
+  url: "/opengraph-image",
+  width: 1200,
+  height: 630,
+  alt: `${siteConfig.name} — garage software`,
+} as const;
+
 export function buildPageMetadata(opts: {
   locale: string;
   title: string;
@@ -51,11 +58,13 @@ export function buildPageMetadata(opts: {
       siteName: siteConfig.name,
       locale: opts.locale === "nl" ? "nl_NL" : "en_US",
       type: "website",
+      images: [defaultOgImage],
     },
     twitter: {
       card: "summary_large_image",
       title: opts.title,
       description: opts.description,
+      images: [defaultOgImage.url],
     },
   };
 }
@@ -116,12 +125,14 @@ export function buildBlogPostMetadata(opts: {
       siteName: siteConfig.name,
       locale: opts.locale === "nl" ? "nl_NL" : "en_US",
       type: "article",
+      images: [defaultOgImage],
       ...(opts.publishedTime ? { publishedTime: opts.publishedTime } : {}),
     },
     twitter: {
       card: "summary_large_image",
       title: opts.title,
       description: opts.description,
+      images: [defaultOgImage.url],
     },
   };
 }

@@ -82,7 +82,7 @@ export function FeaturesGrid() {
         <div className="absolute inset-0 z-0">
           <Image
             src={siteConfig.images.featuresHero}
-            alt=""
+            alt={t("heroImageAlt")}
             fill
             priority
             sizes="100vw"
@@ -240,7 +240,7 @@ export function FeaturesGrid() {
                   <div className="relative aspect-[16/10] overflow-hidden rounded-xl border border-border">
                     <Image
                       src={beat.image}
-                      alt=""
+                      alt={t("floorImageAlt")}
                       fill
                       sizes="(max-width: 1024px) 100vw, 58vw"
                       className="object-cover"

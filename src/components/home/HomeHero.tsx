@@ -17,7 +17,7 @@ export function HomeHero() {
       <div className="absolute inset-0 z-0">
         <Image
           src={siteConfig.images.hero}
-          alt=""
+          alt={t("heroImageAlt")}
           fill
           priority
           sizes="100vw"

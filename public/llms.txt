@@ -1,0 +1,56 @@
+# Motivox
+
+> Motivox is Dutch-first garage workshop software (SaaS) by Innovolabs B.V. One system for the full job: intake, inspection, customer approval, shop-floor work, hours, parts, and invoice — without retyping.
+
+Motivox replaces fragmented Excel/Access/email workflows for auto repair shops in the Netherlands. It is web-based (office, technician, and customer portals) — not a separate native iOS/Android app.
+
+## Product
+
+- [Home (NL)](https://www.motivox.nl/nl): Primary Dutch landing page
+- [Home (EN)](https://www.motivox.nl/en): English landing page
+- [Features (NL)](https://www.motivox.nl/nl/functies): Full product capabilities
+- [Features (EN)](https://www.motivox.nl/en/features): Full product capabilities
+- [Pricing (NL)](https://www.motivox.nl/nl/prijzen): Plans, trial, billing FAQ
+- [Pricing (EN)](https://www.motivox.nl/en/pricing): Plans, trial, billing FAQ
+
+## Company
+
+- [About (NL)](https://www.motivox.nl/nl/over-ons): About Motivox / Innovolabs B.V. (KvK 97588911)
+- [About (EN)](https://www.motivox.nl/en/about): About Motivox / Innovolabs B.V.
+- [Contact](https://www.motivox.nl/nl/contact): Contact form
+- [Innovolabs](https://innovolabs.nl): Parent company
+
+## Blog (citations)
+
+- [Blog index (NL)](https://www.motivox.nl/nl/blog)
+- [Blog index (EN)](https://www.motivox.nl/en/blog)
+- [Van Excel naar één systeem](https://www.motivox.nl/nl/blog/garage-software-nederland-excel)
+- [From Excel to one system](https://www.motivox.nl/en/blog/garage-software-from-excel)
+- [Checklist digitalisering](https://www.motivox.nl/nl/blog/checklist-digitalisering-garage)
+- [Digitizing checklist](https://www.motivox.nl/en/blog/checklist-digitizing-garage)
+- [Digitaal keuringsrapport](https://www.motivox.nl/nl/blog/digitaal-keuringsrapport)
+- [Digital inspection reports](https://www.motivox.nl/en/blog/digital-inspection-reports)
+- [Facturatie van uren naar PDF](https://www.motivox.nl/nl/blog/facturatie-garage-uren-pdf)
+- [Invoicing hours to PDF](https://www.motivox.nl/en/blog/garage-invoicing-hours-pdf)
+- [Klantportaal status en facturen](https://www.motivox.nl/nl/blog/klantportaal-status-facturen)
+- [Customer portal status](https://www.motivox.nl/en/blog/customer-portal-status-invoices)
+- [Werkorders en urenregistratie](https://www.motivox.nl/nl/blog/werkorders-urenregistratie)
+- [Work orders and time tracking](https://www.motivox.nl/en/blog/work-orders-time-tracking)
+- [Wat kost garage software](https://www.motivox.nl/nl/blog/wat-kost-garage-software)
+- [What does garage software cost](https://www.motivox.nl/en/blog/what-does-garage-software-cost)
+- [Werkplaats software kiezen](https://www.motivox.nl/nl/blog/werkplaats-software-kiezen)
+- [Choosing workshop software](https://www.motivox.nl/en/blog/choosing-workshop-software)
+
+## Legal
+
+- [Privacy (NL)](https://www.motivox.nl/nl/privacy)
+- [Terms (NL)](https://www.motivox.nl/nl/terms)
+
+## App
+
+- [Sign up / trial](https://app.motivox.nl/Identity/Account/Register): 30-day trial after registration
+- [Log in](https://app.motivox.nl/Identity/Account/Login)
+
+## Optional
+
+- [Full product summary for LLMs](https://www.motivox.nl/llms-full.txt)

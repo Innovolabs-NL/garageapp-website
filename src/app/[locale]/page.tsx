@@ -13,6 +13,7 @@ import { FeatureGrid } from "@/components/FeatureGrid";
 import { HomeHero } from "@/components/home/HomeHero";
 import { HomeBayBoard } from "@/components/home/HomeBayBoard";
 import { HomeCta } from "@/components/home/HomeCta";
+import { FaqJsonLd } from "@/components/JsonLd";
 import { siteConfig } from "@/lib/site";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -26,11 +27,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t("homeTitle"),
     description: t("homeDescription"),
     href: "/",
+    keywords: t.raw("homeKeywords") as string[],
   });
 }
 
 const stepIcons = [Wrench, FileSignature, Receipt] as const;
 const roleIcons = [Car, Wrench, ClipboardCheck] as const;
+
+const homeFaqs = [
+  ["faq1Q", "faq1A"],
+  ["faq2Q", "faq2A"],
+  ["faq3Q", "faq3A"],
+  ["faq4Q", "faq4A"],
+  ["faq5Q", "faq5A"],
+] as const;
 
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
@@ -43,8 +53,14 @@ export default async function HomePage({ params }: Props) {
     { title: t("roleCustTitle"), body: t("roleCustBody"), Icon: roleIcons[2] },
   ] as const;
 
+  const faqItems = homeFaqs.map(([q, a]) => ({
+    question: t(q),
+    answer: t(a),
+  }));
+
   return (
     <>
+      <FaqJsonLd items={faqItems} />
       <HomeHero />
       <HomeBayBoard />
       <FeatureGrid eyebrow={t("gridEyebrow")} title={t("gridTitle")} />
@@ -136,6 +152,31 @@ export default async function HomePage({ params }: Props) {
               className="object-cover object-center"
             />
           </FadeUp>
+        </div>
+      </section>
+
+      <section className="border-t border-border bg-surface/60 py-20 sm:py-24">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <FadeUp>
+            <p className="eyebrow">{t("faqEyebrow")}</p>
+            <h2 className="mt-5 font-display text-3xl font-bold tracking-[-0.02em] text-foreground">
+              {t("faqTitle")}
+            </h2>
+          </FadeUp>
+          <dl className="mt-10">
+            {homeFaqs.map(([q, a], i) => (
+              <FadeUp key={q} delay={i * 0.03}>
+                <div className="rule py-6">
+                  <dt className="font-display text-lg font-semibold tracking-tight text-foreground">
+                    {t(q)}
+                  </dt>
+                  <dd className="mt-2 text-base leading-relaxed text-muted">
+                    {t(a)}
+                  </dd>
+                </div>
+              </FadeUp>
+            ))}
+          </dl>
         </div>
       </section>
 

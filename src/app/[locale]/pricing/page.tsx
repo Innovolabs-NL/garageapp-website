@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { FaqJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/JsonLd";
 import { PricingContent } from "@/components/PricingContent";
-import { buildPageMetadata } from "@/lib/seo";
+import { absoluteUrl, buildPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -14,6 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t("pricingTitle"),
     description: t("pricingDescription"),
     href: "/pricing",
+    keywords: t.raw("pricingKeywords") as string[],
   });
 }
 
@@ -21,9 +22,20 @@ export default async function PricingPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Pricing");
+  const tNav = await getTranslations("Nav");
+  const homeLabel = locale === "nl" ? "Start" : "Home";
 
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: homeLabel, url: absoluteUrl(`/${locale}`) },
+          {
+            name: tNav("pricing"),
+            url: absoluteUrl(locale === "nl" ? "/nl/prijzen" : "/en/pricing"),
+          },
+        ]}
+      />
       <FaqJsonLd
         items={[
           { question: t("faq1Q"), answer: t("faq1A") },
