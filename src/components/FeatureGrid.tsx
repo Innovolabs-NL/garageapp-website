@@ -38,22 +38,22 @@ export function FeatureGrid({
   const t = useTranslations("Features");
 
   return (
-    <section className="border-b border-border py-20 sm:py-28">
+    <section className="border-b border-border py-14 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <FadeUp>
           <p className="eyebrow">{eyebrow}</p>
-          <h2 className="mt-5 max-w-2xl font-display text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
+          <h2 className="mt-5 max-w-2xl font-display text-[clamp(1.75rem,6vw,2.25rem)] font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
             {title}
           </h2>
         </FadeUp>
-        <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        <ul className="mt-10 grid grid-cols-1 gap-3 sm:mt-12 sm:grid-cols-2 sm:gap-4 lg:grid-cols-5">
           {items.map((item, i) => (
             <FadeUp key={item.key} delay={i * 0.03}>
-              <li className="card-surface flex h-full flex-col gap-4 rounded-xl p-5">
+              <li className="card-surface flex h-full flex-col gap-3 rounded-xl p-4 sm:gap-4 sm:p-5">
                 <span className="icon-bay">
                   <item.Icon size={18} aria-hidden />
                 </span>
-                <p className="font-display text-base font-semibold leading-snug tracking-tight text-foreground">
+                <p className="font-display text-[0.95rem] font-semibold leading-snug tracking-tight text-foreground sm:text-base">
                   {t(item.key)}
                 </p>
               </li>

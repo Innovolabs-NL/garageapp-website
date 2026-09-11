@@ -15,7 +15,7 @@ export function LanguageToggle() {
   return (
     <button
       type="button"
-      className="rounded-lg border border-border bg-surface px-2.5 py-1.5 text-xs font-semibold uppercase tracking-wide text-muted transition-colors hover:border-border-strong hover:text-foreground"
+      className="min-h-11 rounded-lg border border-border bg-surface px-3 py-2 text-xs font-semibold uppercase tracking-wide text-muted transition-colors hover:border-border-strong hover:text-foreground sm:min-h-0 sm:px-2.5 sm:py-1.5"
       onClick={() => {
         router.replace(
           { pathname, params } as Parameters<typeof router.replace>[0],

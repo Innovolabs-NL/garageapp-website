@@ -36,7 +36,7 @@ export function ContactForm() {
   }
 
   const field =
-    "w-full rounded-lg border border-border bg-surface px-3.5 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-[3px] focus:ring-primary/20";
+    "w-full rounded-lg border border-border bg-surface px-3.5 py-3 text-base text-foreground outline-none transition-colors focus:border-primary focus:ring-[3px] focus:ring-primary/20 sm:py-2.5 sm:text-sm";
 
   return (
     <div>

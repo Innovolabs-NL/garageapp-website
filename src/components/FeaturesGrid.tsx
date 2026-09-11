@@ -91,19 +91,19 @@ export function FeaturesGrid() {
           <div className="hero-media__shade" aria-hidden />
         </div>
 
-        <div className="relative z-10 mx-auto flex min-h-[72vh] max-w-6xl flex-col justify-end px-4 pb-16 pt-28 sm:px-6 sm:pb-24">
+        <div className="relative z-10 mx-auto flex min-h-[min(100svh,640px)] max-w-6xl flex-col justify-end px-4 pb-12 pt-24 sm:min-h-[72vh] sm:px-6 sm:pb-24 sm:pt-28">
           <p className="eyebrow">{t("eyebrow")}</p>
-          <h1 className="mt-6 max-w-4xl font-display text-[clamp(2.75rem,7.5vw,5.5rem)] font-bold leading-[0.98] tracking-[-0.03em] text-foreground">
+          <h1 className="mt-5 max-w-4xl font-display text-[clamp(2.15rem,8vw,5.5rem)] font-bold leading-[1.02] tracking-[-0.03em] text-foreground sm:mt-6 sm:leading-[0.98]">
             {t("storyTitle")}
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted sm:text-xl">
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-muted sm:mt-6 sm:text-xl">
             {t("storyIntro")}
           </p>
 
-          <div className="mt-10 flex flex-wrap items-end gap-5">
+          <div className="mt-8 flex flex-wrap items-end gap-4 sm:mt-10 sm:gap-5">
             <Kenteken code={PLATE} />
             <div>
-              <p className="font-display text-lg font-semibold text-foreground">
+              <p className="font-display text-base font-semibold text-foreground sm:text-lg">
                 {t("storyVehicle")}
               </p>
               <p className="text-sm text-muted">{t("storyJob")}</p>
@@ -119,18 +119,18 @@ export function FeaturesGrid() {
             key={beat.n}
             className={`border-b border-border ${flip ? "bg-surface" : ""}`}
           >
-            <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-24 sm:px-6 sm:py-32 lg:grid-cols-12 lg:gap-10">
+            <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-16 sm:gap-12 sm:px-6 sm:py-32 lg:grid-cols-12 lg:gap-10">
               <FadeUp className={`lg:col-span-5 ${flip ? "lg:order-2" : ""}`}>
-                <p className="font-display text-6xl font-bold leading-none text-subtle sm:text-7xl">
+                <p className="font-display text-5xl font-bold leading-none text-subtle sm:text-7xl">
                   {beat.n}
                 </p>
-                <h2 className="mt-8 font-display text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-5xl">
+                <h2 className="mt-6 font-display text-[clamp(1.75rem,6vw,3rem)] font-bold tracking-[-0.02em] text-foreground sm:mt-8 sm:text-5xl">
                   {t(beat.title)}
                 </h2>
-                <p className="mt-6 max-w-md text-lg leading-relaxed text-muted">
+                <p className="mt-4 max-w-md text-base leading-relaxed text-muted sm:mt-6 sm:text-lg">
                   {t(beat.body)}
                 </p>
-                <p className="mt-8 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+                <p className="mt-6 text-xs font-semibold uppercase tracking-[0.16em] text-accent sm:mt-8">
                   {t(beat.status)}
                 </p>
               </FadeUp>
@@ -140,7 +140,7 @@ export function FeaturesGrid() {
                 className={`lg:col-span-7 ${flip ? "lg:order-1" : ""}`}
               >
                 {beat.kind === "inspect" ? (
-                  <div className="card-surface relative overflow-hidden rounded-xl p-8 sm:p-10">
+                  <div className="card-surface relative overflow-hidden rounded-xl p-5 sm:p-10">
                     <div
                       className="pointer-events-none absolute inset-0 garage-texture"
                       aria-hidden
@@ -150,7 +150,7 @@ export function FeaturesGrid() {
                         <Kenteken code={PLATE} />
                         <span className="bay-chip">{t("draftChip")}</span>
                       </div>
-                      <p className="mt-8 font-display text-2xl font-semibold text-foreground">
+                      <p className="mt-6 font-display text-xl font-semibold text-foreground sm:mt-8 sm:text-2xl">
                         {t("inspectCardTitle")}
                       </p>
                       <ul className="mt-5 space-y-3 text-sm">
@@ -163,7 +163,7 @@ export function FeaturesGrid() {
                         ).map(([line, status, tone]) => (
                           <li
                             key={line}
-                            className="flex items-baseline justify-between gap-4 border-b border-border pb-2 text-muted last:border-0"
+                            className="flex flex-col gap-1 border-b border-border pb-2 text-muted last:border-0 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4"
                           >
                             <span>{t(line)}</span>
                             <span
@@ -174,13 +174,13 @@ export function FeaturesGrid() {
                           </li>
                         ))}
                       </ul>
-                      <p className="mt-8 text-xs font-semibold uppercase tracking-[0.16em] text-muted">
+                      <p className="mt-6 text-xs font-semibold uppercase tracking-[0.16em] text-muted sm:mt-8">
                         {t(beat.status)}
                       </p>
                     </div>
                   </div>
                 ) : beat.kind === "plan" ? (
-                  <div className="card-surface relative overflow-hidden rounded-xl p-8 sm:p-10">
+                  <div className="card-surface relative overflow-hidden rounded-xl p-5 sm:p-10">
                     <div
                       className="pointer-events-none absolute inset-0 garage-texture"
                       aria-hidden
@@ -192,7 +192,7 @@ export function FeaturesGrid() {
                           <PenLine size={18} aria-hidden />
                         </span>
                       </div>
-                      <p className="mt-8 font-display text-2xl font-semibold text-foreground">
+                      <p className="mt-6 font-display text-xl font-semibold text-foreground sm:mt-8 sm:text-2xl">
                         {t("planCardTitle")}
                       </p>
                       <ul className="mt-5 space-y-2 text-sm text-muted">
@@ -200,7 +200,7 @@ export function FeaturesGrid() {
                         <li>— {t("planLine2")}</li>
                         <li>— {t("planLine3")}</li>
                       </ul>
-                      <div className="mt-8 flex flex-wrap items-center gap-3">
+                      <div className="mt-6 flex flex-wrap items-center gap-3 sm:mt-8">
                         <span className="icon-bay">
                           <FileText size={18} aria-hidden />
                         </span>
@@ -211,15 +211,15 @@ export function FeaturesGrid() {
                     </div>
                   </div>
                 ) : beat.kind === "timer" ? (
-                  <div className="card-surface relative overflow-hidden rounded-xl p-8 sm:p-10">
+                  <div className="card-surface relative overflow-hidden rounded-xl p-5 sm:p-10">
                     <div
                       className="pointer-events-none absolute inset-0 garage-texture"
                       aria-hidden
                     />
-                    <div className="relative flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
                       <div>
                         <Kenteken code={PLATE} />
-                        <p className="mt-6 font-display text-2xl font-semibold text-foreground">
+                        <p className="mt-5 font-display text-xl font-semibold text-foreground sm:mt-6 sm:text-2xl">
                           {t("storyVehicle")}
                         </p>
                         <p className="mt-1 text-muted">{t("storyJob")}</p>
@@ -229,10 +229,10 @@ export function FeaturesGrid() {
                         <span className="icon-bay">
                           <Clock size={18} aria-hidden />
                         </span>
-                        <LiveTimer className="font-display text-4xl font-bold tabular-nums text-foreground sm:text-5xl" />
+                        <LiveTimer className="font-display text-3xl font-bold tabular-nums text-foreground sm:text-5xl" />
                       </div>
                     </div>
-                    <p className="relative mt-8 text-xs font-semibold uppercase tracking-[0.16em] text-success">
+                    <p className="relative mt-6 text-xs font-semibold uppercase tracking-[0.16em] text-success sm:mt-8">
                       {t(beat.status)}
                     </p>
                   </div>
@@ -245,7 +245,7 @@ export function FeaturesGrid() {
                       sizes="(max-width: 1024px) 100vw, 58vw"
                       className="object-cover"
                     />
-                    <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-3 bg-gradient-to-t from-black/80 to-transparent p-5">
+                    <div className="absolute inset-x-0 bottom-0 flex flex-wrap items-center justify-between gap-3 bg-gradient-to-t from-black/80 to-transparent p-4 sm:p-5">
                       <Kenteken code={PLATE} />
                       <span className="text-xs font-semibold uppercase tracking-[0.14em] text-white/80">
                         {t(beat.status)}
@@ -261,15 +261,15 @@ export function FeaturesGrid() {
 
       <FeatureGrid eyebrow={t("gridEyebrow")} title={t("gridTitle")} />
 
-      <section className="border-b border-border bg-surface py-20 sm:py-28">
+      <section className="border-b border-border bg-surface py-14 sm:py-28">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <FadeUp>
             <p className="eyebrow">{t("audienceEyebrow")}</p>
-            <h2 className="mt-5 max-w-3xl font-display text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
+            <h2 className="mt-5 max-w-3xl font-display text-[clamp(1.75rem,6vw,2.25rem)] font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
               {t("audienceTitle")}
             </h2>
           </FadeUp>
-          <div className="mt-14 grid gap-10 lg:grid-cols-3 lg:gap-8">
+          <div className="mt-10 grid gap-8 lg:mt-14 lg:grid-cols-3 lg:gap-8">
             {(
               [
                 ["officeTitle", officeItems],
@@ -302,7 +302,7 @@ export function FeaturesGrid() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden border-b border-border py-20 sm:py-28">
+      <section className="relative overflow-hidden border-b border-border py-14 sm:py-28">
         <div
           className="pointer-events-none absolute inset-0 garage-texture"
           aria-hidden
@@ -311,14 +311,14 @@ export function FeaturesGrid() {
           <FadeUp>
             <p className="eyebrow">{t("integrationsEyebrow")}</p>
             <div className="mt-5 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-              <h2 className="max-w-xl font-display text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
+              <h2 className="max-w-xl font-display text-[clamp(1.75rem,6vw,2.25rem)] font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
                 {t("integrationsTitle")}
               </h2>
               <span className="icon-bay shrink-0">
                 <Plug size={18} aria-hidden />
               </span>
             </div>
-            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
               {t("integrationsBody")}
             </p>
           </FadeUp>

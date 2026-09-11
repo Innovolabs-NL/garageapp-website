@@ -8,6 +8,7 @@ import {
   Receipt,
   Wrench,
 } from "lucide-react";
+import { AppLink } from "@/components/AppLink";
 import { FadeUp } from "@/components/FadeUp";
 import { FeatureGrid } from "@/components/FeatureGrid";
 import { HomeHero } from "@/components/home/HomeHero";
@@ -65,16 +66,16 @@ export default async function HomePage({ params }: Props) {
       <HomeBayBoard />
       <FeatureGrid eyebrow={t("gridEyebrow")} title={t("gridTitle")} />
 
-      <section className="py-20 sm:py-28">
+      <section className="py-14 sm:py-28">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <FadeUp>
             <p className="eyebrow">{t("howTitle")}</p>
-            <h2 className="mt-5 max-w-2xl font-display text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-5xl">
+            <h2 className="mt-5 max-w-2xl font-display text-[clamp(1.75rem,6vw,3rem)] font-bold tracking-[-0.02em] text-foreground sm:text-5xl">
               {t("howSub")}
             </h2>
           </FadeUp>
 
-          <ol className="mt-14">
+          <ol className="mt-10 sm:mt-14">
             {(
               [
                 ["step1Title", "step1Body"],
@@ -85,7 +86,7 @@ export default async function HomePage({ params }: Props) {
               const Icon = stepIcons[i];
               return (
                 <FadeUp key={titleKey} delay={i * 0.05}>
-                  <li className="rule grid gap-4 py-9 md:grid-cols-[7rem_18rem_1fr] md:gap-8">
+                  <li className="rule grid gap-3 py-7 md:grid-cols-[7rem_18rem_1fr] md:gap-8 md:py-9">
                     <div className="flex items-center gap-3 md:block">
                       <p className="font-display text-4xl font-bold leading-none text-subtle sm:text-5xl">
                         0{i + 1}
@@ -106,17 +107,17 @@ export default async function HomePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="border-y border-border bg-surface py-20 sm:py-28">
+      <section className="border-y border-border bg-surface py-14 sm:py-28">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <FadeUp>
             <p className="eyebrow">{t("rolesEyebrow")}</p>
-            <h2 className="mt-5 max-w-2xl font-display text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-5xl">
+            <h2 className="mt-5 max-w-2xl font-display text-[clamp(1.75rem,6vw,3rem)] font-bold tracking-[-0.02em] text-foreground sm:text-5xl">
               {t("rolesFocus")}
             </h2>
-            <p className="mt-5 max-w-xl text-lg">{t("rolesSub")}</p>
+            <p className="mt-4 max-w-xl text-base sm:mt-5 sm:text-lg">{t("rolesSub")}</p>
           </FadeUp>
 
-          <div className="mt-14 grid gap-10 md:grid-cols-3 md:gap-8">
+          <div className="mt-10 grid gap-8 md:mt-14 md:grid-cols-3 md:gap-8">
             {roles.map((role, i) => (
               <FadeUp key={role.title} delay={i * 0.05}>
                 <article className="rule pt-6">
@@ -134,14 +135,17 @@ export default async function HomePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="py-20 sm:py-28">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16">
+      <section className="py-14 sm:py-28">
+        <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 sm:gap-10 sm:px-6 lg:grid-cols-2 lg:gap-16">
           <FadeUp>
             <p className="eyebrow">{t("portalEyebrow")}</p>
-            <h2 className="mt-5 font-display text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-5xl">
+            <h2 className="mt-5 font-display text-[clamp(1.75rem,6vw,3rem)] font-bold tracking-[-0.02em] text-foreground sm:text-5xl">
               {t("portalTitle")}
             </h2>
-            <p className="mt-6 text-lg leading-relaxed">{t("portalBody")}</p>
+            <p className="mt-5 text-base leading-relaxed sm:mt-6 sm:text-lg">{t("portalBody")}</p>
+            <AppLink href="portal" className="btn-primary mt-7 w-full sm:mt-8 sm:w-auto">
+              {t("portalCta")}
+            </AppLink>
           </FadeUp>
           <FadeUp delay={0.08} className="relative aspect-[4/3] overflow-hidden rounded-xl border border-border">
             <Image
@@ -155,22 +159,22 @@ export default async function HomePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="border-t border-border bg-surface/60 py-20 sm:py-24">
+      <section className="border-t border-border bg-surface/60 py-14 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
           <FadeUp>
             <p className="eyebrow">{t("faqEyebrow")}</p>
-            <h2 className="mt-5 font-display text-3xl font-bold tracking-[-0.02em] text-foreground">
+            <h2 className="mt-5 font-display text-[clamp(1.75rem,6vw,2.25rem)] font-bold tracking-[-0.02em] text-foreground">
               {t("faqTitle")}
             </h2>
           </FadeUp>
-          <dl className="mt-10">
+          <dl className="mt-8 sm:mt-10">
             {homeFaqs.map(([q, a], i) => (
               <FadeUp key={q} delay={i * 0.03}>
-                <div className="rule py-6">
-                  <dt className="font-display text-lg font-semibold tracking-tight text-foreground">
+                <div className="rule py-5 sm:py-6">
+                  <dt className="font-display text-base font-semibold tracking-tight text-foreground sm:text-lg">
                     {t(q)}
                   </dt>
-                  <dd className="mt-2 text-base leading-relaxed text-muted">
+                  <dd className="mt-2 text-sm leading-relaxed text-muted sm:text-base">
                     {t(a)}
                   </dd>
                 </div>

@@ -11,10 +11,10 @@ export async function Footer() {
 
   return (
     <footer className="mt-auto border-t border-border bg-surface">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-4">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 sm:py-14 md:grid-cols-4">
         <div className="md:col-span-2">
           <Link href="/" aria-label="Motivox" className="inline-flex">
-            <BrandLogo className="h-10 w-auto" />
+            <BrandLogo className="h-9 w-auto sm:h-10" />
           </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
             {t("tagline")}
@@ -41,73 +41,80 @@ export async function Footer() {
           </p>
         </div>
 
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-subtle">
-            {t("product")}
-          </p>
-          <ul className="mt-4 space-y-2.5 text-sm text-muted">
-            <li>
-              <Link href="/features" className="transition-colors hover:text-foreground">
-                {nav("features")}
-              </Link>
-            </li>
-            <li>
-              <Link href="/pricing" className="transition-colors hover:text-foreground">
-                {nav("pricing")}
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog" className="transition-colors hover:text-foreground">
-                {nav("blog")}
-              </Link>
-            </li>
-            <li>
-              <AppLink href="login" className="transition-colors hover:text-foreground">
-                {nav("login")}
-              </AppLink>
-            </li>
-            <li>
-              <AppLink href="register" className="transition-colors hover:text-foreground">
-                {nav("cta")}
-              </AppLink>
-            </li>
-          </ul>
-        </div>
+        <div className="grid grid-cols-2 gap-8 sm:gap-10 md:contents">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-subtle">
+              {t("product")}
+            </p>
+            <ul className="mt-4 space-y-2.5 text-sm text-muted">
+              <li>
+                <Link href="/features" className="transition-colors hover:text-foreground">
+                  {nav("features")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/pricing" className="transition-colors hover:text-foreground">
+                  {nav("pricing")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="transition-colors hover:text-foreground">
+                  {nav("blog")}
+                </Link>
+              </li>
+              <li>
+                <AppLink href="login" className="transition-colors hover:text-foreground">
+                  {nav("login")}
+                </AppLink>
+              </li>
+              <li>
+                <AppLink href="portal" className="transition-colors hover:text-foreground">
+                  {nav("customerPortal")}
+                </AppLink>
+              </li>
+              <li>
+                <AppLink href="register" className="transition-colors hover:text-foreground">
+                  {nav("cta")}
+                </AppLink>
+              </li>
+            </ul>
+          </div>
 
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-subtle">
-            {t("company")}
-          </p>
-          <ul className="mt-4 space-y-2.5 text-sm text-muted">
-            <li>
-              <Link href="/about" className="transition-colors hover:text-foreground">
-                {nav("about")}
-              </Link>
-            </li>
-            <li>
-              <a
-                href={siteConfig.companyUrl}
-                className="transition-colors hover:text-foreground"
-              >
-                Innovolabs
-              </a>
-            </li>
-            <li>
-              <Link href="/contact" className="transition-colors hover:text-foreground">
-                {nav("contact")}
-              </Link>
-            </li>
-            <li>
-              <Link href="/privacy" className="transition-colors hover:text-foreground">
-                {nav("privacy")}
-              </Link>
-            </li>
-            <li>
-              <Link href="/terms" className="transition-colors hover:text-foreground">
-                {nav("terms")}
-              </Link>
-            </li>
-          </ul>
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-subtle">
+              {t("company")}
+            </p>
+            <ul className="mt-4 space-y-2.5 text-sm text-muted">
+              <li>
+                <Link href="/about" className="transition-colors hover:text-foreground">
+                  {nav("about")}
+                </Link>
+              </li>
+              <li>
+                <a
+                  href={siteConfig.companyUrl}
+                  className="transition-colors hover:text-foreground"
+                >
+                  Innovolabs
+                </a>
+              </li>
+              <li>
+                <Link href="/contact" className="transition-colors hover:text-foreground">
+                  {nav("contact")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy" className="transition-colors hover:text-foreground">
+                  {nav("privacy")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="transition-colors hover:text-foreground">
+                  {nav("terms")}
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

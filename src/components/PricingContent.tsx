@@ -60,12 +60,12 @@ export function PricingContent() {
   return (
     <>
       <section className="border-b border-border">
-        <div className="mx-auto max-w-6xl px-4 pb-12 pt-28 text-center sm:px-6 sm:pb-16 sm:pt-36">
+        <div className="mx-auto max-w-6xl px-4 pb-10 pt-24 text-center sm:px-6 sm:pb-16 sm:pt-36">
           <p className="eyebrow mx-auto justify-center">{t("eyebrow")}</p>
-          <h1 className="mx-auto mt-6 max-w-3xl font-display text-[clamp(2.4rem,6vw,4.25rem)] font-bold leading-[1.02] tracking-[-0.03em] text-foreground">
+          <h1 className="mx-auto mt-5 max-w-3xl font-display text-[clamp(2rem,8vw,4.25rem)] font-bold leading-[1.05] tracking-[-0.03em] text-foreground sm:mt-6 sm:leading-[1.02]">
             {t("title")}
           </h1>
-          <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-muted">
+          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted sm:mt-5 sm:text-lg">
             {t("intro")}
           </p>
           <p className="mx-auto mt-3 max-w-xl text-sm text-muted">{t("trialNote")}</p>
@@ -73,12 +73,12 @@ export function PricingContent() {
       </section>
 
       <section className="border-b border-border bg-surface-2/40">
-        <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 sm:py-20">
+        <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-20">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
             {plans.map((plan, i) => (
               <FadeUp key={plan.id} delay={i * 0.05}>
                 <article
-                  className={`relative flex h-full flex-col rounded-xl border bg-surface p-6 sm:p-8 ${
+                  className={`relative flex h-full flex-col rounded-xl border bg-surface p-5 sm:p-8 ${
                     plan.featured
                       ? "border-accent shadow-[0_0_0_1px_color-mix(in_srgb,#0165fd_35%,transparent)]"
                       : "border-border"
@@ -100,7 +100,7 @@ export function PricingContent() {
                   </div>
 
                   <div className="mt-6 border-t border-border pt-6">
-                    <div className="flex items-end gap-1.5">
+                    <div className="flex flex-wrap items-end gap-1.5">
                       <p className="font-display text-4xl font-bold tracking-[-0.03em] text-foreground sm:text-5xl">
                         {formatEuro(plan.price)}
                       </p>

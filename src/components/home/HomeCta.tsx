@@ -25,18 +25,18 @@ export function HomeCta() {
           aria-hidden
         />
       </div>
-      <div className="relative z-10 mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
+      <div className="relative z-10 mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-28">
         <FadeUp>
-          <BrandLogo tone="on-dark" className="h-12 w-auto" />
-          <h2 className="mt-8 max-w-3xl font-display text-4xl font-bold tracking-[-0.02em] text-white sm:text-5xl">
+          <BrandLogo tone="on-dark" className="h-10 w-auto sm:h-12" />
+          <h2 className="mt-6 max-w-3xl font-display text-[clamp(1.85rem,7vw,3rem)] font-bold tracking-[-0.02em] text-white sm:mt-8 sm:text-5xl">
             {t("finalCtaTitle")}
           </h2>
-          <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/70">
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/70 sm:mt-5 sm:text-lg">
             {t("finalCtaBody")}
           </p>
           <AppLink
             href="register"
-            className="mt-9 inline-flex h-12 items-center justify-center rounded-lg bg-accent px-7 text-base font-semibold text-white transition-[filter] hover:brightness-110"
+            className="mt-8 inline-flex h-12 w-full items-center justify-center rounded-lg bg-accent px-7 text-base font-semibold text-white transition-[filter] hover:brightness-110 sm:mt-9 sm:w-auto"
           >
             {t("finalCtaButton")}
           </AppLink>

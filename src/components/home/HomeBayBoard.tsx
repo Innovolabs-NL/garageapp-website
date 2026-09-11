@@ -36,17 +36,17 @@ export function HomeBayBoard() {
   const t = useTranslations("Home");
 
   return (
-    <section className="relative overflow-hidden border-b border-border bg-surface py-16 sm:py-20">
+    <section className="relative overflow-hidden border-b border-border bg-surface py-12 sm:py-20">
       <div
         className="pointer-events-none absolute inset-0 garage-texture"
         aria-hidden
       />
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <FadeUp>
-          <div className="flex flex-wrap items-end justify-between gap-4">
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between sm:gap-4">
             <div>
               <p className="eyebrow">{t("bayEyebrow")}</p>
-              <h2 className="mt-4 max-w-xl font-display text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
+              <h2 className="mt-4 max-w-xl font-display text-[clamp(1.75rem,6vw,2.25rem)] font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
                 {t("bayTitle")}
               </h2>
             </div>

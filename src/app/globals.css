@@ -73,11 +73,17 @@ html[data-theme="dark"] {
   --brand-mark-fg: #ffffff;
 }
 
+html {
+  overflow-x: clip;
+}
+
 body {
   background: var(--t-background);
   color: var(--t-muted);
   font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: clip;
   transition: background 200ms ease, color 200ms ease;
+  -webkit-tap-highlight-color: color-mix(in srgb, #0165fd 18%, transparent);
 }
 
 ::selection {
@@ -125,6 +131,7 @@ body {
 
 .btn-primary {
   display: inline-flex;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
   height: 3rem;
@@ -193,13 +200,20 @@ body {
   position: relative;
   isolation: isolate;
   /* Bleed under the fixed header so chrome sits on the photo */
-  margin-top: -4rem;
-  min-height: min(92vh, 820px);
+  margin-top: -3.5rem;
+  min-height: min(100svh, 720px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   color: var(--t-foreground);
   background: var(--t-surface-2);
+}
+
+@media (min-width: 640px) {
+  .hero-media {
+    margin-top: -4rem;
+    min-height: min(92vh, 820px);
+  }
 }
 
 .hero-media__image {
@@ -241,9 +255,27 @@ html[data-theme="dark"] .hero-media__shade {
 }
 
 .hero-media__flow {
+  position: relative;
   border-top: 1px solid var(--t-border);
   background: color-mix(in srgb, var(--t-surface) 82%, transparent);
   backdrop-filter: blur(10px);
+}
+
+@media (max-width: 639px) {
+  .hero-media__flow::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 2.5rem;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      color-mix(in srgb, var(--t-surface) 88%, transparent)
+    );
+  }
 }
 
 html[data-theme="dark"] .hero-media__flow {
@@ -265,6 +297,7 @@ html[data-theme="dark"] .hero-media .eyebrow {
 
 .btn-on-media {
   display: inline-flex;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
   height: 3rem;
@@ -507,9 +540,13 @@ html[data-theme="dark"] .site-header[data-menu-open="true"] .text-muted {
 }
 
 .prose-blog table {
+  display: block;
   width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   margin-bottom: 1.25rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   font-size: 0.95em;
 }
 
@@ -526,6 +563,69 @@ html[data-theme="dark"] .site-header[data-menu-open="true"] .text-muted {
   color: var(--t-foreground);
   font-weight: 650;
   background: var(--t-surface);
+}
+
+.site-header {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.site-header__menu nav {
+  padding-bottom: max(2rem, env(safe-area-inset-bottom, 0px));
+}
+
+.menu-toggle__icon {
+  position: relative;
+  display: block;
+  width: 1.25rem;
+  height: 0.875rem;
+}
+
+.menu-toggle__icon span {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  border-radius: 999px;
+  background: currentColor;
+  transform-origin: center;
+  transition:
+    transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 180ms ease,
+    top 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    width 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    left 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.menu-toggle__icon span:nth-child(1) {
+  top: 0;
+}
+
+.menu-toggle__icon span:nth-child(2) {
+  top: calc(50% - 0.75px);
+  width: 70%;
+  left: 30%;
+}
+
+.menu-toggle__icon span:nth-child(3) {
+  top: calc(100% - 1.5px);
+}
+
+.menu-toggle[data-open="true"] .menu-toggle__icon span:nth-child(1) {
+  top: calc(50% - 0.75px);
+  transform: rotate(45deg);
+}
+
+.menu-toggle[data-open="true"] .menu-toggle__icon span:nth-child(2) {
+  opacity: 0;
+  width: 0;
+  left: 50%;
+  transform: scaleX(0);
+}
+
+.menu-toggle[data-open="true"] .menu-toggle__icon span:nth-child(3) {
+  top: calc(50% - 0.75px);
+  transform: rotate(-45deg);
 }
 
 @media (prefers-reduced-motion: reduce) {

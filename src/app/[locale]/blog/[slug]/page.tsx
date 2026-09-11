@@ -46,7 +46,7 @@ export default async function BlogPostPage({ params }: Props) {
   const otherLocale = locale === "nl" ? "en" : "nl";
 
   return (
-    <article className="mx-auto max-w-3xl px-6 py-12 sm:py-16">
+    <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-16">
       <BlogPostingJsonLd
         locale={locale}
         title={post.title}
@@ -54,17 +54,17 @@ export default async function BlogPostPage({ params }: Props) {
         slug={slug}
         datePublished={post.date}
       />
-      <Link href="/blog" className="text-sm font-semibold text-primary">
+      <Link href="/blog" className="inline-flex min-h-11 items-center text-sm font-semibold text-primary">
         ← {t("back")}
       </Link>
-      <p className="mt-10 text-xs font-semibold uppercase tracking-[0.14em] text-muted">
+      <p className="mt-8 text-xs font-semibold uppercase tracking-[0.14em] text-muted sm:mt-10">
         {post.date} · {post.readingMinutes} {t("minRead")}
       </p>
-      <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
+      <h1 className="mt-4 font-display text-[clamp(1.85rem,7vw,3rem)] font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
         {post.title}
       </h1>
-      <p className="mt-5 text-lg leading-relaxed text-muted">{post.description}</p>
-      <div className="prose-blog mt-10 border-t border-border pt-10">
+      <p className="mt-4 text-base leading-relaxed text-muted sm:mt-5 sm:text-lg">{post.description}</p>
+      <div className="prose-blog mt-8 border-t border-border pt-8 sm:mt-10 sm:pt-10">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
       </div>
       {alternateSlug ? (

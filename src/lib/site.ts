@@ -22,6 +22,8 @@ export const siteConfig = {
   appUrl,
   registerUrl: `${appUrl}/Identity/Account/Register?utm_source=website`,
   loginUrl: `${appUrl}/Identity/Account/Login`,
+  /** Car-owner customer portal (OTP login), not staff Identity. */
+  customerPortalUrl: `${appUrl}/portal/login`,
   contactEmail:
     process.env.CONTACT_TO_EMAIL?.trim() || "hello@innovolabs.nl",
   /** Stripe plan prices excl. VAT — keep in sync with PricingContent. */

@@ -10,12 +10,12 @@ export function PageHero({
   intro: string;
 }) {
   return (
-    <header className="max-w-3xl pb-12 pt-14 sm:pb-16 sm:pt-20">
+    <header className="max-w-3xl pb-10 pt-10 sm:pb-16 sm:pt-20">
       {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
-      <h1 className="mt-5 font-display text-4xl font-bold tracking-[-0.02em] text-foreground sm:text-6xl">
+      <h1 className="mt-5 font-display text-[clamp(2rem,8vw,3.75rem)] font-bold tracking-[-0.02em] text-foreground sm:text-6xl">
         {title}
       </h1>
-      <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">{intro}</p>
+      <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted sm:mt-6 sm:text-lg">{intro}</p>
     </header>
   );
 }

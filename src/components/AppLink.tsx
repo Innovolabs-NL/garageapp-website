@@ -1,7 +1,13 @@
 import type { ReactNode } from "react";
 import { siteConfig } from "@/lib/site";
 
-type AppHref = "register" | "login";
+type AppHref = "register" | "login" | "portal";
+
+const appHrefs: Record<AppHref, string> = {
+  register: siteConfig.registerUrl,
+  login: siteConfig.loginUrl,
+  portal: siteConfig.customerPortalUrl,
+};
 
 export function AppLink({
   href,
@@ -14,9 +20,8 @@ export function AppLink({
   children: ReactNode;
   onClick?: () => void;
 }) {
-  const url = href === "register" ? siteConfig.registerUrl : siteConfig.loginUrl;
   return (
-    <a href={url} className={className} onClick={onClick}>
+    <a href={appHrefs[href]} className={className} onClick={onClick}>
       {children}
     </a>
   );
