@@ -6,7 +6,7 @@ import { routing } from "@/i18n/routing";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
-import { THEME_BOOT_SCRIPT } from "@/lib/theme";
+import { ThemeRehydrate } from "@/components/ThemeRehydrate";
 import "../globals.css";
 
 const inter = Inter({
@@ -46,10 +46,8 @@ export default async function LocaleLayout({ children, params }: Props) {
       suppressHydrationWarning
       className={`${inter.variable} ${grotesk.variable} h-full antialiased`}
     >
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: THEME_BOOT_SCRIPT }} />
-      </head>
       <body className="flex min-h-full flex-col bg-background text-muted">
+        <ThemeRehydrate />
         <NextIntlClientProvider messages={messages}>
           <JsonLd locale={locale} />
           <Header />

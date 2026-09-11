@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import Script from "next/script";
 import { siteConfig } from "@/lib/site";
+import { THEME_BOOT_SCRIPT } from "@/lib/theme";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -40,5 +42,15 @@ export const metadata: Metadata = {
 
 /** Root shell — html/body live in [locale]/layout for correct lang. */
 export default function RootLayout({ children }: { children: ReactNode }) {
-  return children;
+  return (
+    <>
+      {/* Root-only so locale switches don't re-render a <script> on the client. */}
+      <Script
+        id="theme-boot"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: THEME_BOOT_SCRIPT }}
+      />
+      {children}
+    </>
+  );
 }
