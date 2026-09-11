@@ -1,8 +1,24 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import { Inter, Space_Grotesk } from "next/font/google";
+import { getLocale } from "next-intl/server";
 import Script from "next/script";
 import { siteConfig } from "@/lib/site";
 import { THEME_BOOT_SCRIPT } from "@/lib/theme";
+import "./globals.css";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const grotesk = Space_Grotesk({
+  variable: "--font-grotesk",
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  display: "swap",
+});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -40,17 +56,23 @@ export const metadata: Metadata = {
   },
 };
 
-/** Root shell — html/body live in [locale]/layout for correct lang. */
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default async function RootLayout({ children }: { children: ReactNode }) {
+  const locale = await getLocale();
+
   return (
-    <>
-      {/* Root-only so locale switches don't re-render a <script> on the client. */}
-      <Script
-        id="theme-boot"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{ __html: THEME_BOOT_SCRIPT }}
-      />
-      {children}
-    </>
+    <html
+      lang={locale}
+      suppressHydrationWarning
+      className={`${inter.variable} ${grotesk.variable} h-full antialiased`}
+    >
+      <body className="flex min-h-full flex-col bg-background text-muted">
+        <Script
+          id="theme-boot"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: THEME_BOOT_SCRIPT }}
+        />
+        {children}
+      </body>
+    </html>
   );
 }
