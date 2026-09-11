@@ -38,28 +38,41 @@ export function FeatureGrid({
   const t = useTranslations("Features");
 
   return (
-    <section className="border-b border-border py-14 sm:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+    <section className="relative overflow-hidden border-b border-border bg-surface py-14 sm:py-24">
+      <div
+        className="pointer-events-none absolute inset-0 garage-texture opacity-40"
+        aria-hidden
+      />
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <FadeUp>
           <p className="eyebrow">{eyebrow}</p>
-          <h2 className="mt-5 max-w-2xl font-display text-[clamp(1.75rem,6vw,2.25rem)] font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
+          <h2 className="mt-5 max-w-2xl font-display text-[clamp(1.75rem,6vw,2.5rem)] font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
             {title}
           </h2>
         </FadeUp>
-        <ul className="mt-10 grid grid-cols-1 gap-3 sm:mt-12 sm:grid-cols-2 sm:gap-4 lg:grid-cols-5">
-          {items.map((item, i) => (
-            <FadeUp key={item.key} delay={i * 0.03}>
-              <li className="card-surface flex h-full flex-col gap-3 rounded-xl p-4 sm:gap-4 sm:p-5">
-                <span className="icon-bay">
-                  <item.Icon size={18} aria-hidden />
+
+        <FadeUp delay={0.06}>
+          <ul className="mt-10 divide-y divide-border border-y border-border sm:mt-12 sm:grid sm:grid-cols-2 sm:gap-x-10 sm:divide-y-0 sm:border-0 lg:grid-cols-2">
+            {items.map((item, i) => (
+              <li
+                key={item.key}
+                className="flex items-start gap-3.5 py-4 sm:border-t sm:border-border sm:py-5"
+              >
+                <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-border bg-background text-primary">
+                  <item.Icon size={16} strokeWidth={1.75} aria-hidden />
                 </span>
-                <p className="font-display text-[0.95rem] font-semibold leading-snug tracking-tight text-foreground sm:text-base">
-                  {t(item.key)}
-                </p>
+                <div className="min-w-0 flex-1 pt-0.5">
+                  <p className="font-display text-[0.7rem] font-semibold tabular-nums tracking-[0.14em] text-subtle">
+                    {String(i + 1).padStart(2, "0")}
+                  </p>
+                  <p className="mt-1 font-display text-[0.98rem] font-semibold leading-snug tracking-tight text-foreground sm:text-base">
+                    {t(item.key)}
+                  </p>
+                </div>
               </li>
-            </FadeUp>
-          ))}
-        </ul>
+            ))}
+          </ul>
+        </FadeUp>
       </div>
     </section>
   );
