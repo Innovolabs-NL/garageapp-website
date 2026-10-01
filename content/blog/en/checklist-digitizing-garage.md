@@ -24,3 +24,5 @@ Digitizing isn’t “install a package.” It’s choosing processes, agreeing 
 Cold online booking from the homepage and payment gateways without setup can wait. Motivox does not offer street-side self-booking; customers pick a slot only after quote approval. Online pay for repair invoices needs Mollie or Tikkie connected by the shop. The core win is inspection → quote → approval → hours → invoice.
 
 Start a Motivox trial and walk this checklist for your shop.
+
+*Further reading: [Garage software](/en/garage-software).*

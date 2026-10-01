@@ -28,3 +28,5 @@ Koude zelfboeking vanaf de homepage en betaalgateways zonder configuratie. Motiv
 ## Hulp nodig?
 
 Start een proefperiode van Motivox en loop deze checklist door — gericht op jouw garage, niet op een generieke slide.
+
+*Verder lezen: [Garage software](/nl/garage-software).*

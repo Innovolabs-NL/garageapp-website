@@ -18,6 +18,19 @@ export const routing = defineRouting({
       nl: "/over-ons",
       en: "/about",
     },
+    "/garage-software": "/garage-software",
+    "/werkplaats-software": {
+      nl: "/werkplaats-software",
+      en: "/workshop-software",
+    },
+    "/garage-software-zzp": {
+      nl: "/garage-software-zzp",
+      en: "/solo-garage-software",
+    },
+    "/werkorder-software": {
+      nl: "/werkorder-software",
+      en: "/work-order-software",
+    },
     "/contact": "/contact",
     "/privacy": "/privacy",
     "/terms": "/terms",

@@ -40,3 +40,5 @@ De setup begint nu met de vraag of je solo werkt of met een team, en loopt daarn
 - Klanten loggen in met een eenmalige code en één login geldt voor meerdere Motivox-garages
 
 Zien hoe het met jouw eigen data werkt? [Start de proefperiode](https://app.motivox.nl/Identity/Account/Register) of lees de [functies](/nl/functies) en [prijzen](/nl/prijzen).
+
+*Verder lezen: [Werkplaats software](/nl/werkplaats-software).*

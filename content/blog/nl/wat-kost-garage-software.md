@@ -58,3 +58,5 @@ Een proefperiode waarin je eigen data en workflows test, zegt meer dan een verko
 ## Kort antwoord
 
 **Garage software in Nederland** kost typisch tientallen tot honderden euro’s per maand, afhankelijk van seats en diepte. Motivox: **€35 (ZZP) of €80 (Garagebedrijf) excl. BTW**, plus optionele seats à €4 — met 30 dagen proef. Meer lezen: [functies](/nl/functies) of [aanmelden](https://app.motivox.nl/Identity/Account/Register).
+
+*Verder lezen: [Garage software voor ZZP'ers](/nl/garage-software-zzp).*

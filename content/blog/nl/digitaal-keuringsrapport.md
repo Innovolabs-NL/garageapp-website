@@ -25,3 +25,5 @@ Configureerbare secties en items, notities per punt, concept versus definitief, 
 Het keuringsrapport voedt het werkplan. De klant keurt digitaal goed (inclusief handtekening). Zo voorkom je discussie later over “wat is afgesproken”.
 
 Motivox ondersteunt tenant-scoped checklists, inspecties en digitaal klantakkoord als onderdeel van dezelfde jobflow. Kentekenopzoeking via RDW vult voertuiggegevens en APK-datum; dat is geen gecertificeerde APK-keuringsstationsoftware.
+
+*Verder lezen: [Garage software](/nl/garage-software).*

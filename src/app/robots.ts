@@ -12,6 +12,13 @@ const aiBots = [
   "Bytespider",
   "meta-externalagent",
   "Amazonbot",
+  "OAI-SearchBot",
+  "Claude-SearchBot",
+  "Claude-User",
+  "Perplexity-User",
+  "DuckAssistBot",
+  "MistralAI-User",
+  "CCBot",
 ] as const;
 
 export default function robots(): MetadataRoute.Robots {

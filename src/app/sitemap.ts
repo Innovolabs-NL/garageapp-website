@@ -13,6 +13,10 @@ const staticPaths = [
   "/privacy",
   "/terms",
   "/blog",
+  "/garage-software",
+  "/werkplaats-software",
+  "/garage-software-zzp",
+  "/werkorder-software",
 ] as const satisfies readonly Pathnames[];
 
 const staticPriority: Record<(typeof staticPaths)[number], number> = {
@@ -24,7 +28,14 @@ const staticPriority: Record<(typeof staticPaths)[number], number> = {
   "/privacy": 0.3,
   "/terms": 0.3,
   "/blog": 0.8,
+  "/garage-software": 0.9,
+  "/werkplaats-software": 0.8,
+  "/garage-software-zzp": 0.8,
+  "/werkorder-software": 0.8,
 };
+
+/** Bump when the static pages' content meaningfully changes. */
+const staticLastModified = new Date("2026-09-30");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
@@ -33,7 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const href of staticPaths) {
       entries.push({
         url: absoluteUrl(localePath(locale, href)),
-        lastModified: new Date(),
+        lastModified: staticLastModified,
         changeFrequency: href === "/" || href === "/blog" ? "weekly" : "monthly",
         priority: staticPriority[href],
         alternates: {

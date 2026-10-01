@@ -53,6 +53,7 @@ export default async function BlogPostPage({ params }: Props) {
         description={post.description}
         slug={slug}
         datePublished={post.date}
+        keywords={post.keywords}
       />
       <Link href="/blog" className="inline-flex min-h-11 items-center text-sm font-semibold text-primary">
         ← {t("back")}

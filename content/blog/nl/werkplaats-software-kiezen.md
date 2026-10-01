@@ -62,3 +62,5 @@ E-mailsupport op werkdagen (NL/EN) en productupdates zonder aparte upgrade-fee v
 ## Beslisregel
 
 Kies het pakket dat **overtypen elimineert** tussen keuring, akkoord, vloer en factuur — niet het pakket met de langste featurelijst. Als Motivox die keten dekt voor jouw teamgrootte, start met de [proefperiode](https://app.motivox.nl/Identity/Account/Register) of bekijk [functies](/nl/functies).
+
+*Verder lezen: [Werkplaats software](/nl/werkplaats-software).*

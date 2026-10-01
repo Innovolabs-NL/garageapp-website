@@ -62,3 +62,5 @@ Business-day email support (NL/EN) and product updates without a separate upgrad
 ## Decision rule
 
 Pick the product that **eliminates retyping** between inspection, approval, floor, and invoice — not the one with the longest feature list. If Motivox covers that chain for your team size, start a [trial](https://app.motivox.nl/Identity/Account/Register) or review [features](/en/features).
+
+*Further reading: [Workshop software](/en/workshop-software).*

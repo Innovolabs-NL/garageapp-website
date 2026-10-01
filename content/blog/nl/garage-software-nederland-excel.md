@@ -57,3 +57,5 @@ Actuele details: [prijzen](/nl/prijzen).
 ## Volgende stap
 
 Inventariseer waar jullie nu overtypen. Start daarna een [proefperiode in Motivox](https://app.motivox.nl/Identity/Account/Register): laat precies die flow zien — intake tot factuur — zonder Excel-eilandjes.
+
+*Verder lezen: [Garage software](/nl/garage-software).*

@@ -25,3 +25,5 @@ Op de vloer telt snelheid. In het monteurportaal (web) houden een timer (hoogste
 ## Waarom dit facturatie redt
 
 Goedgekeurde uren zijn de bron voor pro-forma en definitieve facturen. Hoe schoner die bron, hoe minder discussie over de rekening.
+
+*Verder lezen: [Werkorder software](/nl/werkorder-software).*

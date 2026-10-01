@@ -13,6 +13,15 @@ Motivox replaces fragmented Excel/Access/email workflows for auto repair shops i
 - [Pricing (NL)](https://www.motivox.nl/nl/prijzen): Plans, trial, billing FAQ
 - [Pricing (EN)](https://www.motivox.nl/en/pricing): Plans, trial, billing FAQ
 
+- [Garage software (NL)](https://www.motivox.nl/nl/garage-software): Overview of Motivox as garage software
+- [Garage software (EN)](https://www.motivox.nl/en/garage-software): Overview of Motivox as garage software
+- [Werkplaats software (NL)](https://www.motivox.nl/nl/werkplaats-software): Live planning, technician and customer portals
+- [Workshop software (EN)](https://www.motivox.nl/en/workshop-software): Live planning, technician and customer portals
+- [Garage software ZZP (NL)](https://www.motivox.nl/nl/garage-software-zzp): For solo mechanics and small shops
+- [Solo garage software (EN)](https://www.motivox.nl/en/solo-garage-software): For solo mechanics and small shops
+- [Werkorder software (NL)](https://www.motivox.nl/nl/werkorder-software): Work orders, hours, parts, invoice
+- [Work order software (EN)](https://www.motivox.nl/en/work-order-software): Work orders, hours, parts, invoice
+
 ## Company
 
 - [About (NL)](https://www.motivox.nl/nl/over-ons): About Motivox / Innovolabs B.V. (KvK 97588911)
@@ -38,6 +47,8 @@ Motivox replaces fragmented Excel/Access/email workflows for auto repair shops i
 - [Work orders and time tracking](https://www.motivox.nl/en/blog/work-orders-time-tracking)
 - [Wat kost garage software](https://www.motivox.nl/nl/blog/wat-kost-garage-software)
 - [What does garage software cost](https://www.motivox.nl/en/blog/what-does-garage-software-cost)
+- [Garage software als ZZP'er: wat heb je nodig](https://www.motivox.nl/nl/blog/garage-software-zzp-wat-heb-je-nodig)
+- [Garage software for solo mechanics](https://www.motivox.nl/en/blog/solo-garage-software-what-you-need)
 - [Werkplaats software kiezen](https://www.motivox.nl/nl/blog/werkplaats-software-kiezen)
 - [Choosing workshop software](https://www.motivox.nl/en/blog/choosing-workshop-software)
 - [Nieuw: live werkplaatsplanning en dashboard](https://www.motivox.nl/nl/blog/nieuw-werkplaatsplanning-dashboard)
@@ -56,5 +67,7 @@ Motivox replaces fragmented Excel/Access/email workflows for auto repair shops i
 - [Log in](https://app.motivox.nl/Identity/Account/Login)
 
 ## Optional
+
+- [Sitemap](https://www.motivox.nl/sitemap.xml)
 
 - [Full product summary for LLMs](https://www.motivox.nl/llms-full.txt)

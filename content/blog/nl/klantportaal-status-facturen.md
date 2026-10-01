@@ -26,3 +26,5 @@ Inloggen of een beveiligde link, plus tijdelijke tokenlinks voor specifieke jobs
 ## Minder ruis, meer vertrouwen
 
 De klantreis is goedkeuren → inplannen → volgen → betalen (online alleen als de zaak Mollie of Tikkie heeft gekoppeld). Wanneer klanten zelf kunnen meekijken, daalt de druk op de telefoon. Motivox levert een klantportaal naast de kantoor- en monteurportalen (web) — één databron.
+
+*Verder lezen: [Werkplaats software](/nl/werkplaats-software).*

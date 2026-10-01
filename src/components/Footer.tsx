@@ -7,6 +7,7 @@ import { siteConfig } from "@/lib/site";
 export async function Footer() {
   const t = await getTranslations("Footer");
   const nav = await getTranslations("Nav");
+  const landing = await getTranslations("Landing.pages");
   const year = new Date().getFullYear();
 
   return (
@@ -55,6 +56,26 @@ export async function Footer() {
               <li>
                 <Link href="/pricing" className="transition-colors hover:text-foreground">
                   {nav("pricing")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/garage-software" className="transition-colors hover:text-foreground">
+                  {landing("garageSoftware.navLabel")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/werkplaats-software" className="transition-colors hover:text-foreground">
+                  {landing("workshopSoftware.navLabel")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/garage-software-zzp" className="transition-colors hover:text-foreground">
+                  {landing("soloGarage.navLabel")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/werkorder-software" className="transition-colors hover:text-foreground">
+                  {landing("workOrders.navLabel")}
                 </Link>
               </li>
               <li>

@@ -57,3 +57,5 @@ Details: [pricing](/en/pricing).
 ## Next step
 
 Map where you still retype. Then start a [Motivox trial](https://app.motivox.nl/Identity/Account/Register): walk that exact flow — intake to invoice — without Excel islands.
+
+*Further reading: [Garage software](/en/garage-software).*

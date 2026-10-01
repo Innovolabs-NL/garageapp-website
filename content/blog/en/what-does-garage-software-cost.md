@@ -58,3 +58,5 @@ A trial where you test your own data and workflows says more than a sales demo. 
 ## Short answer
 
 **Garage software** typically costs tens to hundreds of euros per month, depending on seats and depth. Motivox: **€35 (ZZP) or €80 (Garage) excl. VAT**, plus optional seats at €4 — with a 30-day trial. Next: [features](/en/features) or [sign up](https://app.motivox.nl/Identity/Account/Register).
+
+*Further reading: [Garage software for solo shops](/en/solo-garage-software).*

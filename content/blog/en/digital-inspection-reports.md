@@ -13,3 +13,5 @@ An inspection is more than a quick look under the car. It’s when you record wh
 Digital checklists bring consistency, traceability, and a faster path to the work plan. Statuses (OK / attention / urgent / n/a) become the proposal. The customer then approves digitally — including a signature — so “what was agreed” is clear later.
 
 Motivox supports tenant-scoped checklists, inspections, and digital customer approval in the same job flow. Plate lookup via RDW can fill vehicle details and APK date; that is not a certified APK-station suite.
+
+*Further reading: [Garage software](/en/garage-software).*

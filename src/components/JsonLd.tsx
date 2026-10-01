@@ -16,6 +16,7 @@ export function JsonLd({ locale }: { locale: string }) {
         "@id": `${siteConfig.url}/#organization`,
         name: siteConfig.company,
         legalName: siteConfig.company,
+        brand: { "@type": "Brand", name: siteConfig.name, url: siteConfig.url },
         url: siteConfig.companyUrl,
         email: siteConfig.contactEmail,
         vatID: siteConfig.vatId,
@@ -37,7 +38,13 @@ export function JsonLd({ locale }: { locale: string }) {
       },
       {
         "@type": "SoftwareApplication",
+        "@id": `${siteConfig.url}/#software`,
         name: siteConfig.name,
+        alternateName: "Motivox garage software",
+        isAccessibleForFree: false,
+        softwareHelp: { "@type": "CreativeWork", url: absoluteUrl(`/${locale}`) },
+        publisher: { "@id": `${siteConfig.url}/#organization` },
+        isPartOf: { "@id": `${siteConfig.url}/#website` },
         applicationCategory: "BusinessApplication",
         applicationSubCategory: "Garage workshop software",
         operatingSystem: "Web",
@@ -121,12 +128,14 @@ export function BlogPostingJsonLd({
   description,
   slug,
   datePublished,
+  keywords,
 }: {
   locale: string;
   title: string;
   description: string;
   slug: string;
   datePublished: string;
+  keywords?: string[];
 }) {
   const url = absoluteUrl(`/${locale}/blog/${slug}`);
   const homeLabel = locale === "nl" ? "Start" : "Home";
@@ -136,7 +145,11 @@ export function BlogPostingJsonLd({
   const data = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": `${url}#article`,
     headline: title,
+    ...(keywords?.length ? { keywords: keywords.join(", ") } : {}),
+    isPartOf: { "@id": `${siteConfig.url}/#website` },
+    about: { "@id": `${siteConfig.url}/#software` },
     description,
     image,
     datePublished,

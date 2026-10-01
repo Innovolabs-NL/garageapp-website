@@ -361,5 +361,215 @@
     "back": "Terug naar blog",
     "minRead": "min lezen",
     "empty": "Nog geen artikelen."
+  },
+  "Landing": {
+    "common": {
+      "ctaPrimary": "Start 30 dagen proef",
+      "ctaSecondary": "Bekijk prijzen",
+      "trialNote": "Geen demo-gesprek nodig. Maandelijks opzegbaar.",
+      "faqTitle": "Veelgestelde vragen",
+      "relatedTitle": "Meer over Motivox",
+      "relatedFeatures": "Alle functies",
+      "relatedPricing": "Prijzen en abonnementen",
+      "relatedBlog": "Lees de blog",
+      "priceTitle": "Eerlijke prijs, zonder verrassingen",
+      "priceBody": "ZZP €35 of Garagebedrijf €80 per maand, excl. btw. 30 dagen proef met alles van Garagebedrijf.",
+      "finalTitle": "Probeer Motivox 30 dagen in je eigen werkplaats",
+      "finalBody": "Meld je aan, zet je eerste klant en werkorder in, en kijk of je het zou missen."
+    },
+    "pages": {
+      "garageSoftware": {
+        "navLabel": "Garage software",
+        "metaTitle": "Garage software voor Nederlandse werkplaatsen — Motivox",
+        "metaDescription": "Garage software van intake tot factuur in één systeem: keuring, offerte, werkorder, uren en btw-factuur. 30 dagen gratis proberen, vanaf €35 per maand.",
+        "keywords": [
+          "garage software",
+          "garage software Nederland",
+          "garagesoftware",
+          "software voor autogarage",
+          "werkplaats software"
+        ],
+        "eyebrow": "Garage software",
+        "title": "Garage software die de hele job in één systeem houdt",
+        "intro": "Motivox is garage software voor Nederlandse autobedrijven. Van intake en keuring tot werkorder, uren, onderdelen en factuur: je typt elk gegeven één keer en iedereen werkt met hetzelfde dossier.",
+        "sections": [
+          {
+            "title": "Wat is garage software?",
+            "body": "Garage software is een programma waarmee een autowerkplaats klanten, voertuigen, werkorders, uren, onderdelen en facturen beheert. Bij Motivox draait alles in de browser, zonder installatie, en zien kantoor, monteur en klant dezelfde actuele status."
+          },
+          {
+            "title": "Van intake tot factuur, zonder overtypen",
+            "body": "Zoek het voertuig op via het kenteken (RDW, inclusief APK-datum), voer de keuring uit, stuur een offerte met digitale handtekening, plan de werkorder in, registreer uren en onderdelen en maak een proforma- of definitieve factuur als pdf. Eén keer invoeren, overal beschikbaar."
+          },
+          {
+            "title": "Drie portalen op één waarheid",
+            "body": "Het kantoor plant en factureert. De monteur ziet alleen zijn eigen werk en registreert uren met een timer. De klant volgt de status, keurt werk goed en betaalt online wanneer Mollie of Tikkie is gekoppeld."
+          },
+          {
+            "title": "Gemaakt voor Nederland",
+            "body": "Nederlandse btw-facturen, KvK-gegevens en koppelingen met Exact Online, Moneybird en e-Boekhouden. Export als CSV of UBL. Je abonnement betaal je via iDEAL, SEPA of kaart."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wat kost garage software van Motivox?",
+            "a": "ZZP kost €35 per maand en Garagebedrijf €80 per maand, beide excl. btw. Extra accounts op Garagebedrijf kosten €4 per maand excl. btw."
+          },
+          {
+            "q": "Kan ik Motivox eerst proberen?",
+            "a": "Ja. Je krijgt 30 dagen proef met alle functies van Garagebedrijf. Een demo-gesprek is niet verplicht."
+          },
+          {
+            "q": "Moet ik iets installeren?",
+            "a": "Nee. Motivox draait in de browser op computer, tablet en werkplaatsscherm. Er is geen aparte iOS- of Android-app."
+          },
+          {
+            "q": "Is mijn data veilig?",
+            "a": "Motivox draait in de cloud met back-ups, strikte scheiding tussen werkplaatsen en MFA voor medewerkers."
+          }
+        ]
+      },
+      "workshopSoftware": {
+        "navLabel": "Werkplaats software",
+        "metaTitle": "Werkplaats software voor autobedrijven — Motivox",
+        "metaDescription": "Werkplaats software met live planning, monteurportaal en klantportaal. Minder bellen en overtypen, meer tijd onder de auto. 30 dagen gratis proberen.",
+        "keywords": [
+          "werkplaats software",
+          "werkplaatsmanagement",
+          "werkplaatsplanning software",
+          "monteurportaal",
+          "werkplaats software autobedrijf"
+        ],
+        "eyebrow": "Werkplaats software",
+        "title": "Werkplaats software voor een rustige, voorspelbare werkvloer",
+        "intro": "Motivox geeft je werkplaats overzicht: wie werkt waaraan, welke auto staat waar en wat wacht op goedkeuring. Je planning, je monteurs en je klanten werken in hetzelfde systeem.",
+        "sections": [
+          {
+            "title": "Live werkplaatsplanning",
+            "body": "Zie aankomsten, auto's die buiten openingstijd zijn gebracht, afspraken die verplaatst moeten worden en de capaciteit van je werkplaats. Het plan past zich aan zodra de werkvloer verandert."
+          },
+          {
+            "title": "Een monteurportaal dat meewerkt",
+            "body": "Monteurs zien hun eigen werkorders, starten een timer of boeken uren handmatig en leggen onderdelen en kleinmateriaal vast. Geen papieren bonnen die zoekraken."
+          },
+          {
+            "title": "Klanten die niet meer hoeven te bellen",
+            "body": "In het klantportaal volgt de eigenaar de status, bekijkt de keuring, geeft goedkeuring en ziet de factuur. Dat scheelt telefoontjes aan de balie."
+          },
+          {
+            "title": "Je eigen dashboard",
+            "body": "Stel tegels samen voor omzet, openstaande facturen, planning, lage voorraad en de belasting per monteur, zodat je elke ochtend ziet waar het schuurt."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is live werkplaatsplanning bij elk abonnement inbegrepen?",
+            "a": "Live werkplaatsplanning zit in Garagebedrijf en tijdens de proefperiode. ZZP heeft in plaats daarvan een solo-modus waarin je wisselt tussen kantoor en werkplaats."
+          },
+          {
+            "q": "Hoeveel monteurs kan ik toevoegen?",
+            "a": "Garagebedrijf bevat 3 kantoor- en 5 monteuraccounts. Extra accounts kosten €4 per maand excl. btw. Een groep met onbeperkt aantal accounts is op aanvraag mogelijk."
+          },
+          {
+            "q": "Werkt het op een tablet in de werkplaats?",
+            "a": "Ja. Motivox is een webapplicatie en werkt op computer, tablet en werkplaatsscherm."
+          }
+        ]
+      },
+      "soloGarage": {
+        "navLabel": "Garage software ZZP",
+        "metaTitle": "Garage software voor ZZP'ers en kleine garages — Motivox",
+        "metaDescription": "Garage software voor de zelfstandige monteur of kleine garage: offerte, werkorder, uren en factuur in één tool. ZZP-plan €35 per maand, 30 dagen proef.",
+        "keywords": [
+          "garage software ZZP",
+          "software zzp monteur",
+          "garage software klein bedrijf",
+          "garage software goedkoop",
+          "zelfstandige garage software"
+        ],
+        "eyebrow": "Garage software voor ZZP",
+        "title": "Garage software voor de zelfstandige monteur",
+        "intro": "Werk je alleen of met één hulp? Dan wil je geen duur pakket vol functies die je niet gebruikt. Het ZZP-plan van Motivox kost €35 per maand excl. btw en dekt de hele job van keuring tot factuur.",
+        "sections": [
+          {
+            "title": "Eén account, twee rollen",
+            "body": "In de solo-modus wissel je in één account tussen kantoor en werkplaats. Je maakt de offerte achter de balie en registreert je uren onder de auto, zonder tweede abonnement."
+          },
+          {
+            "title": "Professioneel van offerte tot factuur",
+            "body": "Stuur een offerte met digitale handtekening, leg werk en onderdelen vast en verstuur een nette btw-factuur als pdf. Klanten volgen de status in hun portaal."
+          },
+          {
+            "title": "Inbegrepen: jij plus één extra account",
+            "body": "Het ZZP-plan bevat de eigenaar en één extra account voor kantoor of monteur. Groeit je bedrijf, dan upgrade je naar Garagebedrijf met live planning en meer accounts."
+          },
+          {
+            "title": "Boekhouding blijft simpel",
+            "body": "Koppel Moneybird, Exact Online of e-Boekhouden, of exporteer facturen als CSV of UBL. Laat klanten online betalen via Mollie of Tikkie."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wat kost Motivox voor een ZZP'er?",
+            "a": "Het ZZP-plan kost €35 per maand excl. btw, maandelijks opzegbaar. Eerst 30 dagen proberen met alle functies van Garagebedrijf."
+          },
+          {
+            "q": "Wat is het verschil tussen ZZP en Garagebedrijf?",
+            "a": "ZZP is voor de eigenaar plus één extra account, met solo-modus. Garagebedrijf (€80) heeft 3 kantoor- en 5 monteuraccounts en live werkplaatsplanning."
+          },
+          {
+            "q": "Kan ik later upgraden?",
+            "a": "Ja. Je kunt overstappen naar Garagebedrijf zodra je team groeit."
+          }
+        ]
+      },
+      "workOrders": {
+        "navLabel": "Werkorder software",
+        "metaTitle": "Werkorder software voor garages — Motivox",
+        "metaDescription": "Werkorder software voor autogarages: werkorders, urenregistratie, onderdelen en facturatie aan elkaar gekoppeld. Geen overtypen. 30 dagen gratis proberen.",
+        "keywords": [
+          "werkorder software",
+          "werkbon software garage",
+          "urenregistratie werkplaats",
+          "werkorder programma",
+          "digitale werkbon"
+        ],
+        "eyebrow": "Werkorder software",
+        "title": "Werkorder software waarin uren en onderdelen vanzelf op de factuur komen",
+        "intro": "Een werkorder is het hart van je werkplaats. In Motivox start hij bij de keuring, loopt hij langs je monteurs en eindigt hij als factuur, zonder dat iemand de gegevens opnieuw invoert.",
+        "sections": [
+          {
+            "title": "Van keuring naar werkorder",
+            "body": "Bevindingen uit de keuring worden regels in de offerte. Na goedkeuring van de klant, per pdf of via een veilige link met handtekening en tijdstempel, wordt dit je werkorder."
+          },
+          {
+            "title": "Urenregistratie met timer",
+            "body": "Monteurs starten een timer of boeken uren handmatig op de werkorder. Je ziet per klus wat er gewerkt is, en per monteur wat er gepland staat."
+          },
+          {
+            "title": "Onderdelen en kleinmateriaal",
+            "body": "Leg onderdelen en verbruiksmateriaal vast op de werkorder, geef regelkortingen op arbeid en materiaal en houd lage voorraad in de gaten op je dashboard."
+          },
+          {
+            "title": "Factuur met één klik",
+            "body": "Uren, onderdelen en kortingen worden een proforma- of definitieve factuur als pdf, met Nederlandse btw. Creditnota's maak je met een paar klikken."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wat is werkorder software?",
+            "a": "Software waarmee een werkplaats opdrachten registreert, aan monteurs toewijst, uren en onderdelen bijhoudt en uiteindelijk factureert."
+          },
+          {
+            "q": "Kunnen klanten een werkorder goedkeuren?",
+            "a": "Ja. Klanten keuren goed via een uitgeprinte pdf in de werkplaats of via een veilige link met digitale handtekening en tijdstempel."
+          },
+          {
+            "q": "Kan ik uren handmatig invoeren?",
+            "a": "Ja. Monteurs gebruiken een timer of voeren uren handmatig in."
+          }
+        ]
+      }
+    }
   }
 }

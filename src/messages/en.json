@@ -360,5 +360,215 @@
     "back": "Back to blog",
     "minRead": "min read",
     "empty": "No articles yet."
+  },
+  "Landing": {
+    "common": {
+      "ctaPrimary": "Start 30-day trial",
+      "ctaSecondary": "See pricing",
+      "trialNote": "No demo call required. Cancel monthly.",
+      "faqTitle": "Frequently asked questions",
+      "relatedTitle": "More about Motivox",
+      "relatedFeatures": "All features",
+      "relatedPricing": "Pricing and plans",
+      "relatedBlog": "Read the blog",
+      "priceTitle": "Honest pricing, no surprises",
+      "priceBody": "ZZP €35 or Garage €80 per month, excl. VAT. 30-day trial with everything in Garage.",
+      "finalTitle": "Try Motivox in your own shop for 30 days",
+      "finalBody": "Sign up, add your first customer and work order, and see if you'd miss it."
+    },
+    "pages": {
+      "garageSoftware": {
+        "navLabel": "Garage software",
+        "metaTitle": "Garage software for Dutch repair shops — Motivox",
+        "metaDescription": "Garage software from intake to invoice in one system: inspection, quote, work order, hours and VAT invoice. Try free for 30 days, from €35 per month.",
+        "keywords": [
+          "garage software",
+          "garage software Netherlands",
+          "auto repair shop software",
+          "workshop software",
+          "garage management software"
+        ],
+        "eyebrow": "Garage software",
+        "title": "Garage software that keeps the whole job in one system",
+        "intro": "Motivox is garage software for Dutch auto repair shops. From intake and inspection to work order, hours, parts, and invoice: you enter each detail once and everyone works from the same file.",
+        "sections": [
+          {
+            "title": "What is garage software?",
+            "body": "Garage software is a program a repair shop uses to manage customers, vehicles, work orders, hours, parts, and invoices. Motivox runs in the browser with nothing to install, and the office, technicians, and customers all see the same live status."
+          },
+          {
+            "title": "Intake to invoice, no retyping",
+            "body": "Look up the vehicle by licence plate (RDW, including the APK date), run the inspection, send a quote with digital signature, schedule the work order, log hours and parts, and create a pro forma or final invoice as a PDF. Enter it once, use it everywhere."
+          },
+          {
+            "title": "Three portals, one source of truth",
+            "body": "The office plans and invoices. The technician sees only their own work and logs hours with a timer. The customer follows status, approves work, and pays online when Mollie or Tikkie is connected."
+          },
+          {
+            "title": "Built for the Netherlands",
+            "body": "Dutch VAT invoices, KvK details, and integrations with Exact Online, Moneybird, and e-Boekhouden. Export as CSV or UBL. You pay for your subscription by iDEAL, SEPA, or card."
+          }
+        ],
+        "faq": [
+          {
+            "q": "What does Motivox garage software cost?",
+            "a": "ZZP costs €35 per month and Garage costs €80 per month, both excl. VAT. Extra accounts on Garage cost €4 per month excl. VAT."
+          },
+          {
+            "q": "Can I try Motivox first?",
+            "a": "Yes. You get a 30-day trial with everything in the Garage plan. A demo call is not required."
+          },
+          {
+            "q": "Do I need to install anything?",
+            "a": "No. Motivox runs in the browser on desktop, tablet, and shop-floor screens. There is no separate iOS or Android app."
+          },
+          {
+            "q": "Is my data safe?",
+            "a": "Motivox runs in the cloud with backups, strict separation between shops, and MFA for staff."
+          }
+        ]
+      },
+      "workshopSoftware": {
+        "navLabel": "Workshop software",
+        "metaTitle": "Workshop software for auto repair shops — Motivox",
+        "metaDescription": "Workshop software with live planning, a technician portal and a customer portal. Fewer calls and less retyping, more time under the car. Try free for 30 days.",
+        "keywords": [
+          "workshop software",
+          "workshop management software",
+          "shop planning software",
+          "technician portal",
+          "auto repair workshop software"
+        ],
+        "eyebrow": "Workshop software",
+        "title": "Workshop software for a calmer, more predictable shop floor",
+        "intro": "Motivox gives your workshop an overview: who is working on what, which car is where, and what is waiting for approval. Your planning, technicians, and customers all work in the same system.",
+        "sections": [
+          {
+            "title": "Live shop planning",
+            "body": "See arrivals, cars dropped off after hours, appointments that need replanning, and your shop's capacity. The plan adapts as the floor changes."
+          },
+          {
+            "title": "A technician portal that helps",
+            "body": "Technicians see their own work orders, start a timer or book hours manually, and record parts and consumables. No paper job cards getting lost."
+          },
+          {
+            "title": "Customers who stop calling",
+            "body": "In the customer portal the owner follows status, views the inspection, approves work, and sees the invoice. That means fewer calls at the front desk."
+          },
+          {
+            "title": "Your own dashboard",
+            "body": "Build tiles for revenue, open invoices, schedule, low stock, and technician workload, so you see every morning where things are tight."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is live shop planning in every plan?",
+            "a": "Live shop planning is in the Garage plan and during the trial. ZZP has a solo mode instead, where you switch between office and workshop."
+          },
+          {
+            "q": "How many technicians can I add?",
+            "a": "Garage includes 3 back office and 5 technician accounts. Extra accounts cost €4 per month excl. VAT. A group with unlimited seats is available on request."
+          },
+          {
+            "q": "Does it work on a tablet in the shop?",
+            "a": "Yes. Motivox is a web application and works on desktop, tablet, and shop-floor screens."
+          }
+        ]
+      },
+      "soloGarage": {
+        "navLabel": "Solo garage software",
+        "metaTitle": "Garage software for solo mechanics and small shops — Motivox",
+        "metaDescription": "Garage software for the independent mechanic or small shop: quote, work order, hours and invoice in one tool. ZZP plan €35 per month, 30-day trial.",
+        "keywords": [
+          "solo garage software",
+          "garage software for freelancers",
+          "small garage software",
+          "affordable garage software",
+          "ZZP garage software"
+        ],
+        "eyebrow": "Garage software for solo shops",
+        "title": "Garage software for the independent mechanic",
+        "intro": "Working alone or with one helper? You don't want an expensive package full of features you never use. Motivox's ZZP plan costs €35 per month excl. VAT and covers the whole job from inspection to invoice.",
+        "sections": [
+          {
+            "title": "One account, two roles",
+            "body": "In solo mode you switch between office and workshop in a single account. Make the quote at the desk and log your hours under the car, without a second subscription."
+          },
+          {
+            "title": "Professional from quote to invoice",
+            "body": "Send a quote with digital signature, record work and parts, and send a clean VAT invoice as a PDF. Customers follow status in their portal."
+          },
+          {
+            "title": "Included: you plus one extra account",
+            "body": "The ZZP plan includes the owner and one extra account for office or technician. When the business grows, upgrade to Garage for live planning and more accounts."
+          },
+          {
+            "title": "Bookkeeping stays simple",
+            "body": "Connect Moneybird, Exact Online, or e-Boekhouden, or export invoices as CSV or UBL. Let customers pay online through Mollie or Tikkie."
+          }
+        ],
+        "faq": [
+          {
+            "q": "What does Motivox cost for a solo mechanic?",
+            "a": "The ZZP plan costs €35 per month excl. VAT, cancellable monthly. Try it first for 30 days with everything in Garage."
+          },
+          {
+            "q": "What is the difference between ZZP and Garage?",
+            "a": "ZZP is for the owner plus one extra account, with solo mode. Garage (€80) has 3 back office and 5 technician accounts and live shop planning."
+          },
+          {
+            "q": "Can I upgrade later?",
+            "a": "Yes. You can move to Garage as soon as your team grows."
+          }
+        ]
+      },
+      "workOrders": {
+        "navLabel": "Work order software",
+        "metaTitle": "Work order software for garages — Motivox",
+        "metaDescription": "Work order software for auto repair shops: work orders, time tracking, parts and invoicing linked together. No retyping. Try free for 30 days.",
+        "keywords": [
+          "work order software",
+          "garage work order software",
+          "workshop time tracking",
+          "job card software",
+          "digital work order"
+        ],
+        "eyebrow": "Work order software",
+        "title": "Work order software where hours and parts flow onto the invoice",
+        "intro": "The work order is the heart of your shop. In Motivox it starts at the inspection, moves through your technicians, and ends as an invoice, without anyone entering the data again.",
+        "sections": [
+          {
+            "title": "From inspection to work order",
+            "body": "Findings from the inspection become lines on the quote. Once the customer approves, by printed PDF or a secure link with signature and timestamp, it becomes your work order."
+          },
+          {
+            "title": "Time tracking with a timer",
+            "body": "Technicians start a timer or book hours manually on the work order. You see what was worked per job, and what is planned per technician."
+          },
+          {
+            "title": "Parts and consumables",
+            "body": "Record parts and consumables on the work order, apply line discounts on labour and materials, and keep an eye on low stock on your dashboard."
+          },
+          {
+            "title": "Invoice in one click",
+            "body": "Hours, parts, and discounts become a pro forma or final invoice as a PDF, with Dutch VAT. Credit notes take a few clicks."
+          }
+        ],
+        "faq": [
+          {
+            "q": "What is work order software?",
+            "a": "Software a workshop uses to register jobs, assign them to technicians, track hours and parts, and finally invoice."
+          },
+          {
+            "q": "Can customers approve a work order?",
+            "a": "Yes. Customers approve through a printed PDF in the shop or a secure link with digital signature and timestamp."
+          },
+          {
+            "q": "Can I enter hours manually?",
+            "a": "Yes. Technicians use a timer or enter hours manually."
+          }
+        ]
+      }
+    }
   }
 }
