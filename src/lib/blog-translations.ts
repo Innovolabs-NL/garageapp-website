@@ -13,6 +13,7 @@ const pairs: ReadonlyArray<readonly [nl: string, en: string]> = [
   ["werkplaats-software-kiezen", "choosing-workshop-software"],
   ["nieuw-werkplaatsplanning-dashboard", "whats-new-shop-planning-dashboard"],
   ["garage-software-zzp-wat-heb-je-nodig", "solo-garage-software-what-you-need"],
+  ["garage-software-vergelijken-2026", "garage-software-comparison-2026"],
 ];
 
 /** Slug of the same article in the other locale, or null if unpaired. */
