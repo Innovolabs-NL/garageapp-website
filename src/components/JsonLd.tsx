@@ -18,6 +18,8 @@ export function JsonLd({ locale }: { locale: string }) {
         legalName: siteConfig.company,
         url: siteConfig.companyUrl,
         email: siteConfig.contactEmail,
+        vatID: siteConfig.vatId,
+        address: { "@type": "PostalAddress", ...siteConfig.address },
         logo: absoluteUrl("/icon"),
         identifier: {
           "@type": "PropertyValue",
@@ -39,6 +41,24 @@ export function JsonLd({ locale }: { locale: string }) {
         applicationCategory: "BusinessApplication",
         applicationSubCategory: "Garage workshop software",
         operatingSystem: "Web",
+        featureList:
+          locale === "nl"
+            ? [
+                "Keuring, offerte en digitale handtekening",
+                "Werkbon, urenregistratie en factuur (proforma of definitief)",
+                "Live werkplaatsplanning (Garagebedrijf)",
+                "Eigen dashboard met blokken en lage-voorraadmelding",
+                "Monteurportaal en klantportaal",
+                "Koppelingen: Mollie, Tikkie, Exact Online, Moneybird, e-Boekhouden",
+              ]
+            : [
+                "Inspection, quote, and digital signature",
+                "Work order, time tracking, and invoice (pro forma or final)",
+                "Live shop planning (Garage plan)",
+                "Your own dashboard with tiles and low-stock alerts",
+                "Technician portal and customer portal",
+                "Integrations: Mollie, Tikkie, Exact Online, Moneybird, e-Boekhouden",
+              ],
         description,
         url: homeUrl,
         provider: { "@id": `${siteConfig.url}/#organization` },

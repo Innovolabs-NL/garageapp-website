@@ -5,8 +5,10 @@ import {
   Bell,
   CalendarClock,
   CheckCircle2,
+  FileMinus,
   FileSignature,
   Files,
+  LayoutDashboard,
   Package,
   Plug,
   Receipt,
@@ -26,6 +28,8 @@ const items = [
   { key: "grid8" as const, Icon: Receipt },
   { key: "grid9" as const, Icon: Bell },
   { key: "grid10" as const, Icon: Plug },
+  { key: "grid11" as const, Icon: LayoutDashboard },
+  { key: "grid12" as const, Icon: FileMinus },
 ];
 
 export function FeatureGrid({

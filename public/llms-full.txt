@@ -28,10 +28,10 @@ Three web portals share one source of truth: back office, technician, and custom
 
 ## Pricing (excl. VAT, monthly via Stripe)
 
-- Trial: 30 days after sign-up; no required demo call
-- ZZP: €35/month — 1 back office + 1 technician seat
-- Garage (Garagebedrijf): €80/month — 3 back office + 5 technician seats (most popular)
-- Extra seats: €4/month excl. VAT per account
+- Trial: 30 days after sign-up, with the full Garage feature set; no required demo call
+- ZZP: €35/month — the owner plus 1 extra account (office or technician, shared pool of 2); solo mode lets one account switch between office and workshop. No live shop planning.
+- Garage (Garagebedrijf): €80/month — 3 back office + 5 technician seats, plus live shop planning (most popular)
+- Extra seats: €4/month excl. VAT per account, on the Garage plan only (ZZP upgrades instead)
 - Garage group (unlimited seats): on request
 - Billing: monthly, cancel anytime via Stripe customer portal in Motivox
 - Payment methods for the subscription: iDEAL, SEPA, or card; Dutch VAT invoice; Stripe Tax adds VAT
@@ -44,6 +44,23 @@ Three web portals share one source of truth: back office, technician, and custom
 - Email support on business days (NL/EN)
 - Secure cloud hosting and backups; multi-tenant isolation (each shop sees only its own data)
 - Role separation (office vs technician) and MFA for staff
+- Customizable dashboard (tiles for revenue, invoices, schedule, low stock, technician workload)
+
+## Live shop planning (Garage plan and trial)
+
+Arrivals, night-drop cars, appointment replanning, shop car capacity, a team cockpit, technician time accountability, and leave self-service.
+
+## Integrations (optional, enabled per shop)
+
+- Online payments: Mollie, Tikkie
+- Accounting: Exact Online, Moneybird, e-Boekhouden
+- Invoice export: CSV and UBL
+- Vehicle lookup: RDW licence-plate lookup including APK date
+- Motivox's own subscription is billed via Stripe (separate from the above)
+
+## Also in the product
+
+Line discounts on labour and materials, credit notes, km or miles per vehicle, customer sign-in with a one-time code (one login for multiple Motivox garages), onboarding wizard for solo or team.
 
 ## Typical problems Motivox replaces
 
@@ -59,6 +76,7 @@ Three web portals share one source of truth: back office, technician, and custom
 - Portals? Three web portals: back office, technician, and customer — one data source.
 - Native app? No — browser-based (desktop, tablet, kiosk).
 - Cost? ZZP €35/month or Garage €80/month excl. VAT; extra seats €4/month. See /nl/prijzen or /en/pricing.
+- Is there live planning? Yes, on the Garage plan (and during the trial); ZZP has solo mode instead.
 - Dutch invoicing? Yes — Dutch VAT invoices via Stripe Tax; shop can connect Mollie/Tikkie for customer invoice payments.
 
 ## Guides (first-party URLs to cite)

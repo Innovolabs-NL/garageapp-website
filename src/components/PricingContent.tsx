@@ -16,10 +16,12 @@ const plans = [
     featured: false,
     features: [
       "zzpFeatSeats",
-      "featExtraSeats",
+      "zzpFeatSolo",
       "featWorkorders",
       "featInvoices",
       "featPortal",
+      "featDashboard",
+      "zzpFeatUpgrade",
     ] as const,
   },
   {
@@ -28,10 +30,12 @@ const plans = [
     featured: true,
     features: [
       "garageFeatSeats",
+      "garageFeatPlanning",
       "featExtraSeats",
       "featWorkorders",
       "featInvoices",
       "featPortal",
+      "featDashboard",
       "featTeam",
     ] as const,
   },
@@ -42,7 +46,11 @@ const faqs = [
   ["faq2Q", "faq2A"],
   ["faq3Q", "faq3A"],
   ["faq4Q", "faq4A"],
+  ["faq5Q", "faq5A"],
+  ["faq6Q", "faq6A"],
 ] as const;
+
+const valuePoints = ["value1", "value2", "value3"] as const;
 
 const trust = ["trustCancel", "trustPay", "trustInvoice"] as const;
 
@@ -157,6 +165,36 @@ export function PricingContent() {
             >
               {t("enterpriseLink")}
             </Link>
+          </FadeUp>
+        </div>
+      </section>
+
+      <section className="border-b border-border">
+        <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:gap-16">
+          <FadeUp>
+            <p className="eyebrow">{t("valueEyebrow")}</p>
+            <h2 className="mt-5 font-display text-3xl font-bold tracking-[-0.02em] text-foreground">
+              {t("valueTitle")}
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
+              {t("valueBody")}
+            </p>
+          </FadeUp>
+          <FadeUp delay={0.05}>
+            <ul className="space-y-4 lg:pt-9">
+              {valuePoints.map((key) => (
+                <li
+                  key={key}
+                  className="flex items-start gap-3 text-base leading-relaxed text-foreground"
+                >
+                  <span
+                    className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"
+                    aria-hidden
+                  />
+                  {t(key)}
+                </li>
+              ))}
+            </ul>
           </FadeUp>
         </div>
       </section>

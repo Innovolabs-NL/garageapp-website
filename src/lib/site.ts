@@ -14,6 +14,13 @@ export const siteConfig = {
   company: "Innovolabs B.V.",
   companyUrl: "https://innovolabs.nl",
   kvk: "97588911",
+  vatId: "NL868124047B01",
+  address: {
+    streetAddress: "Edelherthof 16",
+    postalCode: "4105 VP",
+    addressLocality: "Culemborg",
+    addressCountry: "NL",
+  },
   descriptionNl:
     "Eén systeem voor de hele job — intake, keuring, goedkeuring, werk op de vloer, uren, onderdelen en factuur — zonder iets over te typen.",
   descriptionEn:

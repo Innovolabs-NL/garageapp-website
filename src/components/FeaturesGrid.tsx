@@ -8,6 +8,7 @@ import { Kenteken } from "@/components/Kenteken";
 import { LiveTimer } from "@/components/LiveTimer";
 import { FeatureGrid } from "@/components/FeatureGrid";
 import { HomeCta } from "@/components/home/HomeCta";
+import { HomeShopPulse } from "@/components/home/HomeShopPulse";
 import { siteConfig } from "@/lib/site";
 
 const PLATE = "H-842-XN";
@@ -53,6 +54,9 @@ const officeItems = [
   "officeItem6",
   "officeItem7",
   "officeItem8",
+  "officeItem9",
+  "officeItem10",
+  "officeItem11",
 ] as const;
 
 const techItems = [
@@ -62,6 +66,7 @@ const techItems = [
   "techItem4",
   "techItem5",
   "techItem6",
+  "techItem7",
 ] as const;
 
 const custItems = [
@@ -71,6 +76,7 @@ const custItems = [
   "custItem4",
   "custItem5",
   "custItem6",
+  "custItem7",
 ] as const;
 
 export function FeaturesGrid() {
@@ -258,6 +264,8 @@ export function FeaturesGrid() {
           </section>
         );
       })}
+
+      <HomeShopPulse />
 
       <FeatureGrid eyebrow={t("gridEyebrow")} title={t("gridTitle")} />
 

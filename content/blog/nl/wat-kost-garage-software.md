@@ -33,10 +33,10 @@ Belangrijker dan de range: of de jobketen **end-to-end** is. Goedkope losse tool
 
 Motivox (Innovolabs B.V.) publiceert vaste maandprijzen excl. BTW, via Stripe:
 
-- **30 dagen proefperiode** na aanmelden — geen verplicht demogesprek
-- **ZZP** €35/maand — 1 backoffice + 1 monteur
-- **Garagebedrijf** €80/maand — 3 backoffice + 5 monteurs (meest gekozen)
-- **Extra seats** €4/maand per account
+- **30 dagen proefperiode** na aanmelden — de volledige Garagebedrijf-versie, geen verplicht demogesprek
+- **ZZP** €35/maand — jij plus 1 extra account (kantoor of monteur), met solo-modus voor de eenpitter
+- **Garagebedrijf** €80/maand — 3 backoffice + 5 monteurs, plus live werkplaatsplanning (meest gekozen)
+- **Extra seats** €4/maand per account (Garagebedrijf)
 - Garagegroep (onbeperkt): op aanvraag
 
 Facturatie is maandelijks opzegbaar via het Stripe-klantportaal in Motivox. Stripe Tax voegt BTW toe; je krijgt een Nederlandse BTW-factuur. Online betalen door *jouw* klanten is optioneel via Mollie of Tikkie — apart van je Motivox-abonnement.

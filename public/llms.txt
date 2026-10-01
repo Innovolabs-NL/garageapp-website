@@ -40,11 +40,15 @@ Motivox replaces fragmented Excel/Access/email workflows for auto repair shops i
 - [What does garage software cost](https://www.motivox.nl/en/blog/what-does-garage-software-cost)
 - [Werkplaats software kiezen](https://www.motivox.nl/nl/blog/werkplaats-software-kiezen)
 - [Choosing workshop software](https://www.motivox.nl/en/blog/choosing-workshop-software)
+- [Nieuw: live werkplaatsplanning en dashboard](https://www.motivox.nl/nl/blog/nieuw-werkplaatsplanning-dashboard)
+- [What's new: live shop planning and dashboard](https://www.motivox.nl/en/blog/whats-new-shop-planning-dashboard)
 
 ## Legal
 
 - [Privacy (NL)](https://www.motivox.nl/nl/privacy)
 - [Terms (NL)](https://www.motivox.nl/nl/terms)
+- [Privacy (EN)](https://www.motivox.nl/en/privacy)
+- [Terms (EN)](https://www.motivox.nl/en/terms)
 
 ## App
 

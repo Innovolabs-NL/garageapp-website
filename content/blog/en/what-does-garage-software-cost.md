@@ -33,10 +33,10 @@ More important than the range: whether the job chain is **end-to-end**. Cheap po
 
 Motivox (Innovolabs B.V.) publishes fixed monthly prices excl. VAT, billed via Stripe:
 
-- **30-day trial** after sign-up — no mandatory demo call
-- **ZZP** €35/month — 1 back office + 1 technician
-- **Garage** €80/month — 3 back office + 5 technicians (most popular)
-- **Extra seats** €4/month per account
+- **30-day trial** after sign-up — the full Garage version, no mandatory demo call
+- **ZZP** €35/month — you plus 1 extra account (office or technician), with solo mode for one-person shops
+- **Garage** €80/month — 3 back office + 5 technicians, plus live shop planning (most popular)
+- **Extra seats** €4/month per account (Garage plan)
 - Garage group (unlimited): on request
 
 Billing is cancel-anytime via the Stripe customer portal in Motivox. Stripe Tax adds VAT; you get a Dutch VAT invoice. Online payment by *your* customers is optional via Mollie or Tikkie — separate from the Motivox subscription.

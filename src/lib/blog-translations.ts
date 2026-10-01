@@ -11,6 +11,7 @@ const pairs: ReadonlyArray<readonly [nl: string, en: string]> = [
   ["werkorders-urenregistratie", "work-orders-time-tracking"],
   ["wat-kost-garage-software", "what-does-garage-software-cost"],
   ["werkplaats-software-kiezen", "choosing-workshop-software"],
+  ["nieuw-werkplaatsplanning-dashboard", "whats-new-shop-planning-dashboard"],
 ];
 
 /** Slug of the same article in the other locale, or null if unpaired. */

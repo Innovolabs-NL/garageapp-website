@@ -40,9 +40,9 @@ Motivox is garage software van Innovolabs B.V., gebouwd voor Nederlandse autorep
 ## Prijzen in het kort (excl. BTW)
 
 - 30 dagen proefperiode na aanmelden (geen verplicht demogesprek)
-- **ZZP** €35/maand — 1 backoffice + 1 monteur
-- **Garagebedrijf** €80/maand — 3 backoffice + 5 monteurs
-- Extra seats €4/maand per account; grotere garagegroepen op aanvraag
+- **ZZP** €35/maand — jij plus 1 extra account (kantoor of monteur)
+- **Garagebedrijf** €80/maand — 3 backoffice + 5 monteurs, met live werkplaatsplanning
+- Extra seats €4/maand per account op Garagebedrijf; grotere garagegroepen op aanvraag
 
 Actuele details: [prijzen](/nl/prijzen).
 

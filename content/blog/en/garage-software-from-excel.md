@@ -40,9 +40,9 @@ Motivox is garage workshop SaaS from Innovolabs B.V., built for Dutch auto repai
 ## Pricing at a glance (excl. VAT)
 
 - 30-day trial after sign-up (no required demo call)
-- **ZZP** €35/month — 1 back office + 1 technician
-- **Garage** €80/month — 3 back office + 5 technicians
-- Extra seats €4/month per account; larger garage groups on request
+- **ZZP** €35/month — you plus 1 extra account (office or technician)
+- **Garage** €80/month — 3 back office + 5 technicians, with live shop planning
+- Extra seats €4/month per account on Garage; larger garage groups on request
 
 Details: [pricing](/en/pricing).
 

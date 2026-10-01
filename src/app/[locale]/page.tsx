@@ -13,6 +13,7 @@ import { FadeUp } from "@/components/FadeUp";
 import { FeatureGrid } from "@/components/FeatureGrid";
 import { HomeHero } from "@/components/home/HomeHero";
 import { HomeBayBoard } from "@/components/home/HomeBayBoard";
+import { HomeShopPulse } from "@/components/home/HomeShopPulse";
 import { HomeCta } from "@/components/home/HomeCta";
 import { FaqJsonLd } from "@/components/JsonLd";
 import { siteConfig } from "@/lib/site";
@@ -41,6 +42,7 @@ const homeFaqs = [
   ["faq3Q", "faq3A"],
   ["faq4Q", "faq4A"],
   ["faq5Q", "faq5A"],
+  ["faq6Q", "faq6A"],
 ] as const;
 
 export default async function HomePage({ params }: Props) {
@@ -64,6 +66,7 @@ export default async function HomePage({ params }: Props) {
       <FaqJsonLd items={faqItems} />
       <HomeHero />
       <HomeBayBoard />
+      <HomeShopPulse />
       <FeatureGrid eyebrow={t("gridEyebrow")} title={t("gridTitle")} />
 
       <section className="py-14 sm:py-28">
