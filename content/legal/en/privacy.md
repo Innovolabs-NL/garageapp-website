@@ -109,6 +109,7 @@ Motivox only uses cookies and browser storage that are needed to run the service
 | `GarageApp.AntiXsrf` | Cookie, necessary | Protects forms against cross-site request forgery | Session |
 | `gm_mode` | Cookie, functional | Remembers your chosen work mode | 1 year |
 | `.AspNetCore.Culture` | Cookie, functional | Remembers your language | 1 year |
+| `gm_signed_in` | Cookie, functional | Lets this website show "Open app" instead of "Log in" when you are signed in. Contains only a timestamp, no personal data | Up to 8 hours, removed when you sign out |
 | `garageapp.themePreference` | Local storage, functional | Remembers light/dark theme | Until you clear it |
 | Menu and tour state | Local storage, functional | Remembers whether the side menu is open and whether you finished the first-run tour | Until you clear it |
 

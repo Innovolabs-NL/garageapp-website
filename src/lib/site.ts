@@ -29,6 +29,8 @@ export const siteConfig = {
   appUrl,
   registerUrl: `${appUrl}/Identity/Account/Register?utm_source=website`,
   loginUrl: `${appUrl}/Identity/Account/Login`,
+  /** App entry for already signed-in staff; the app routes them to their home. */
+  openAppUrl: `${appUrl}/`,
   /** Car-owner customer portal (OTP login), not staff Identity. */
   customerPortalUrl: `${appUrl}/portal/login`,
   contactEmail:

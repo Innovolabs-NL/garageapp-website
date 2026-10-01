@@ -109,6 +109,7 @@ Motivox gebruikt alleen cookies en browseropslag die nodig zijn om de dienst te 
 | `GarageApp.AntiXsrf` | Cookie, noodzakelijk | Beschermt formulieren tegen cross-site request forgery | Sessie |
 | `gm_mode` | Cookie, functioneel | Onthoudt je gekozen werkmodus | 1 jaar |
 | `.AspNetCore.Culture` | Cookie, functioneel | Onthoudt je taal | 1 jaar |
+| `gm_signed_in` | Cookie, functioneel | Laat deze website "Open app" tonen in plaats van "Inloggen" wanneer je bent ingelogd. Bevat alleen een tijdstempel, geen persoonsgegevens | Maximaal 8 uur, verwijderd bij uitloggen |
 | `garageapp.themePreference` | Lokale opslag, functioneel | Onthoudt licht/donker thema | Tot je het wist |
 | Menu- en rondleidingstatus | Lokale opslag, functioneel | Onthoudt of het zijmenu open staat en of je de eerste rondleiding hebt afgerond | Tot je het wist |
 

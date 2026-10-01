@@ -6,6 +6,7 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { AppLink } from "./AppLink";
 import { BrandLogo } from "./BrandLogo";
+import { useSignedIn } from "@/lib/useSignedIn";
 import { LanguageToggle } from "./LanguageToggle";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -27,6 +28,7 @@ export function Header() {
   const t = useTranslations("Nav");
   const pathname = usePathname();
   const reduceMotion = useReducedMotion();
+  const signedIn = useSignedIn();
   const [open, setOpen] = useState(false);
   const [overMedia, setOverMedia] = useState(pathname === "/");
 
@@ -95,18 +97,29 @@ export function Header() {
           <div className="hidden md:block">
             <LanguageToggle />
           </div>
-          <AppLink
-            href="login"
-            className="hidden text-sm font-medium text-muted transition-colors hover:text-foreground md:inline"
-          >
-            {t("login")}
-          </AppLink>
-          <AppLink
-            href="register"
-            className="hidden h-9 items-center justify-center rounded-lg bg-accent px-4 text-sm font-semibold text-white transition-[filter] hover:brightness-110 md:inline-flex"
-          >
-            {t("cta")}
-          </AppLink>
+          {signedIn ? (
+            <AppLink
+              href="app"
+              className="hidden h-9 items-center justify-center rounded-lg bg-accent px-4 text-sm font-semibold text-white transition-[filter] hover:brightness-110 md:inline-flex"
+            >
+              {t("openApp")}
+            </AppLink>
+          ) : (
+            <>
+              <AppLink
+                href="login"
+                className="hidden text-sm font-medium text-muted transition-colors hover:text-foreground md:inline"
+              >
+                {t("login")}
+              </AppLink>
+              <AppLink
+                href="register"
+                className="hidden h-9 items-center justify-center rounded-lg bg-accent px-4 text-sm font-semibold text-white transition-[filter] hover:brightness-110 md:inline-flex"
+              >
+                {t("cta")}
+              </AppLink>
+            </>
+          )}
           <button
             type="button"
             className="menu-toggle inline-flex h-11 w-11 items-center justify-center rounded-lg text-muted transition-colors hover:bg-surface-2 hover:text-foreground md:hidden"
@@ -191,20 +204,32 @@ export function Header() {
                   </p>
                   <LanguageToggle />
                 </div>
-                <AppLink
-                  href="login"
-                  onClick={() => setOpen(false)}
-                  className="inline-flex h-12 w-full items-center justify-center rounded-lg border border-border-strong text-base font-semibold text-foreground"
-                >
-                  {t("login")}
-                </AppLink>
-                <AppLink
-                  href="register"
-                  onClick={() => setOpen(false)}
-                  className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-accent px-7 text-base font-semibold text-white transition-[filter] hover:brightness-110"
-                >
-                  {t("cta")}
-                </AppLink>
+                {signedIn ? (
+                  <AppLink
+                    href="app"
+                    onClick={() => setOpen(false)}
+                    className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-accent px-7 text-base font-semibold text-white transition-[filter] hover:brightness-110"
+                  >
+                    {t("openApp")}
+                  </AppLink>
+                ) : (
+                  <>
+                    <AppLink
+                      href="login"
+                      onClick={() => setOpen(false)}
+                      className="inline-flex h-12 w-full items-center justify-center rounded-lg border border-border-strong text-base font-semibold text-foreground"
+                    >
+                      {t("login")}
+                    </AppLink>
+                    <AppLink
+                      href="register"
+                      onClick={() => setOpen(false)}
+                      className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-accent px-7 text-base font-semibold text-white transition-[filter] hover:brightness-110"
+                    >
+                      {t("cta")}
+                    </AppLink>
+                  </>
+                )}
               </motion.div>
             </nav>
           </motion.div>

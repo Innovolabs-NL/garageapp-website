@@ -1,11 +1,12 @@
 import type { ReactNode } from "react";
 import { siteConfig } from "@/lib/site";
 
-type AppHref = "register" | "login" | "portal";
+type AppHref = "register" | "login" | "portal" | "app";
 
 const appHrefs: Record<AppHref, string> = {
   register: siteConfig.registerUrl,
   login: siteConfig.loginUrl,
+  app: siteConfig.openAppUrl,
   portal: siteConfig.customerPortalUrl,
 };
 
