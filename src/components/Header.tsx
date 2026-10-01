@@ -32,9 +32,12 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const [overMedia, setOverMedia] = useState(pathname === "/");
 
-  useEffect(() => {
+  // Close the mobile menu on navigation (adjusting state during render, not in an effect).
+  const [menuPathname, setMenuPathname] = useState(pathname);
+  if (menuPathname !== pathname) {
+    setMenuPathname(pathname);
     setOpen(false);
-  }, [pathname]);
+  }
 
   useEffect(() => {
     if (!open) return;
