@@ -8,7 +8,7 @@ keywords:
   - checklist werkplaats
 ---
 
-Een keuring is meer dan “even kijken onder de auto”. Het is het moment waarop je vastlegt wat veilig, urgent of optioneel is — en waarop de klant beslist.
+Een keuring is meer dan “even kijken onder de auto”. Het is het moment waarop je vastlegt wat veilig, urgent of optioneel is, en waarop de klant beslist.
 
 ## Waarom digitaal beter werkt dan papier
 
@@ -18,7 +18,7 @@ Een keuring is meer dan “even kijken onder de auto”. Het is het moment waaro
 
 ## Wat je in een digitaal rapport wilt
 
-Configureerbare secties en items, notities per punt, concept versus definitief, en een leesbaar rapport dat je met de klant deelt — zonder interne notities die niet voor de klant bedoeld zijn.
+Configureerbare secties en items, notities per punt, concept versus definitief, en een leesbaar rapport dat je met de klant deelt, zonder interne notities die niet voor de klant bedoeld zijn.
 
 ## Koppeling met goedkeuring
 

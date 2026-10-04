@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /*
-  Motivox marketing — bold editorial system.
+  Motivox marketing, bold editorial system.
   MotivoX navy + electric blue accent (#0165FD),
   Space Grotesk display over Inter body. Light + dark via html[data-theme].
 */
@@ -327,7 +327,7 @@ html[data-theme="dark"] .btn-on-media:hover {
   border-color: rgba(255, 255, 255, 0.55);
 }
 
-/* Header over media — only darken chrome in dark theme */
+/* Header over media, only darken chrome in dark theme */
 html[data-theme="dark"] .site-header[data-over-media="true"] {
   border-color: transparent;
   background: linear-gradient(180deg, rgba(8, 12, 20, 0.55) 0%, rgba(8, 12, 20, 0.12) 100%);

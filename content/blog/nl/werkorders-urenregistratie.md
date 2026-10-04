@@ -1,6 +1,6 @@
 ---
 title: "Werkorders en urenregistratie zonder overtypen"
-description: "Van goedgekeurd werkplan naar werkorder, planning en uren — zodat de backoffice factureert zonder Excel-tussenstappen."
+description: "Van goedgekeurd werkplan naar werkorder, planning en uren, zodat de backoffice factureert zonder Excel-tussenstappen."
 date: "2026-07-18"
 keywords:
   - werkorder software
@@ -8,7 +8,7 @@ keywords:
   - timesheet werkplaats
 ---
 
-De kernbelofte van moderne garage software is eenvoudig: **een technicus ziet de werkorder en logt uren; de backoffice maakt daaruit een factuur — zonder overtypen.**
+De kernbelofte van moderne garage software is eenvoudig: **een technicus ziet de werkorder en logt uren; de backoffice maakt daaruit een factuur, zonder overtypen.**
 
 ## Werkorder uit het plan
 
@@ -20,7 +20,7 @@ Wijs technici toe en plan blokken. De tech ziet alleen wat relevant is; de plann
 
 ## Uren: timer én handmatig
 
-Op de vloer telt snelheid. In het monteurportaal (web) houden een timer (hoogstens één lopende timer) én handmatige correctie de realiteit bij; foto’s of video kunnen bij een werkregel. Daarna: goedkeuring of afwijzing van timesheets door de backoffice — met reden bij afwijzing.
+Op de vloer telt snelheid. In het monteurportaal (web) houden een timer (hoogstens één lopende timer) én handmatige correctie de realiteit bij; foto’s of video kunnen bij een werkregel. Daarna: goedkeuring of afwijzing van timesheets door de backoffice, met reden bij afwijzing.
 
 ## Waarom dit facturatie redt
 

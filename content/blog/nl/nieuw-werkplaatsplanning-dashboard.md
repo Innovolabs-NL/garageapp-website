@@ -1,6 +1,6 @@
 ---
 title: "Nieuw in Motivox: live werkplaatsplanning en je eigen dashboard"
-description: "Live werkplaatsplanning voor Garagebedrijf, solo-modus voor ZZP, een dashboard dat je zelf inricht en soepelere onboarding — de nieuwste Motivox-updates."
+description: "Live werkplaatsplanning voor Garagebedrijf, solo-modus voor ZZP, een dashboard dat je zelf inricht en soepelere onboarding, de nieuwste Motivox-updates."
 date: "2026-09-30"
 keywords:
   - Motivox updates
@@ -15,7 +15,7 @@ Een garage gaat niet onderuit op de grote dingen. Het gaat mis op maandagochtend
 
 Aankomsten, nachtafgiftes, verplaatste afspraken en echte werkplaatscapaciteit staan nu op één bord. Een teamcockpit laat zien wie is ingeklokt en waar diegene mee bezig is. Verlof regelt het team zelf, niet via een briefje op de kantoordeur.
 
-Live werkplaatsplanning hoort bij **Garagebedrijf** — en omdat je 30 dagen proef de volledige Garagebedrijf-versie is, kun je het op je eigen auto’s uitproberen vóór je kiest.
+Live werkplaatsplanning hoort bij **Garagebedrijf**, en omdat je 30 dagen proef de volledige Garagebedrijf-versie is, kun je het op je eigen auto’s uitproberen vóór je kiest.
 
 ## Solo-modus voor ZZP
 
@@ -25,8 +25,8 @@ Alleen, of met één hulp? Op ZZP wisselt één account nu tussen kantoor en wer
 
 Kies welke blokken je ziet, sleep ze in de volgorde waarin je ernaar kijkt en maak ze groter of kleiner. Nieuwe blokken:
 
-- **Lage voorraad** — stel per product een minimumvoorraad in en het blok vertelt wat je moet bijbestellen
-- **Werkdruk monteurs** — wie heeft vandaag ruimte, en wie niet
+- **Lage voorraad**, stel per product een minimumvoorraad in en het blok vertelt wat je moet bijbestellen
+- **Werkdruk monteurs**, wie heeft vandaag ruimte, en wie niet
 
 ## Onboarding die eerst de juiste vraag stelt
 

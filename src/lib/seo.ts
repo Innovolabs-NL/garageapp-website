@@ -32,7 +32,7 @@ const defaultOgImage = {
   url: "/opengraph-image",
   width: 1200,
   height: 630,
-  alt: `${siteConfig.name} — garage software`,
+  alt: `${siteConfig.name}, garage software`,
 } as const;
 
 export function buildPageMetadata(opts: {
@@ -111,7 +111,7 @@ export function buildBlogPostMetadata(opts: {
         : canonical;
 
   return {
-    title: `${opts.title} — ${siteConfig.name}`,
+    title: `${opts.title}, ${siteConfig.name}`,
     description: opts.description,
     keywords: opts.keywords,
     alternates: {

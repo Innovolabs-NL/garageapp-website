@@ -42,8 +42,8 @@ export function HomeShopPulse() {
               </p>
             </div>
             <ul className="mt-4 space-y-2 text-sm text-muted">
-              <li className="text-accent">— {t("pulseTile1Line1")}</li>
-              <li>— {t("pulseTile1Line2")}</li>
+              <li className="text-accent">, {t("pulseTile1Line1")}</li>
+              <li>, {t("pulseTile1Line2")}</li>
             </ul>
           </div>
 

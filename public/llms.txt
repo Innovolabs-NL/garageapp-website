@@ -1,8 +1,8 @@
 # Motivox
 
-> Motivox is Dutch-first garage workshop software (SaaS) by Innovolabs B.V. One system for the full job: intake, inspection, customer approval, shop-floor work, hours, parts, and invoice — without retyping.
+> Motivox is Dutch-first garage workshop software (SaaS) by Innovolabs B.V. One system for the full job: intake, inspection, customer approval, shop-floor work, hours, parts, and invoice, without retyping.
 
-Motivox replaces fragmented Excel/Access/email workflows for auto repair shops in the Netherlands. It is web-based (office, technician, and customer portals) — not a separate native iOS/Android app.
+Motivox replaces fragmented Excel/Access/email workflows for auto repair shops in the Netherlands. It is web-based (office, technician, and customer portals), not a separate native iOS/Android app.
 
 ## Product
 

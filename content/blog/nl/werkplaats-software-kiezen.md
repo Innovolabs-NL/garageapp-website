@@ -1,6 +1,6 @@
 ---
 title: "Werkplaats software kiezen: checklist voor garages"
-description: "Checklist om werkplaats- of garage software te kiezen: jobketen, portalen, NL-facturatie, data-isolatie en support — zonder concurrententabellen."
+description: "Checklist om werkplaats- of garage software te kiezen: jobketen, portalen, NL-facturatie, data-isolatie en support, zonder concurrententabellen."
 date: "2026-09-09"
 keywords:
   - werkplaats software kiezen
@@ -9,7 +9,7 @@ keywords:
   - werkplaatsmanagement
 ---
 
-De verkeerde keuze voelt pas na drie maanden: overtypen blijft, monteurs loggen niet in, klanten bellen nog steeds voor status. Gebruik deze **checklist** vóór je tekent — onafhankelijk van welk pakket je overweegt.
+De verkeerde keuze voelt pas na drie maanden: overtypen blijft, monteurs loggen niet in, klanten bellen nog steeds voor status. Gebruik deze **checklist** vóór je tekent, onafhankelijk van welk pakket je overweegt.
 
 ## 1. Is de jobketen echt end-to-end?
 
@@ -22,17 +22,17 @@ Goede garage software koppelt:
 5. Uren, onderdelen, kleinmateriaal
 6. Factuur en klantinzage
 
-Als stap 3 en 6 in verschillende systemen leven, koop je geen “één systeem” — je koopt twee eilanden met een Excel-brug.
+Als stap 3 en 6 in verschillende systemen leven, koop je geen “één systeem”, je koopt twee eilanden met een Excel-brug.
 
 ## 2. Drie rollen, één bron van waarheid
 
 Vraag expliciet naar:
 
-- **Kantoor** — klanten, offertes, planning, facturen
-- **Monteur** — werkbon, keuring, uren (timer of handmatig), media bij de regel
-- **Klant** — akkoord, slot ná goedkeuring, status, factuurdownload
+- **Kantoor**, klanten, offertes, planning, facturen
+- **Monteur**, werkbon, keuring, uren (timer of handmatig), media bij de regel
+- **Klant**, akkoord, slot ná goedkeuring, status, factuurdownload
 
-Zonder monteur- of klantportaal blijft de balie het knelpunt. Motivox levert drie **webportalen** op één dataset — geen aparte native app.
+Zonder monteur- of klantportaal blijft de balie het knelpunt. Motivox levert drie **webportalen** op één dataset, geen aparte native app.
 
 ## 3. Nederlandse praktijk
 
@@ -40,7 +40,7 @@ Check BTW-facturen, rollen (kantoor vs monteur), MFA, en of APK-/kentekenflows b
 
 ## 4. Data en multi-tenant
 
-Elke zaak mag alleen eigen data zien. Een tweede vestiging mag geen “per ongeluk gedeelde” klantenlijst krijgen. Vraag hoe multi-tenant isolatie werkt — en wat een tweede shop betekent (eigen registratie vs shared tenant).
+Elke zaak mag alleen eigen data zien. Een tweede vestiging mag geen “per ongeluk gedeelde” klantenlijst krijgen. Vraag hoe multi-tenant isolatie werkt, en wat een tweede shop betekent (eigen registratie vs shared tenant).
 
 ## 5. Adoptie op de vloer
 
@@ -61,6 +61,6 @@ E-mailsupport op werkdagen (NL/EN) en productupdates zonder aparte upgrade-fee v
 
 ## Beslisregel
 
-Kies het pakket dat **overtypen elimineert** tussen keuring, akkoord, vloer en factuur — niet het pakket met de langste featurelijst. Als Motivox die keten dekt voor jouw teamgrootte, start met de [proefperiode](https://app.motivox.nl/Identity/Account/Register) of bekijk [functies](/nl/functies).
+Kies het pakket dat **overtypen elimineert** tussen keuring, akkoord, vloer en factuur, niet het pakket met de langste featurelijst. Als Motivox die keten dekt voor jouw teamgrootte, start met de [proefperiode](https://app.motivox.nl/Identity/Account/Register) of bekijk [functies](/nl/functies).
 
 *Verder lezen: [Werkplaats software](/nl/werkplaats-software).*

@@ -1,4 +1,4 @@
-/** Env may be set but empty on Vercel — treat blank as missing. */
+/** Env may be set but empty on Vercel, treat blank as missing. */
 function envUrl(value: string | undefined, fallback: string) {
   const trimmed = value?.trim();
   return (trimmed || fallback).replace(/\/$/, "");
@@ -22,9 +22,9 @@ export const siteConfig = {
     addressCountry: "NL",
   },
   descriptionNl:
-    "Eén systeem voor de hele job — intake, keuring, goedkeuring, werk op de vloer, uren, onderdelen en factuur — zonder iets over te typen.",
+    "Eén systeem voor de hele job, intake, keuring, goedkeuring, werk op de vloer, uren, onderdelen en factuur, zonder iets over te typen.",
   descriptionEn:
-    "One system for the whole job — intake, inspection, approval, work on the floor, hours, parts, and invoice — without retyping anything.",
+    "One system for the whole job, intake, inspection, approval, work on the floor, hours, parts, and invoice, without retyping anything.",
   url: envUrl(process.env.NEXT_PUBLIC_SITE_URL, "https://www.motivox.nl"),
   appUrl,
   registerUrl: `${appUrl}/Identity/Account/Register?utm_source=website`,
@@ -35,7 +35,7 @@ export const siteConfig = {
   customerPortalUrl: `${appUrl}/portal/login`,
   contactEmail:
     process.env.CONTACT_TO_EMAIL?.trim() || "hello@innovolabs.nl",
-  /** Stripe plan prices excl. VAT — keep in sync with PricingContent. */
+  /** Stripe plan prices excl. VAT, keep in sync with PricingContent. */
   pricing: {
     currency: "EUR",
     zzpMonthly: 35,
@@ -43,10 +43,10 @@ export const siteConfig = {
     extraSeatMonthly: 4,
     trialDays: 30,
   },
-  /** Workshop photography — replace with owned shots when available */
+  /** Workshop photography, replace with owned shots when available */
   images: {
     hero: "https://images.unsplash.com/photo-1727893119356-1702fe921cf9?auto=format&fit=crop&w=2400&q=80",
-    /** Bright shop floor — same series as `hero`, distinct angle for Functies */
+    /** Bright shop floor, same series as `hero`, distinct angle for Functies */
     featuresHero:
       "https://images.unsplash.com/photo-1727893141025-35d62b3f4a03?auto=format&fit=crop&w=2400&q=80",
     floor:

@@ -15,13 +15,13 @@ Motivox is offered to businesses only. By registering you confirm that you act i
 
 ## 2. The service
 
-Motivox is a multi-tenant web SaaS for auto repair shops. It supports a connected job chain — typically intake, inspection, quote/approval, work order, hours, parts/consumables, and invoicing — via three **web** portals:
+Motivox is a multi-tenant web SaaS for auto repair shops. It supports a connected job chain, typically intake, inspection, quote/approval, work order, hours, parts/consumables, and invoicing, via three **web** portals:
 
 - **Office** (back office / shop owner)
 - **Technician**
 - **Customer** (one-time code login and/or secure links)
 
-Motivox is **not** a separate native iOS/Android application. Optional integrations (e.g. Mollie, Tikkie, Exact Online, Moneybird, e-Boekhouden) are available per shop after you connect them; they are not enabled for everyone by default. RDW plate lookup and APK reminders are not a certified APK-station software suite. Customer appointment slots are available **after** quote approval — not as cold public self-booking.
+Motivox is **not** a separate native iOS/Android application. Optional integrations (e.g. Mollie, Tikkie, Exact Online, Moneybird, e-Boekhouden) are available per shop after you connect them; they are not enabled for everyone by default. RDW plate lookup and APK reminders are not a certified APK-station software suite. Customer appointment slots are available **after** quote approval, not as cold public self-booking.
 
 Motivox records a customer’s approval of a quote as a simple electronic signature with supporting evidence (consent, time, IP address and PDF). It does not provide advanced or qualified electronic signatures. The repair contract is between your shop and your customer; Innovolabs B.V. is not a party to it and is not responsible for your quotes, prices, repairs or invoices.
 
@@ -133,4 +133,4 @@ These terms are governed by **Dutch law**. Disputes shall be submitted to the co
 
 If the Dutch and English versions differ, the Dutch version prevails.
 
-Innovolabs B.V. — Edelherthof 16, 4105 VP Culemborg — KvK 97588911 — [hello@innovolabs.nl](mailto:hello@innovolabs.nl)
+Innovolabs B.V., Edelherthof 16, 4105 VP Culemborg, KvK 97588911, [hello@innovolabs.nl](mailto:hello@innovolabs.nl)

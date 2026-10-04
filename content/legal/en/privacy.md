@@ -32,7 +32,7 @@ Depending on how you use Motivox and this website, we may process:
 - **Product usage (SaaS):** operational logs needed to run and secure the service (e.g. activity log entries your shop generates)
 - **Tenant business content (as processor):** customer and vehicle records, inspections, quotes, work orders, hours, parts, invoices, portal access tokens and one-time login codes, optional payment and accounting connection settings your shop configures
 - **Signature evidence (as processor, for the garage):** when a customer approves a quote in the customer portal, we record the consent, time, IP address, browser details (user agent) and the approved PDF as evidence for the garage
-- **Website preferences:** theme preference stored in the browser (`localStorage`) — not used for advertising profiles
+- **Website preferences:** theme preference stored in the browser (`localStorage`), not used for advertising profiles
 - **Website server logs:** technical data such as IP address and request time, processed by Vercel, the hosting provider of this website, to deliver and secure it
 
 We do **not** sell personal data. We do not use profiling or make automated decisions with legal or similarly significant effects about you.
@@ -129,4 +129,4 @@ We may update this policy when our practices or the law change. The “Last upda
 
 ## 13. Contact
 
-Innovolabs B.V. — Edelherthof 16, 4105 VP Culemborg — KvK 97588911 — [hello@innovolabs.nl](mailto:hello@innovolabs.nl)
+Innovolabs B.V., Edelherthof 16, 4105 VP Culemborg, KvK 97588911, [hello@innovolabs.nl](mailto:hello@innovolabs.nl)

@@ -32,7 +32,7 @@ Afhankelijk van hoe je Motivox en deze website gebruikt, kunnen wij verwerken:
 - **Productgebruik (SaaS):** operationele logs die nodig zijn om de dienst te laten draaien en te beveiligen (bijv. activiteitenlog die jouw zaak genereert)
 - **Zakelijke inhoud van de tenant (als verwerker):** klant- en voertuigdossiers, keuringen, offertes, werkbonnen, uren, onderdelen, facturen, portaal-tokens en eenmalige inlogcodes, optionele betaal- en boekhoudkoppelingen die de zaak configureert
 - **Handtekeningbewijs (als verwerker, voor de garage):** wanneer een klant in het klantportaal een offerte goedkeurt, leggen wij de toestemming, het tijdstip, het IP-adres, browsergegevens (user agent) en de goedgekeurde pdf vast als bewijs voor de garage
-- **Websitevoorkeuren:** thema-voorkeur in de browser (`localStorage`) — niet voor advertentieprofielen
+- **Websitevoorkeuren:** thema-voorkeur in de browser (`localStorage`), niet voor advertentieprofielen
 - **Serverlogs van de website:** technische gegevens zoals IP-adres en tijdstip van het verzoek, verwerkt door Vercel, de hostingpartij van deze website, om de site te leveren en te beveiligen
 
 Wij **verkopen** geen persoonsgegevens. Wij passen geen profilering toe en nemen geen geautomatiseerde besluiten met rechtsgevolgen of vergelijkbaar ingrijpende gevolgen over jou.
@@ -129,4 +129,4 @@ Wij kunnen dit beleid bijwerken wanneer onze praktijken of de wet wijzigen. De d
 
 ## 13. Contact
 
-Innovolabs B.V. — Edelherthof 16, 4105 VP Culemborg — KvK 97588911 — [hello@innovolabs.nl](mailto:hello@innovolabs.nl)
+Innovolabs B.V., Edelherthof 16, 4105 VP Culemborg, KvK 97588911, [hello@innovolabs.nl](mailto:hello@innovolabs.nl)

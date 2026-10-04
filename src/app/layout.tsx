@@ -33,7 +33,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — Garage software`,
+    default: `${siteConfig.name}, Garage software`,
     template: `%s`,
   },
   description: siteConfig.descriptionNl,

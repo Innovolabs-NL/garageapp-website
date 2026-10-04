@@ -1,6 +1,6 @@
 ---
 title: "What does garage software cost?"
-description: "What you pay for garage or workshop software: subscriptions, seats, VAT, trials — and what Motivox costs (ZZP €35, Garage €80 excl. VAT)."
+description: "What you pay for garage or workshop software: subscriptions, seats, VAT, trials, and what Motivox costs (ZZP €35, Garage €80 excl. VAT)."
 date: "2026-09-09"
 keywords:
   - garage software cost
@@ -9,17 +9,17 @@ keywords:
   - Motivox pricing
 ---
 
-Shops leaving Excel or Access behind usually ask first: **what does garage software cost?** The answer is rarely one number. You pay for seats, modules, and often a yearly lock-in — or a clear monthly SaaS plan.
+Shops leaving Excel or Access behind usually ask first: **what does garage software cost?** The answer is rarely one number. You pay for seats, modules, and often a yearly lock-in, or a clear monthly SaaS plan.
 
 ## What the price is made of
 
 Do not compare only the “from” rate. Check:
 
-1. **What is included** — intake, inspection, quote, work order, hours, invoice, customer portal
-2. **Seats** — office vs technician; cost of an extra account
-3. **VAT** — prices are often excl. VAT; invoices must fit your bookkeeping
-4. **Trial** — self-serve start vs mandatory demo call
-5. **Cancellation** — month-to-month or annual commitment
+1. **What is included**, intake, inspection, quote, work order, hours, invoice, customer portal
+2. **Seats**, office vs technician; cost of an extra account
+3. **VAT**, prices are often excl. VAT; invoices must fit your bookkeeping
+4. **Trial**, self-serve start vs mandatory demo call
+5. **Cancellation**, month-to-month or annual commitment
 
 Add-on modules (inventory, brand integrations, multi-site) can double the monthly bill. Ask what you *do not* need.
 
@@ -33,19 +33,19 @@ More important than the range: whether the job chain is **end-to-end**. Cheap po
 
 Motivox (Innovolabs B.V.) publishes fixed monthly prices excl. VAT, billed via Stripe:
 
-- **30-day trial** after sign-up — the full Garage version, no mandatory demo call
-- **ZZP** €35/month — you plus 1 extra account (office or technician), with solo mode for one-person shops
-- **Garage** €80/month — 3 back office + 5 technicians, plus live shop planning (most popular)
+- **30-day trial** after sign-up, the full Garage version, no mandatory demo call
+- **ZZP** €35/month, you plus 1 extra account (office or technician), with solo mode for one-person shops
+- **Garage** €80/month, 3 back office + 5 technicians, plus live shop planning (most popular)
 - **Extra seats** €4/month per account (Garage plan)
 - Garage group (unlimited): on request
 
-Billing is cancel-anytime via the Stripe customer portal in Motivox. Stripe Tax adds VAT; you get a Dutch VAT invoice. Online payment by *your* customers is optional via Mollie or Tikkie — separate from the Motivox subscription.
+Billing is cancel-anytime via the Stripe customer portal in Motivox. Stripe Tax adds VAT; you get a Dutch VAT invoice. Online payment by *your* customers is optional via Mollie or Tikkie, separate from the Motivox subscription.
 
 Current details: [pricing](/en/pricing).
 
 ## Trial vs demo
 
-A trial where you test your own data and workflows says more than a sales demo. Motivox starts with registration and onboarding (company details, rates, logo). You see whether the chain — inspection → approval → floor → invoice — fits before you pay.
+A trial where you test your own data and workflows says more than a sales demo. Motivox starts with registration and onboarding (company details, rates, logo). You see whether the chain, inspection → approval → floor → invoice, fits before you pay.
 
 ## Checklist before you sign
 
@@ -57,6 +57,6 @@ A trial where you test your own data and workflows says more than a sales demo. 
 
 ## Short answer
 
-**Garage software** typically costs tens to hundreds of euros per month, depending on seats and depth. Motivox: **€35 (ZZP) or €80 (Garage) excl. VAT**, plus optional seats at €4 — with a 30-day trial. Next: [features](/en/features) or [sign up](https://app.motivox.nl/Identity/Account/Register).
+**Garage software** typically costs tens to hundreds of euros per month, depending on seats and depth. Motivox: **€35 (ZZP) or €80 (Garage) excl. VAT**, plus optional seats at €4, with a 30-day trial. Next: [features](/en/features) or [sign up](https://app.motivox.nl/Identity/Account/Register).
 
 *Further reading: [Garage software for solo shops](/en/solo-garage-software).*

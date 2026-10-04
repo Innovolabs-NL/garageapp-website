@@ -3,7 +3,7 @@ type Props = {
   className?: string;
 };
 
-/** Stylized NL license plate — workshop DNA without cartoon icons. */
+/** Stylized NL license plate, workshop DNA without cartoon icons. */
 export function Kenteken({ code, className = "" }: Props) {
   return (
     <span className={`kenteken ${className}`.trim()} aria-label={code}>

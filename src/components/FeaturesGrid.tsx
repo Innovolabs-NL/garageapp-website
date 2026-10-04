@@ -202,9 +202,9 @@ export function FeaturesGrid() {
                         {t("planCardTitle")}
                       </p>
                       <ul className="mt-5 space-y-2 text-sm text-muted">
-                        <li>— {t("planLine1")}</li>
-                        <li>— {t("planLine2")}</li>
-                        <li>— {t("planLine3")}</li>
+                        <li>, {t("planLine1")}</li>
+                        <li>, {t("planLine2")}</li>
+                        <li>, {t("planLine3")}</li>
                       </ul>
                       <div className="mt-6 flex flex-wrap items-center gap-3 sm:mt-8">
                         <span className="icon-bay">

@@ -15,13 +15,13 @@ Motivox wordt uitsluitend aan bedrijven aangeboden. Door je te registreren beves
 
 ## 2. De dienst
 
-Motivox is een multi-tenant web-SaaS voor autoreparatiebedrijven. Het ondersteunt een gekoppelde jobketen — typisch intake, keuring, offerte/akkoord, werkbon, uren, onderdelen/kleinmateriaal en facturatie — via drie **web**portalen:
+Motivox is een multi-tenant web-SaaS voor autoreparatiebedrijven. Het ondersteunt een gekoppelde jobketen, typisch intake, keuring, offerte/akkoord, werkbon, uren, onderdelen/kleinmateriaal en facturatie, via drie **web**portalen:
 
 - **Kantoor** (backoffice / garagehouder)
 - **Monteur**
 - **Klant** (inloggen met een eenmalige code en/of beveiligde links)
 
-Motivox is **geen** aparte native iOS-/Android-app. Optionele koppelingen (bijv. Mollie, Tikkie, Exact Online, Moneybird, e-Boekhouden) zijn per zaak beschikbaar nadat je ze koppelt; ze staan niet standaard aan voor iedereen. RDW-kentekenopzoeking en APK-herinneringen zijn geen gecertificeerde APK-keuringsstationsoftware. Afspraakslots voor klanten zijn beschikbaar **ná** offerte-akkoord — niet als koude publieke zelfboeking.
+Motivox is **geen** aparte native iOS-/Android-app. Optionele koppelingen (bijv. Mollie, Tikkie, Exact Online, Moneybird, e-Boekhouden) zijn per zaak beschikbaar nadat je ze koppelt; ze staan niet standaard aan voor iedereen. RDW-kentekenopzoeking en APK-herinneringen zijn geen gecertificeerde APK-keuringsstationsoftware. Afspraakslots voor klanten zijn beschikbaar **ná** offerte-akkoord, niet als koude publieke zelfboeking.
 
 Motivox legt het akkoord van een klant op een offerte vast als een gewone elektronische handtekening met bewijsmateriaal (toestemming, tijdstip, IP-adres en pdf). Motivox biedt geen geavanceerde of gekwalificeerde elektronische handtekeningen. De reparatieovereenkomst wordt gesloten tussen jouw zaak en jouw klant; Innovolabs B.V. is daar geen partij bij en is niet verantwoordelijk voor jouw offertes, prijzen, reparaties of facturen.
 
@@ -94,7 +94,7 @@ Voor persoonsgegevens die wij als verwerkingsverantwoordelijke verwerken (bijvoo
 
 ## 8. Intellectueel eigendom
 
-Motivox-software, merken, documentatie en gerelateerde IE blijven eigendom van Innovolabs B.V. of haar licentiegevers. Deze voorwaarden geven je een niet-exclusief, niet-overdraagbaar recht om de SaaS te gebruiken tijdens een actief abonnement of proefperiode — geen eigendom van de software.
+Motivox-software, merken, documentatie en gerelateerde IE blijven eigendom van Innovolabs B.V. of haar licentiegevers. Deze voorwaarden geven je een niet-exclusief, niet-overdraagbaar recht om de SaaS te gebruiken tijdens een actief abonnement of proefperiode, geen eigendom van de software.
 
 ## 9. Beschikbaarheid en support
 
@@ -133,4 +133,4 @@ Op deze voorwaarden is **Nederlands recht** van toepassing. Geschillen worden vo
 
 Wijken de Nederlandse en de Engelse versie van elkaar af, dan prevaleert de Nederlandse versie.
 
-Innovolabs B.V. — Edelherthof 16, 4105 VP Culemborg — KvK 97588911 — [hello@innovolabs.nl](mailto:hello@innovolabs.nl)
+Innovolabs B.V., Edelherthof 16, 4105 VP Culemborg, KvK 97588911, [hello@innovolabs.nl](mailto:hello@innovolabs.nl)

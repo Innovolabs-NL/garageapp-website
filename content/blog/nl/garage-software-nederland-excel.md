@@ -1,6 +1,6 @@
 ---
 title: "Garage software Nederland: van Excel naar één systeem"
-description: "Waarom Nederlandse garages Excel en Access vervangen door gekoppelde garage software — en waar je op let bij de overstap."
+description: "Waarom Nederlandse garages Excel en Access vervangen door gekoppelde garage software, en waar je op let bij de overstap."
 date: "2026-07-10"
 keywords:
   - garage software Nederland
@@ -8,7 +8,7 @@ keywords:
   - Excel garage
 ---
 
-Veel Nederlandse werkplaatsen draaien nog op Excel-lijsten, Access-databases of een mix van e-mail en papier. Het werkt — tot het aantal jobs groeit, een technicus ziek is, of de klant vraagt: “wanneer is mijn auto klaar?”
+Veel Nederlandse werkplaatsen draaien nog op Excel-lijsten, Access-databases of een mix van e-mail en papier. Het werkt, tot het aantal jobs groeit, een technicus ziek is, of de klant vraagt: “wanneer is mijn auto klaar?”
 
 ## Het probleem is niet “geen software”
 
@@ -32,16 +32,16 @@ Zonder die keten blijft digitaal werken een schijnverbetering: je hebt “apps�
 Motivox is garage software van Innovolabs B.V., gebouwd voor Nederlandse autoreparatiebedrijven:
 
 - **Nederlands-eerst** interface, met Engels als tweede taal
-- **Drie webportalen** — kantoor, monteur en klant — op één bron van waarheid
+- **Drie webportalen**, kantoor, monteur en klant, op één bron van waarheid
 - **Multi-tenant** architectuur: elke zaak ziet alleen eigen data; een tweede vestiging start met eigen registratie
-- **Geen aparte native iOS-/Android-app** — alles via de browser (geschikt voor kiosk, tablet en desktop)
+- **Geen aparte native iOS-/Android-app**, alles via de browser (geschikt voor kiosk, tablet en desktop)
 - Typische NL-praktijk: BTW-factuur, rollen (kantoor vs monteur), MFA voor medewerkers
 
 ## Prijzen in het kort (excl. BTW)
 
 - 30 dagen proefperiode na aanmelden (geen verplicht demogesprek)
-- **ZZP** €35/maand — jij plus 1 extra account (kantoor of monteur)
-- **Garagebedrijf** €80/maand — 3 backoffice + 5 monteurs, met live werkplaatsplanning
+- **ZZP** €35/maand, jij plus 1 extra account (kantoor of monteur)
+- **Garagebedrijf** €80/maand, 3 backoffice + 5 monteurs, met live werkplaatsplanning
 - Extra seats €4/maand per account op Garagebedrijf; grotere garagegroepen op aanvraag
 
 Actuele details: [prijzen](/nl/prijzen).
@@ -56,6 +56,6 @@ Actuele details: [prijzen](/nl/prijzen).
 
 ## Volgende stap
 
-Inventariseer waar jullie nu overtypen. Start daarna een [proefperiode in Motivox](https://app.motivox.nl/Identity/Account/Register): laat precies die flow zien — intake tot factuur — zonder Excel-eilandjes.
+Inventariseer waar jullie nu overtypen. Start daarna een [proefperiode in Motivox](https://app.motivox.nl/Identity/Account/Register): laat precies die flow zien, intake tot factuur, zonder Excel-eilandjes.
 
 *Verder lezen: [Garage software](/nl/garage-software).*

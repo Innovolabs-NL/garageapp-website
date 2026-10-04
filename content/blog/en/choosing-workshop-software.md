@@ -1,6 +1,6 @@
 ---
 title: "Choosing workshop software: a checklist for repair shops"
-description: "A checklist for choosing garage or workshop software: job chain, portals, Dutch invoicing, data isolation, and support — without competitor tables."
+description: "A checklist for choosing garage or workshop software: job chain, portals, Dutch invoicing, data isolation, and support, without competitor tables."
 date: "2026-09-09"
 keywords:
   - choosing workshop software
@@ -9,7 +9,7 @@ keywords:
   - workshop management
 ---
 
-The wrong choice shows up after three months: retyping remains, technicians never log in, customers still call for status. Use this **checklist** before you sign — regardless of which product you are evaluating.
+The wrong choice shows up after three months: retyping remains, technicians never log in, customers still call for status. Use this **checklist** before you sign, regardless of which product you are evaluating.
 
 ## 1. Is the job chain truly end-to-end?
 
@@ -22,17 +22,17 @@ Good garage software connects:
 5. Hours, parts, consumables
 6. Invoice and customer visibility
 
-If steps 3 and 6 live in different systems, you are not buying “one system” — you are buying two islands with an Excel bridge.
+If steps 3 and 6 live in different systems, you are not buying “one system”, you are buying two islands with an Excel bridge.
 
 ## 2. Three roles, one source of truth
 
 Ask explicitly about:
 
-- **Office** — customers, quotes, planning, invoices
-- **Technician** — work order, inspection, hours (timer or manual), media on the line
-- **Customer** — approval, slot after approval, status, invoice download
+- **Office**, customers, quotes, planning, invoices
+- **Technician**, work order, inspection, hours (timer or manual), media on the line
+- **Customer**, approval, slot after approval, status, invoice download
 
-Without a technician or customer portal, the front desk stays the bottleneck. Motivox ships three **web portals** on one dataset — no separate native app.
+Without a technician or customer portal, the front desk stays the bottleneck. Motivox ships three **web portals** on one dataset, no separate native app.
 
 ## 3. Local practice (Netherlands)
 
@@ -40,7 +40,7 @@ Check VAT invoices, office vs technician roles, MFA, and whether APK / plate flo
 
 ## 4. Data and multi-tenant
 
-Each shop should see only its own data. A second location must not accidentally share a customer list. Ask how multi-tenant isolation works — and what a second shop means (own registration vs shared tenant).
+Each shop should see only its own data. A second location must not accidentally share a customer list. Ask how multi-tenant isolation works, and what a second shop means (own registration vs shared tenant).
 
 ## 5. Adoption on the floor
 
@@ -61,6 +61,6 @@ Business-day email support (NL/EN) and product updates without a separate upgrad
 
 ## Decision rule
 
-Pick the product that **eliminates retyping** between inspection, approval, floor, and invoice — not the one with the longest feature list. If Motivox covers that chain for your team size, start a [trial](https://app.motivox.nl/Identity/Account/Register) or review [features](/en/features).
+Pick the product that **eliminates retyping** between inspection, approval, floor, and invoice, not the one with the longest feature list. If Motivox covers that chain for your team size, start a [trial](https://app.motivox.nl/Identity/Account/Register) or review [features](/en/features).
 
 *Further reading: [Workshop software](/en/workshop-software).*

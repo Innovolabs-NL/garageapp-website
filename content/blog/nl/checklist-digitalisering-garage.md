@@ -12,14 +12,14 @@ Digitaliseren is geen “pakket installeren”. Het is processen kiezen, rollen 
 
 ## Checklist
 
-1. **Jobflow vastleggen** — van intake tot factuur op één A4
-2. **Rollen** — wie doet keuring, wie plant, wie factureert
-3. **Checklisttemplates** — welke keuringen herhaal je wekelijks
-4. **Klantcommunicatie** — wat mag de klant zien in een portaal
-5. **Data-import** — klanten, voertuigen, openstaande jobs
-6. **Pilot** — één vestiging, korte feedbackcyclus
-7. **Training** — technici eerst uren/timer; backoffice daarna facturatie
-8. **Meet** — telefoontjes over status, fouten op facturen, tijd tot factuur
+1. **Jobflow vastleggen**, van intake tot factuur op één A4
+2. **Rollen**, wie doet keuring, wie plant, wie factureert
+3. **Checklisttemplates**, welke keuringen herhaal je wekelijks
+4. **Klantcommunicatie**, wat mag de klant zien in een portaal
+5. **Data-import**, klanten, voertuigen, openstaande jobs
+6. **Pilot**, één vestiging, korte feedbackcyclus
+7. **Training**, technici eerst uren/timer; backoffice daarna facturatie
+8. **Meet**, telefoontjes over status, fouten op facturen, tijd tot factuur
 
 ## Wat je mag uitstellen
 
@@ -27,6 +27,6 @@ Koude zelfboeking vanaf de homepage en betaalgateways zonder configuratie. Motiv
 
 ## Hulp nodig?
 
-Start een proefperiode van Motivox en loop deze checklist door — gericht op jouw garage, niet op een generieke slide.
+Start een proefperiode van Motivox en loop deze checklist door, gericht op jouw garage, niet op een generieke slide.
 
 *Verder lezen: [Garage software](/nl/garage-software).*

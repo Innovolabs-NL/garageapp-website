@@ -48,7 +48,7 @@ export async function POST(req: NextRequest) {
     to: [to],
     replyTo: email,
     subject: `Motivox contact: ${name}${company ? ` (${company})` : ""}`,
-    text: `Name: ${name}\nEmail: ${email}\nCompany: ${company || "—"}\n\n${message}`,
+    text: `Name: ${name}\nEmail: ${email}\nCompany: ${company || ","}\n\n${message}`,
   });
 
   if (error) {

@@ -1,6 +1,6 @@
 ---
 title: "Garage software: from Excel to one system"
-description: "Why repair shops replace Excel and Access with connected garage software — and what to check before you switch."
+description: "Why repair shops replace Excel and Access with connected garage software, and what to check before you switch."
 date: "2026-07-10"
 keywords:
   - garage software
@@ -8,7 +8,7 @@ keywords:
   - Excel garage
 ---
 
-Many shops still run on Excel lists, Access databases, or a mix of email and paper. It works — until job volume grows, a tech is out sick, or a customer asks: “when is my car ready?”
+Many shops still run on Excel lists, Access databases, or a mix of email and paper. It works, until job volume grows, a tech is out sick, or a customer asks: “when is my car ready?”
 
 ## The problem isn’t “no software”
 
@@ -32,16 +32,16 @@ Without that chain, “going digital” is cosmetic: you have tools, but you sti
 Motivox is garage workshop SaaS from Innovolabs B.V., built for Dutch auto repair shops:
 
 - **Dutch-first** UI, with English as a second language
-- **Three web portals** — office, technician, and customer — on one source of truth
+- **Three web portals**, office, technician, and customer, on one source of truth
 - **Multi-tenant** architecture: each shop sees only its own data; a second location starts with its own registration
-- **Not a separate native iOS/Android app** — browser-based for kiosk, tablet, and desktop
+- **Not a separate native iOS/Android app**, browser-based for kiosk, tablet, and desktop
 - Dutch practice baked in: VAT invoices, office vs technician roles, MFA for staff
 
 ## Pricing at a glance (excl. VAT)
 
 - 30-day trial after sign-up (no required demo call)
-- **ZZP** €35/month — you plus 1 extra account (office or technician)
-- **Garage** €80/month — 3 back office + 5 technicians, with live shop planning
+- **ZZP** €35/month, you plus 1 extra account (office or technician)
+- **Garage** €80/month, 3 back office + 5 technicians, with live shop planning
 - Extra seats €4/month per account on Garage; larger garage groups on request
 
 Details: [pricing](/en/pricing).
@@ -56,6 +56,6 @@ Details: [pricing](/en/pricing).
 
 ## Next step
 
-Map where you still retype. Then start a [Motivox trial](https://app.motivox.nl/Identity/Account/Register): walk that exact flow — intake to invoice — without Excel islands.
+Map where you still retype. Then start a [Motivox trial](https://app.motivox.nl/Identity/Account/Register): walk that exact flow, intake to invoice, without Excel islands.
 
 *Further reading: [Garage software](/en/garage-software).*

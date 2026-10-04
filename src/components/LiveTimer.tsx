@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-/** Start offset: 1h 42m 8s — looks like a job already in progress. */
+/** Start offset: 1h 42m 8s, looks like a job already in progress. */
 const START_SECONDS = 1 * 3600 + 42 * 60 + 8;
 
 function formatElapsed(total: number): string {
